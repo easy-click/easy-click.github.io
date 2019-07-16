@@ -1,1 +1,1 @@
-quick-demo
+* Demo 请查看 [EasyClick Demo](https://github.com/easy-click/easyclick-demo/)

@@ -10,5 +10,5 @@
 * 可用于Android各种辅助脚本
 
 
-[GitHub Demo](https://github.com/easy-click/easyclick-demo/)
-[Get Started](zh-cn/quick-start)
+[EasyClick Demo](https://github.com/easy-click/easyclick-demo/)
+[Get Started](zh-cn/getting-start)
