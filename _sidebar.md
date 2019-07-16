@@ -5,7 +5,7 @@
 
 * [快速演示](zh-cn/quick-demo)
 * [入门指南](zh-cn/getting-start)
-* [示例仓库](zh-cn/getting-start)
+* [示例仓库](zh-cn/sample-repo)
 * [基础功能](zh-cn/basic-functions)
 * [高级功能](zh-cn/advanced-functions)
 * [API手册](zh-cn/api-docs)
