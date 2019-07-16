@@ -41,15 +41,19 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.2', ext: 'aar
 - 子任务写完之后，在 com.run.Main#exec方法中进行实例化并调用即可
 - 实际子任务可以查看 今日头条的示例 (JRTT.java)
 
+### 配置UI界面
+
+?> EasyClick 自带UIGenerator工具类，通过JSON配置，即可生成脚本参数UI界面
+
 
 ### 运行与调试
 
-?> 运行和调试都按照Anroid的标准步骤即可，注意需要关闭 Instant Run 功能。[如何关闭Instant Run](https://blog.csdn.net/yu544324974/article/details/52472641)
+?> 运行和调试都按照Android的标准步骤即可，注意需要关闭 Instant Run 功能。[如何关闭 Instant Run](https://blog.csdn.net/yu544324974/article/details/52472641)
 
 
 ### 打包发布
 
-?> 打包发布按照Anroid的标准步骤即可
+?> 打包发布按照Android的标准步骤即可
 
 ### 混淆配置
 
