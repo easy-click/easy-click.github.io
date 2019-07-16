@@ -11,4 +11,4 @@
 
 
 [GitHub Demo](https://github.com/easy-click/easyclick-demo/)
-[Get Started](zh-cn/quick_start)
+[Get Started](zh-cn/quick-start)
