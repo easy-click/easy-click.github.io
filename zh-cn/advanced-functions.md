@@ -17,7 +17,92 @@
 * @description 获取手机的IMEI
 * @return 字符串
 
-        String imei = device.getImei();
+> ```java
+> String imei = device.getImei();
+> ``` 
+
+###  device.getScreenWidth()
+* @description 取得屏幕宽度
+* @return 整型
+
+> ```java
+> int width = device.getScreenWidth();
+> ``` 
+
+
+
+###  device.getScreenHeight()
+* @description 取得屏幕高度
+* @return 整型
+
+> ```java
+> int height = device.getScreenHeight();
+> ``` 
+
+
+###  device.getAndroidId()
+* @description 取得Android ID
+* @return 字符串
+
+> ```java
+> String androidId = device.getAndroidId();
+> ``` 
+
+
+###  device.getBrand()
+* @description 取得手机品牌
+* @return 字符串
+
+> ```java
+> String brand = device.getBrand();
+> ``` 
+
+
+###  device.getModel()
+* @description 取得手机机型
+* @return 字符串
+
+> ```java
+> String model = device.getModel();
+> ``` 
+
+
+###  device.getImsi()
+* @description 取得手机卡号
+* @return 字符串
+
+> ```java
+> String imsi = device.getImsi();
+> ```
+
+
+###  device.getSerial()
+* @description 取得手机串号
+* @return 字符串
+
+> ```java
+> String serial = device.getSerial();
+> ``` 
+
+
+###  device.getSdkInt()
+* @description 取得手机SDK 版本号，例如 23
+* @return 字符串
+
+> ```java
+> int sdkInt = device.getSdkInt();
+> ```
+
+###  device.getOSVersion()
+* @description 取得手机版本号,例如 6.0等字符串
+* @return 字符串
+
+> ```java
+> String osVersion = device.getOSVersion();
+> ```
+
+
+
 
 
 ## 文件操作函数
@@ -26,7 +111,48 @@
 * @param path 文件路径
 * @return 字符串
 
-        String data = file.readFile("/sdcard/test.txt");
+> ```java
+> String data = file.readFile("/sdcard/test.txt");
+> ```
+
+
+### file.writeFile(String data, String path)
+* @description 将字符串存储到文件中
+* @param data 字符串 数据
+* @param path 文件路径
+
+> ```java
+> String data="Test";
+> file.writeFile(data,"/sdcard/test.txt");
+> ```
+
+
+### file.create(String path)
+* @description 创建一个文件或者文件夹
+* @param path 文件或者文件夹路径
+* @return 布尔型 true 代表创建成功
+
+> ```java
+> boolean create=file.create("/sdcard/test.txt");
+> ```        
+
+### file.readAssets(String path)
+* @description 从APK的assets文件夹中读取数据为字符串
+* @param path assets文件夹中的文件路径，例如 data/a.txt
+* @return 字符串
+
+> ```java
+> String data=file.readAssets("data/test.txt");
+> ```
+
+
+### file.deleteAllFile(String path)
+* @description 删除所有文件或者文件夹
+* @param path 文件或者文件路径
+
+> ```java
+> file.deleteAllFile("data/test.txt");
+> ```
 
 ## Http网络函数
 
