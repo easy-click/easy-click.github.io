@@ -8,6 +8,7 @@
 * 可脱机运行，可单独发布
 * 免ROOT运行
 * 开发工具Google官方支持
+* QQ群：777164022
 
 
 [EasyClick Demo](https://github.com/easy-click/easyclick-demo/)
