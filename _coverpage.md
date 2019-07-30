@@ -7,7 +7,7 @@
 * 丰富的API，图像识别
 * 可脱机运行，可单独发布
 * 免ROOT运行
-* 可用于Android各种辅助脚本
+* 开发工具Google官方支持
 
 
 [EasyClick Demo](https://github.com/easy-click/easyclick-demo/)
