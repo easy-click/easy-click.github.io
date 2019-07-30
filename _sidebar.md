@@ -9,5 +9,5 @@
 * [同类对比](zh-cn/similar-comparison)
 * [常见问题](zh-cn/similar-comparison)
 * [免责申明](zh-cn/similar-comparison)
-* [QQ群：777164022](#)
+* [QQ群：777164022]()
 
