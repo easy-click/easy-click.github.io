@@ -59,7 +59,7 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar
 ?> 打包发布按照Android的标准步骤即可
 
 ### 混淆配置
-
+- 根据实际情况，可以不开启
 
 
 
@@ -70,6 +70,7 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar
 > -keep public class * extends android.test.**
 > -keep class org.opencv.**{*;}
 > -keep class com.gibb.auto.model.**{*;}
+> -keep class **.Main{*;}
 > ```
 
 
