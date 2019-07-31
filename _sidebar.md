@@ -18,7 +18,7 @@
 * [API手册](zh-cn/api-docs)
 * [工具软件](zh-cn/dev-tools)
 * [同类对比](zh-cn/similar-comparison)
-* [常见问题](zh-cn/similar-comparison)
-* [免责申明](zh-cn/similar-comparison)
+* [常见问题](zh-cn/question-answer)
+* [免责申明](zh-cn/declare)
 * [QQ群：777164022]()
 
