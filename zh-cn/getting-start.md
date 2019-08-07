@@ -11,7 +11,7 @@ maven {
 implementation 'com.android.support:appcompat-v7:26.0.0'
 implementation 'com.android.support:design:26.0.0'
 implementation group: 'com.android.support', name: 'support-v4', version: '26.0.0'
-implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar'
+implementation group: 'com.gibb', name: 'easyclick', version: '1.0.9-no-image', ext: 'aar'
 > ```
 
 
@@ -19,19 +19,33 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar
 ### 配置UI界面
 
 - 新建Activity类并配置为启动类
-- 在Android工程assets文件夹新建一个demo.json文件,内容为
+- 在Android工程res/layout/文件夹新建一个main.xml文件,内容为
 
-> ```json
-> {
-> 	"ui": [{
-> 		"label": "测试文本",
-> 		"line_type": "文本",
-> 		"background_color": "#e67f7f"
-> 	}]
-> }
+> ```xml
+> <?xml version="1.0" encoding="utf-8"?>
+> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>     android:layout_width="match_parent"
+>     android:layout_height="match_parent"
+>     android:orientation="vertical">
+> 
+>     <TextView
+>         android:layout_width="match_parent"
+>         android:layout_height="wrap_content"
+>         android:text="第一个DEMO" />
+> </LinearLayout>
 > ```
 
-- EasyClick 自带 TestCaseStarter#generateUiView 方法，通过JSON配置，即可生成脚本参数UI界面
+- 设置界面UI
+
+> ```java
+>     protected void onCreate(Bundle savedInstanceState) {
+>         super.onCreate(savedInstanceState);
+>         View view = ApiStarter.getInstance(getApplicationContext())
+>                 .generateUiView("main.xml", true);
+>         setContentView(view);
+>     }
+> 
+> ```
 
 
 
@@ -39,11 +53,16 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar
 
 - 新建 com.run.Main 类 并继承 com.gibb.auto.open.BaseCaseMain
 
-?> 主任务是指包含子任务的入口集合，为了更清晰，逻辑上划分的主、子任务
-
-- 在com.run.Main类中实现 exec 和 stop方法
-- exec 方法是脚本真正执行调用的方法
-- stop 方法是脚本被停止的时候调用的方法，这里要做资源的回收
+> ```java
+> package com.run;
+> import com.gibb.auto.open.BaseCaseMain;
+> public class Main extends BaseCaseMain {
+>     @Override
+>     public void exec() {
+>         event.toast("我是DEMO");
+>     }
+> }
+> ```
 
 
 ### 运行与调试
@@ -54,9 +73,6 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar
 ?> 运行和调试都按照Android的标准步骤即可，注意需要关闭 Instant Run 功能。[如何关闭 Instant Run](https://blog.csdn.net/yu544324974/article/details/52472641)
 
 
-### 打包发布
-
-?> 打包发布按照Android的标准步骤即可
 
 ### 混淆配置
 - 根据实际情况，可以不开启
@@ -71,6 +87,10 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.7', ext: 'aar
 > -keep class org.opencv.**{*;}
 > -keep class com.gibb.auto.model.**{*;}
 > -keep class **.Main{*;}
+> -keep class **.R {*;}
+> -keep class **.R$* {*;}
+> -keep class **.R$*
+> -keep class **.R
 > ```
 
 
