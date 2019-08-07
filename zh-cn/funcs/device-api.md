@@ -1,4 +1,3 @@
-# 设备信息主要是获取手机的信息等
 
 ##  device.getIMEI()
 * @description 获取手机的IMEI

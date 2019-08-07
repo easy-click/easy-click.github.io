@@ -1,4 +1,43 @@
-## thread-api
+
+## execAsync(Runnable runnable)
+* @description 异步执行线程，这里会将Runnable放到线程池中进行管理
+* @param runnable Runnable对象
+
+> ```java
+> thread.execAsync(new Runnable() {
+>             @Override
+>             public void run() {
+>                 while (!isStop()) {
+>                     Log.e("TAG", "run...");
+>                 }
+>             }
+>         });
+> ```
+
+
+## execFuncSyncNotNull(ExecFunc<T> condition, long timeout)
+* @description 执行某个函数并且等待结果不为空时返回，如果函数中返回的不是空，该方法将立刻执行完毕
+* @param condition 条件函数
+* @param timeout   超时时间，单位是秒
+* @return 返回一个对象
+
+
+> ```java
+>  Object object = thread.execFuncSyncNotNull(new ExecFunc<Object>() {
+>             @Override
+>             public Object execute() {
+>                 if (pkg.equalsIgnoreCase("com.tencent.qq")) {
+>                     return new Object();
+>                 }
+>                 return null;
+>             }
+>         }, 10);
+>         if (utils.isObjectNotNull(object)) {
+>             event.toast("检测成功");
+>         } else {
+>             event.toast("检测失败");
+>         }
+> ```
 
 
 
