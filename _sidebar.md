@@ -9,9 +9,11 @@
     * [文件操作函数-file](zh-cn/funcs/file-api)
     * [Http网络函数-http](zh-cn/funcs/http-api)
     * [Shell命令函数-shell](zh-cn/funcs/shell-api)
+    * [工具类函数-utils](zh-cn/funcs/utils-api)
+    * [线程类函数-thread](zh-cn/funcs/thread-api)
     * [图像识别函数-image](zh-cn/funcs/image-api)
     * [设备事件函数-event](zh-cn/funcs/event-api)
-    * [TestCaseStarter说明](zh-cn/funcs/test-case-starter)
+    * [ApiStarter说明](zh-cn/funcs/api-starter)
     * [UI模板定制](zh-cn/funcs/ui-custom)
     
     
