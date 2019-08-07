@@ -74,3 +74,23 @@
 > ```java
 > boolean value = utils.isTrue(Boolean.valueOf("true"));
 > ```
+
+
+## fileMd5(String file)
+* @description 文件的MD5
+* @param file 文件路径
+* @return 文件MD5字符串或者null
+
+> ```java
+> String md5 = utils.fileMd5("/sdcard/a.txt");
+> ```
+
+
+## dataMd5(String file)
+* @description 数据计算出来的MD5
+* @param data 数据
+* @return 数据MD5字符串或者null
+
+> ```java
+> String md5 = utils.dataMd5("data");
+> ```
