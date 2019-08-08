@@ -94,3 +94,23 @@
 > ```java
 > String md5 = utils.dataMd5("data");
 > ```
+
+
+
+## utils.randomInt(int length)
+* @description 随机整型数据
+* @param length 位数，要随机产生多少位的整型数据
+* @return 整型
+
+> ```java
+> int r = utils.randomInt(2);
+> ```
+
+## utils.randomCharNumber(int length)
+* @description 取得随机的数字和字母
+* @param length 长度
+* @return 字符串数字混合
+
+> ```java
+> String r = utils.randomCharNumber(2);
+> ```
