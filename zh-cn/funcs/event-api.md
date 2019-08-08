@@ -1,3 +1,11 @@
+## Selector 元素选择器说明
+ - Selector是元素选择器，使用链式函数构建，例如Selector.builder().className("android.widget.EditText").build();
+ - Selector中的字段方法和元素属性一一对应，具体可以查看 [EasyClick环境构建软件](zh-cn/dev-tools?id=easyclick-环境构建软件)
+ - 事件函数中，使用Selector数组作为参数的，代表是递进式选择元素，用于应对一次性无法选中元素的情况
+
+
+
+
 ## event.toast(String msg)
 * @description 显示消息
 * @param msg 消息内容
