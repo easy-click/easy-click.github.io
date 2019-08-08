@@ -1,5 +1,5 @@
 
-## execAsync(Runnable runnable)
+## thread.execAsync(Runnable runnable)
 * @description 异步执行线程，这里会将Runnable放到线程池中进行管理
 * @param runnable Runnable对象
 
@@ -15,7 +15,7 @@
 > ```
 
 
-## execFuncSyncNotNull(ExecFunc<T> condition, long timeout)
+## thread.execFuncSyncNotNull(ExecFunc<T> condition, long timeout)
 * @description 执行某个函数并且等待结果不为空时返回，如果函数中返回的不是空，该方法将立刻执行完毕
 * @param condition 条件函数
 * @param timeout   超时时间，单位是秒
@@ -41,7 +41,7 @@
 
 
 
-## execFuncAndWait(ExecFunc condition, long timeout)
+## thread.execFuncAndWait(ExecFunc condition, long timeout)
 * @description 执行某个函数并且等待true返回，如果函数中返回的是true，该方法将立刻执行完毕
 * @param condition 条件函数
 * @param timeout   超时时间，单位是秒

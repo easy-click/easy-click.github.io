@@ -1,5 +1,5 @@
 
-## downloadFile(String remoteUrl, File file, int timeout)
+## http.downloadFile(String remoteUrl, File file, int timeout)
 * @description 下载远程文件到本地,支持断点续传
 * @param remoteUrl 远程文件URL
 * @param file      要保存到本地的文件对象
@@ -12,7 +12,7 @@
 
 
 
-## downloadFile(String remoteUrl, String file)
+## http.downloadFile(String remoteUrl, String file)
 * @description 下载远程文件到本地,支持断点续传，默认超时时间为30秒
 * @param remoteUrl 远程文件URL
 * @param file      要保存到本地的文件对象
@@ -23,7 +23,7 @@
 > ```
 
 
-## httpGet(String url, int timeout)
+## http.httpGet(String url, int timeout)
 * @description Http GET 请求
 * @param url 请求的URL
 * @param timeout 超时时间 单位毫秒
@@ -34,7 +34,7 @@
 > ```
 
 
-## httpGet(String url,HashMap<String, String> params, int timeout)
+## http.httpGet(String url,HashMap<String, String> params, int timeout)
 * @description Http GET 请求
 * @param url 请求的URL
 * @param params  参数Map表
@@ -49,7 +49,7 @@
 
 
 
-## httpPost(String url,HashMap<String, String> params, int timeout)
+## http.httpPost(String url,HashMap<String, String> params, int timeout)
 * @description Http Post 请求
 * @param url 请求的URL
 * @param params  参数Map表
