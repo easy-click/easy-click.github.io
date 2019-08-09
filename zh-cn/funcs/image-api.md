@@ -1,4 +1,6 @@
 
+-- 注意: 这里的截图函数需要Andrioid 5.0 以上版本才能使用, 5.0 以下请使用event函数的截图方法
+
 ## image.requestScreenCapture()
 * @description 向系统申请屏幕截图权限，返回是否请求成功。
     * 第一次使用该函数会弹出截图权限请求，建议选择“总是允许”。
