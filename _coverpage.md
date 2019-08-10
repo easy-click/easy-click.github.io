@@ -11,5 +11,5 @@
 * QQ群：777164022
 
 
-[EasyClick Demo](https://github.com/easy-click/easyclick-demo/)
+[EasyClick Demo](https://github.com/easy-click/easyclick-demo1/)
 [Get Started](zh-cn/getting-start)

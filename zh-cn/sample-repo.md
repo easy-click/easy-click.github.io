@@ -1,7 +1,7 @@
 
 ## 入门实例
-- [代码地址]()
-- [Apk下载]()
+- [代码地址](https://github.com/easy-click/easyclick-demo1)
+- [Apk下载](https://github.com/easy-click/easyclick-demo1/raw/master/release/demo1.apk)
 
 ## 设备信息演示
 - [代码地址]()
