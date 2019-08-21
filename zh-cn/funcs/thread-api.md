@@ -1,6 +1,8 @@
 
 ## thread.execAsync(Runnable runnable)
 * @description 异步执行线程，这里会将Runnable放到线程池中进行管理
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param runnable Runnable对象
 
 > ```java
@@ -17,6 +19,8 @@
 
 ## thread.execFuncSyncNotNull(ExecFunc<T> condition, long timeout)
 * @description 执行某个函数并且等待结果不为空时返回，如果函数中返回的不是空，该方法将立刻执行完毕
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param condition 条件函数
 * @param timeout   超时时间，单位是秒
 * @return 返回一个对象
@@ -43,6 +47,8 @@
 
 ## thread.execFuncAndWait(ExecFunc condition, long timeout)
 * @description 执行某个函数并且等待true返回，如果函数中返回的是true，该方法将立刻执行完毕
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param condition 条件函数
 * @param timeout   超时时间，单位是秒
 * @return 返回一个布尔型对象

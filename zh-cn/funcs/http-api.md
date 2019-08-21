@@ -1,6 +1,8 @@
 
 ## http.downloadFile(String remoteUrl, File file, int timeout)
 * @description 下载远程文件到本地,支持断点续传
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param remoteUrl 远程文件URL
 * @param file      要保存到本地的文件对象
 * @param timeout   下载超时，单位是毫秒
@@ -14,6 +16,8 @@
 
 ## http.downloadFile(String remoteUrl, String file)
 * @description 下载远程文件到本地,支持断点续传，默认超时时间为30秒
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param remoteUrl 远程文件URL
 * @param file      要保存到本地的文件对象
 * @return true 代表成功 false代表失败
@@ -25,6 +29,8 @@
 
 ## http.httpGet(String url, int timeout)
 * @description Http GET 请求
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param url 请求的URL
 * @param timeout 超时时间 单位毫秒
 * @return 字符串 请求后返回的字符串
@@ -36,6 +42,8 @@
 
 ## http.httpGet(String url,HashMap<String, String> params, int timeout)
 * @description Http GET 请求
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param url 请求的URL
 * @param params  参数Map表
 * @param timeout 超时时间 单位毫秒
@@ -51,6 +59,8 @@
 
 ## http.httpPost(String url,HashMap<String, String> params, int timeout)
 * @description Http Post 请求
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @param url 请求的URL
 * @param params  参数Map表
 * @param timeout 超时时间 单位毫秒
@@ -60,5 +70,19 @@
 > HashMap<String,String> params= new HashMap<>();
 > params.put("a","test");
 > String data = http.httpPost("http://baidu.com/",params,30*1000);
+> ```
+
+## http.postJSON(String url, String json)
+* @description HTTP POST JSON数据
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
+* @param url 请求的URL
+* @param json  json数据
+* @return 字符串 请求后返回的字符串
+
+> ```java
+> JSONObject params= new JSONObject<>();
+> params.put("a","test");
+> String data = http.postJSON("http://baidu.com/",params.toString());
 > ```
 

@@ -13,6 +13,9 @@
     * [线程类函数-thread](zh-cn/funcs/thread-api)
     * [图像识别函数-image](zh-cn/funcs/image-api)
     * [设备事件函数-event](zh-cn/funcs/event-api)
+    * [无障碍设备事件函数-acEvent](zh-cn/funcs/acevent-api)
+    * [节点事件函数-node](zh-cn/funcs/node-api)
+    * [JNodes函数](zh-cn/funcs/jnodes-api)
     * [ApiStarter说明](zh-cn/funcs/api-starter)
     * [UI模板定制](zh-cn/funcs/ui-custom)
 

@@ -1,6 +1,6 @@
 ## 任务划分说明
  - 主任务和子任务无本质区别，只是逻辑上区分而已
- - 主任务继承com.gibb.auto.open.BaseCaseMain
+ - 主任务继承com.gibb.auto.open.testcase.BaseCaseMain
  - 子任务继承com.gibb.auto.open.testcase.SubTestCase
  - 子任务和主任务都包含了相同的功能函数，只要继承即可拥有以下能力:
     - device 变量: 设备相关的API封装
@@ -11,6 +11,8 @@
     - shell 变量: Shell命令操作相关的Api封装
     - utils 变量: 常用工具类操作相关的Api封装
     - thread 变量: 多线程相关的Api封装
+    - node 变量: 节点操作封装
+    - acEvent 变量: 无障碍模式下的事件封装
 
 
 !> 任务类中函数解析

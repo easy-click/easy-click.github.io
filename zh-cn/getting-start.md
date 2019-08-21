@@ -11,7 +11,7 @@ maven {
 implementation 'com.android.support:appcompat-v7:26.0.0'
 implementation 'com.android.support:design:26.0.0'
 implementation group: 'com.android.support', name: 'support-v4', version: '26.0.0'
-implementation group: 'com.gibb', name: 'easyclick', version: '1.0.9-no-image', ext: 'aar'
+implementation group: 'com.gibb', name: 'easyclick', version: '1.5.0-no-image', ext: 'aar'
 > ```
 
 
@@ -40,6 +40,8 @@ implementation group: 'com.gibb', name: 'easyclick', version: '1.0.9-no-image', 
 > ```java
 >     protected void onCreate(Bundle savedInstanceState) {
 >         super.onCreate(savedInstanceState);
+>          //设置运行模式 1 代理模式，2 无障碍模式
+>        ApiStarter.getInstance(getApplicationContext()).setRunningMode(2);
 >         View view = ApiStarter.getInstance(getApplicationContext())
 >                 .generateUiView("main.xml", true);
 >         setContentView(view);

@@ -1,6 +1,8 @@
 
 ##  device.getIMEI()
 * @description 获取手机的IMEI
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java
@@ -9,6 +11,8 @@
 
 ##  device.getScreenWidth()
 * @description 取得屏幕宽度
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 整型
 
 > ```java
@@ -19,6 +23,8 @@
 
 ##  device.getScreenHeight()
 * @description 取得屏幕高度
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 整型
 
 > ```java
@@ -28,6 +34,8 @@
 
 ##  device.getAndroidId()
 * @description 取得Android ID
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java
@@ -37,6 +45,8 @@
 
 ##  device.getBrand()
 * @description 取得手机品牌
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java
@@ -55,6 +65,8 @@
 
 ##  device.getImsi()
 * @description 取得手机卡号
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java
@@ -64,6 +76,8 @@
 
 ##  device.getSerial()
 * @description 取得手机串号
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java
@@ -73,6 +87,8 @@
 
 ##  device.getSdkInt()
 * @description 取得手机SDK 版本号，例如 23
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java
@@ -81,6 +97,8 @@
 
 ##  device.getOSVersion()
 * @description 取得手机版本号,例如 6.0等字符串
+* 运行环境: 无限制
+* 兼容版本: Android 4.4 以上
 * @return 字符串
 
 > ```java

@@ -3,6 +3,10 @@
 - ApiStarter.getInstance(context)直接取得实例
 
 
+## setRunningMode(int mode)) 
+* @description 设置运行模式
+*  @param mode 1 代理模式，2 代表无障碍模式
+
 
 ## version() 
 * @description SDK版本
