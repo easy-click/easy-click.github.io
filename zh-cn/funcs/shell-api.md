@@ -50,3 +50,20 @@
 > ```java
 > String result = shell.execCommand("pm install /sdcard/app.apk");
 > ```
+
+
+
+
+## shell.closeScreen()
+* @description 关闭屏幕
+* 运行环境: 代理模式
+* 兼容版本: Android 4.4 以上
+* @return true 成功，false 失败
+
+
+## shell.lightScreen()
+* @description 点亮屏幕
+* 运行环境: 代理模式
+* 兼容版本: Android 4.4 以上
+* @return true 成功，false 失败
+
