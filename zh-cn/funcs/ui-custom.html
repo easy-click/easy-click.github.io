@@ -1,0 +1,924 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>UI定制 · EasyClick开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ui/linearlayout.html" />
+    
+    
+    <link rel="prev" href="utils-api.html" />
+    
+
+    
+        <link rel="shortcut icon" href="/zh-cn/images/ico.png" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/zh-cn/images/ico.png">
+    
+    
+        
+    
+    
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../features.html">
+            
+                <a href="../features.html">
+            
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../getting-start.html">
+            
+                <a href="../getting-start.html">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="devtools/dev-tools.html">
+            
+                <a href="devtools/dev-tools.html">
+            
+                    
+                    开发工具介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="devtools/dev-tools-install.html">
+            
+                <a href="devtools/dev-tools-install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="devtools/dev-tools-project.html">
+            
+                <a href="devtools/dev-tools-project.html">
+            
+                    
+                    工程相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="devtools/dev-tools-device.html">
+            
+                <a href="devtools/dev-tools-device.html">
+            
+                    
+                    设备相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="devtools/dev-tools-screen.html">
+            
+                <a href="devtools/dev-tools-screen.html">
+            
+                    
+                    屏幕相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="devtools/dev-tools-settings.html">
+            
+                <a href="devtools/dev-tools-settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../funcs.html">
+            
+                <a href="../funcs.html">
+            
+                    
+                    功能函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="global/global.html">
+            
+                <a href="global/global.html">
+            
+                    
+                    全局模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="global/global-shortcut.html">
+            
+                <a href="global/global-shortcut.html">
+            
+                    
+                    全局快捷事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="global/selector-node.html">
+            
+                <a href="global/selector-node.html">
+            
+                    
+                    选择器&节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="acevent-api.html">
+            
+                <a href="acevent-api.html">
+            
+                    
+                    无障碍事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="event-api.html">
+            
+                <a href="event-api.html">
+            
+                    
+                    代理事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="image-api.html">
+            
+                <a href="image-api.html">
+            
+                    
+                    图色函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="device-api.html">
+            
+                <a href="device-api.html">
+            
+                    
+                    设备函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="file-api.html">
+            
+                <a href="file-api.html">
+            
+                    
+                    文件函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="http-api.html">
+            
+                <a href="http-api.html">
+            
+                    
+                    网络函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="thread-api.html">
+            
+                <a href="thread-api.html">
+            
+                    
+                    线程函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="utils-api.html">
+            
+                <a href="utils-api.html">
+            
+                    
+                    常用工具函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="ui-custom.html">
+            
+                <a href="ui-custom.html">
+            
+                    
+                    UI定制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="ui/linearlayout.html">
+            
+                <a href="ui/linearlayout.html">
+            
+                    
+                    LinearLayout线性布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="ui/framelayout.html">
+            
+                <a href="ui/framelayout.html">
+            
+                    
+                    FrameLayout帧布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="ui/relativelayout.html">
+            
+                <a href="ui/relativelayout.html">
+            
+                    
+                    RelativeLayout绝对布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="ui/scrollview.html">
+            
+                <a href="ui/scrollview.html">
+            
+                    
+                    ScrollView滚动框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="ui/view.html">
+            
+                <a href="ui/view.html">
+            
+                    
+                    View视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="ui/button.html">
+            
+                <a href="ui/button.html">
+            
+                    
+                    Button按钮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="ui/textview.html">
+            
+                <a href="ui/textview.html">
+            
+                    
+                    TextView文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="ui/edittext.html">
+            
+                <a href="ui/edittext.html">
+            
+                    
+                    EditText输入框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="ui/checkbox.html">
+            
+                <a href="ui/checkbox.html">
+            
+                    
+                    CheckBox复选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="ui/radiogroup.html">
+            
+                <a href="ui/radiogroup.html">
+            
+                    
+                    RadioGroup布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="ui/radiobutton.html">
+            
+                <a href="ui/radiobutton.html">
+            
+                    
+                    RadioButton单选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="ui/spinner.html">
+            
+                <a href="ui/spinner.html">
+            
+                    
+                    Spinner下拉选择框
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="plugin/plugins.html">
+            
+                <a href="plugin/plugins.html">
+            
+                    
+                    三方插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="plugin/plugins-write.html">
+            
+                <a href="plugin/plugins-write.html">
+            
+                    
+                    编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="plugin/plugins-use.html">
+            
+                <a href="plugin/plugins-use.html">
+            
+                    
+                    使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../question-answer.html">
+            
+                <a href="../question-answer.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../declare.html">
+            
+                <a href="../declare.html">
+            
+                    
+                    免责申明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >UI定制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;"><b>2. </b>&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x516C;&#x6709;&#x5C5E;&#x6027;"><b>3. </b>&#x516C;&#x6709;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;"><b>4. </b>UI&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;</a></li><li><span class="title-icon "></span><a href="#ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><b>5. </b>UI&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;</a></li></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
+<p>EasyClick &#x9075;&#x5FAA;&#x4E86;Android&#x7684;UI&#x8BBE;&#x8BA1;&#x65B9;&#x5F0F;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;Android UI&#x7684;&#x7B80;&#x5316;&#x7248;&#x672C;</p>
+<h1 id="&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;"><a name="&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;</h1>
+<ul>
+<li><a href="ui/linearlayout.html">LinearLayout &#x7EBF;&#x6027;&#x5E03;&#x5C40;</a></li>
+<li><a href="ui/framelayout.html">FrameLayout &#x5E27;&#x5E03;&#x5C40;</a></li>
+<li><a href="ui/relativelayout.html">RelativeLayout &#x7EDD;&#x5BF9;&#x5E03;&#x5C40;</a></li>
+<li><a href="ui/scrollview.html">ScrollView &#x6EDA;&#x52A8;&#x6846;</a></li>
+<li><a href="ui/view.html">View&#x89C6;&#x56FE;</a></li>
+<li><a href="ui/button.html">Button &#x6309;&#x94AE;</a></li>
+<li><a href="ui/textview.html">TextView &#x6587;&#x672C;&#x89C6;&#x56FE;</a></li>
+<li><a href="ui/edittext.html">EditText &#x8F93;&#x5165;&#x6846;</a></li>
+<li><a href="ui/checkbox.html">CheckBox &#x590D;&#x9009;&#x6846;</a></li>
+<li><a href="ui/radiogroup.html">RadioGroup&#x5E03;&#x5C40;</a></li>
+<li><a href="ui/radiobutton.html">RadioButton &#x5355;&#x9009;&#x6846;</a></li>
+<li><a href="ui/spinner.html">Spinner &#x4E0B;&#x62C9;&#x9009;&#x62E9;&#x6846;</a></li>
+</ul>
+<h1 id="&#x516C;&#x6709;&#x5C5E;&#x6027;"><a name="&#x516C;&#x6709;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x516C;&#x6709;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x516C;&#x6709;&#x5C5E;&#x6027;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+<th style="text-align:center">&#x53EF;&#x9009;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">layout_width</td>
+<td style="text-align:center">&#x5BBD;&#x5EA6;</td>
+<td style="text-align:center">wrap_content: &#x548C;&#x81EA;&#x8EAB;&#x5185;&#x5BB9;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br> match_parent:&#x548C;&#x7236;&#x7EC4;&#x4EF6;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br>&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">layout_height</td>
+<td style="text-align:center">&#x9AD8;&#x5EA6;</td>
+<td style="text-align:center">wrap_content: &#x548C;&#x81EA;&#x8EAB;&#x5185;&#x5BB9;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br> match_parent:&#x548C;&#x7236;&#x7EC4;&#x4EF6;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br>&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">background</td>
+<td style="text-align:center">&#x80CC;&#x666F;&#x8272;</td>
+<td style="text-align:center">16&#x8FDB;&#x5236;&#x7684;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x4F8B;&#x5982;#FFFFFF&#x6216;&#x8005;#FFFFFFFF</td>
+</tr>
+<tr>
+<td style="text-align:center">tag</td>
+<td style="text-align:center">&#x6807;&#x7B7E;</td>
+<td style="text-align:center">&#x4E2D;&#x82F1;&#x6587;&#x90FD;&#x53EF;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;tag&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:center">visibility</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x53EF;&#x5C55;&#x793A;</td>
+<td style="text-align:center">gone:&#x4E0D;&#x5C55;&#x793A;<br>visible:&#x5C55;&#x793A;<br>invisible:&#x4E0D;&#x5C55;&#x793A;&#x4F46;&#x662F;&#x5360;&#x7528;&#x7A7A;&#x95F4;</td>
+</tr>
+<tr>
+<td style="text-align:center">clickable</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x53EF;&#x70B9;&#x51FB;</td>
+<td style="text-align:center">true: &#x53EF;&#x70B9;&#x51FB; <br>false: &#x4E0D;&#x53EF;&#x70B9;&#x51FB;</td>
+</tr>
+<tr>
+<td style="text-align:center">enable</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x542F;&#x7528;</td>
+<td style="text-align:center">true: &#x542F;&#x7528; <br>false: &#x7981;&#x7528;</td>
+</tr>
+<tr>
+<td style="text-align:center">minHeight</td>
+<td style="text-align:center">&#x6700;&#x5C0F;&#x9AD8;&#x5EA6;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">minWidth</td>
+<td style="text-align:center">&#x6700;&#x5C0F;&#x5BBD;&#x5EA6;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">paddingLeft</td>
+<td style="text-align:center">&#x5DE6;&#x5185;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">paddingTop</td>
+<td style="text-align:center">&#x4E0A;&#x5185;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">paddingRight</td>
+<td style="text-align:center">&#x53F3;&#x5185;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">paddingBottom</td>
+<td style="text-align:center">&#x4E0B;&#x5185;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">padding</td>
+<td style="text-align:center">&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x5185;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">layout_gravity</td>
+<td style="text-align:center">&#x81EA;&#x8EAB;&#x76F8;&#x5F53;&#x4E8E;&#x7236;&#x5BB9;&#x5668;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</td>
+<td style="text-align:center"><a href="https://blog.csdn.net/gaojinshan/article/details/44917205" target="_blank">&#x7528;&#x6CD5;&#x53C2;&#x8003;</a><br>top<br>bottom<br>left<br>right<br>center_vertical<br>fill_vertical<br>center_horizontal<br>fill_horizontal<br>center<br>fill<br>clip_vertical<br>clip_horizontal<br></td>
+</tr>
+<tr>
+<td style="text-align:center">layout_margin</td>
+<td style="text-align:center">&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x5916;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">layout_marginLeft</td>
+<td style="text-align:center">&#x5DE6;&#x5916;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">layout_marginRight</td>
+<td style="text-align:center">&#x53F3;&#x5916;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">layout_marginTop</td>
+<td style="text-align:center">&#x4E0A;&#x5916;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+<tr>
+<td style="text-align:center">layout_marginBottom</td>
+<td style="text-align:center">&#x4E0B;&#x5916;&#x8FB9;&#x8DDD;</td>
+<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
+</tr>
+</tbody>
+</table>
+<h1 id="ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;"><a name="ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;" class="anchor-navigation-ex-anchor" href="#ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>4. UI&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;</h1>
+<ul>
+<li>&#x5C5E;&#x6027;&#x4E3A;&#xFF1A;layout_width, layout_height</li>
+<li>match_parent &#x586B;&#x5145;&#x6EE1;&#x7236;&#x5BB9;&#x5668;</li>
+<li>wrap_content &#x4EE5;&#x81EA;&#x8EAB;&#x5B9E;&#x9645;&#x5BBD;&#x5EA6;&#x4E3A;&#x51C6;</li>
+<li>&#x6570;&#x5B57;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;12dp&#xFF0C;&#x4EE3;&#x8868;12&#x4E2A;dp&#x5BBD;&#x5EA6;&#xFF0C;dp&#x662F;android&#x7684;&#x5BBD;&#x5EA6;&#x5355;&#x4F4D;</li>
+</ul>
+<h1 id="ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><a name="ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;" class="anchor-navigation-ex-anchor" href="#ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>5. UI&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;</h1>
+<ul>
+<li>&#x53C2;&#x8003;  <a href="task">&#x4EFB;&#x52A1;&#x7C7B;&#x4E2D;&#x7684;API&#x8BF4;&#x660E;</a></li>
+</ul>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="utils-api.html" class="navigation navigation-prev " aria-label="Previous page: 常用工具函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ui/linearlayout.html" class="navigation navigation-next " aria-label="Next page: LinearLayout线性布局">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"UI定制","level":"1.6","depth":1,"next":{"title":"LinearLayout线性布局","level":"1.6.1","depth":2,"path":"zh-cn/funcs/ui/linearlayout.md","ref":"zh-cn/funcs/ui/linearlayout.md","articles":[]},"previous":{"title":"常用工具函数","level":"1.5.11","depth":2,"path":"zh-cn/funcs/utils-api.md","ref":"zh-cn/funcs/utils-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/ui-custom.md","mtime":"2020-02-26T08:38:58.858Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-29T04:23:30.210Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
