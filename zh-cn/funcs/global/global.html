@@ -691,7 +691,11 @@
 <li>@param msg &#x6D88;&#x606F;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">toast(<span class="hljs-string">&quot;msg&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    toast(<span class="hljs-string">&quot;msg&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="logd"><a name="logd" class="anchor-navigation-ex-anchor" href="#logd"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. logd</h2>
@@ -700,7 +704,13 @@
 <li>@param msg &#x6D88;&#x606F;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">logd(<span class="hljs-string">&quot;msg&quot;</span>);
+<pre><code class="lang-javascript">
+loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    logd(<span class="hljs-string">&quot;msg&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="loge"><a name="loge" class="anchor-navigation-ex-anchor" href="#loge"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. loge</h2>
@@ -709,7 +719,11 @@
 <li>@param msg &#x6D88;&#x606F;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">loge(<span class="hljs-string">&quot;msg&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    loge(<span class="hljs-string">&quot;msg&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="logw"><a name="logw" class="anchor-navigation-ex-anchor" href="#logw"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. logw</h2>
@@ -718,7 +732,11 @@
 <li>@param msg &#x6D88;&#x606F;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">logw(<span class="hljs-string">&quot;msg&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    logw(<span class="hljs-string">&quot;msg&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="logi"><a name="logi" class="anchor-navigation-ex-anchor" href="#logi"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. logi</h2>
@@ -727,7 +745,11 @@
 <li>@param msg &#x6D88;&#x606F;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">logi(<span class="hljs-string">&quot;msg&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    logi(<span class="hljs-string">&quot;msg&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h1 id="ui&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><a name="ui&#x53C2;&#x6570;&#x8BFB;&#x53D6;" class="anchor-navigation-ex-anchor" href="#ui&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>4. UI&#x53C2;&#x6570;&#x8BFB;&#x53D6;</h1>
@@ -738,7 +760,11 @@
 <li>@return &#x6574;&#x578B;&#xFF0C;&#x627E;&#x4E0D;&#x5230;&#x5C31;&#x8FD4;&#x56DE;0</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = readConfigInt(<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = readConfigInt(<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="readconfigstring"><a name="readconfigstring" class="anchor-navigation-ex-anchor" href="#readconfigstring"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. readConfigString</h2>
@@ -748,7 +774,11 @@
 <li>@return &#x5B57;&#x7B26;&#x4E32; &#x627E;&#x4E0D;&#x5230;&#x5C31;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = readConfigString(<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = readConfigString(<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="readconfigdouble"><a name="readconfigdouble" class="anchor-navigation-ex-anchor" href="#readconfigdouble"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. readConfigDouble</h2>
@@ -758,68 +788,86 @@
 <li>@return double</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = readConfigDouble(<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = readConfigDouble(<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="readconfigboolean"><a name="readconfigboolean" class="anchor-navigation-ex-anchor" href="#readconfigboolean"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. readConfigBoolean</h2>
 <ul>
 <li>&#x8BFB;&#x53D6;UI&#x754C;&#x9762;&#x4E2D;&#x7684;&#x53C2;&#x6570;,&#x8FD4;&#x56DE;&#x662F;&#x5E03;&#x5C14;&#x578B;</li>
 <li>@param key &#x5728;UI&#x754C;&#x9762;&#x4E2D;&#x914D;&#x7F6E;&#x7684;key</li>
-<li><p>@return true &#x6216;&#x8005; false</p>
+<li>@return true &#x6216;&#x8005; false</li>
+</ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = readConfigDouble(<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = readConfigDouble(<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="getconfigjson"><a name="getconfigjson" class="anchor-navigation-ex-anchor" href="#getconfigjson"><i class="fa fa-link" aria-hidden="true"></i></a>4.5. getConfigJSON</h2>
 <ul>
 <li>&#x53D6;&#x5F97;&#x914D;&#x7F6E;&#x7684;JSON</li>
-<li><p>@return JSON&#x6570;&#x636E;</p>
+<li>@return JSON&#x6570;&#x636E;</li>
+</ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = getConfigJSON();
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = getConfigJSON();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x8FD0;&#x884C;&#x6A21;&#x5F0F;"><a name="&#x8FD0;&#x884C;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x884C;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x8FD0;&#x884C;&#x6A21;&#x5F0F;</h1>
 <h2 id="isaccmode"><a name="isaccmode" class="anchor-navigation-ex-anchor" href="#isaccmode"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. isAccMode</h2>
 <ul>
 <li>&#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;</li>
-<li><p>@return true&#x6216;&#x8005;false</p>
+<li>@return true&#x6216;&#x8005;false</li>
+</ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = isAccMode();
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = isAccMode();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="isagentmode"><a name="isagentmode" class="anchor-navigation-ex-anchor" href="#isagentmode"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. isAgentMode</h2>
 <ul>
 <li>&#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</li>
-<li><p>@return true&#x6216;&#x8005;false</p>
+<li>@return true&#x6216;&#x8005;false</li>
+</ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = isAgentMode();
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = isAgentMode();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x6682;&#x505C;&#x6267;&#x884C;"><a name="&#x6682;&#x505C;&#x6267;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x6682;&#x505C;&#x6267;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x6682;&#x505C;&#x6267;&#x884C;</h1>
 <h2 id="sleep"><a name="sleep" class="anchor-navigation-ex-anchor" href="#sleep"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. sleep</h2>
 <ul>
-<li>&#x4F11;&#x7720;<ul>
-<li>@param miSecond &#x6BEB;&#x79D2;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = sleep(<span class="hljs-number">1000</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+<li>&#x4F11;&#x7720;</li>
+<li>@param miSecond &#x6BEB;&#x79D2;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = sleep(<span class="hljs-number">1000</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -864,7 +912,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"全局模块","level":"1.5.1","depth":2,"next":{"title":"全局快捷事件","level":"1.5.2","depth":2,"path":"zh-cn/funcs/global/global-shortcut.md","ref":"zh-cn/funcs/global/global-shortcut.md","articles":[]},"previous":{"title":"功能函数","level":"1.5","depth":1,"path":"zh-cn/funcs.md","ref":"zh-cn/funcs.md","articles":[{"title":"全局模块","level":"1.5.1","depth":2,"path":"zh-cn/funcs/global/global.md","ref":"zh-cn/funcs/global/global.md","articles":[]},{"title":"全局快捷事件","level":"1.5.2","depth":2,"path":"zh-cn/funcs/global/global-shortcut.md","ref":"zh-cn/funcs/global/global-shortcut.md","articles":[]},{"title":"选择器&节点","level":"1.5.3","depth":2,"path":"zh-cn/funcs/global/selector-node.md","ref":"zh-cn/funcs/global/selector-node.md","articles":[]},{"title":"无障碍事件","level":"1.5.4","depth":2,"path":"zh-cn/funcs/acevent-api.md","ref":"zh-cn/funcs/acevent-api.md","articles":[]},{"title":"代理事件","level":"1.5.5","depth":2,"path":"zh-cn/funcs/event-api.md","ref":"zh-cn/funcs/event-api.md","articles":[]},{"title":"图色函数","level":"1.5.6","depth":2,"path":"zh-cn/funcs/image-api.md","ref":"zh-cn/funcs/image-api.md","articles":[]},{"title":"设备函数","level":"1.5.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},{"title":"文件函数","level":"1.5.8","depth":2,"path":"zh-cn/funcs/file-api.md","ref":"zh-cn/funcs/file-api.md","articles":[]},{"title":"网络函数","level":"1.5.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},{"title":"线程函数","level":"1.5.10","depth":2,"path":"zh-cn/funcs/thread-api.md","ref":"zh-cn/funcs/thread-api.md","articles":[]},{"title":"常用工具函数","level":"1.5.11","depth":2,"path":"zh-cn/funcs/utils-api.md","ref":"zh-cn/funcs/utils-api.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/global/global.md","mtime":"2020-03-02T08:34:10.736Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-04T03:42:22.861Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"全局模块","level":"1.5.1","depth":2,"next":{"title":"全局快捷事件","level":"1.5.2","depth":2,"path":"zh-cn/funcs/global/global-shortcut.md","ref":"zh-cn/funcs/global/global-shortcut.md","articles":[]},"previous":{"title":"功能函数","level":"1.5","depth":1,"path":"zh-cn/funcs.md","ref":"zh-cn/funcs.md","articles":[{"title":"全局模块","level":"1.5.1","depth":2,"path":"zh-cn/funcs/global/global.md","ref":"zh-cn/funcs/global/global.md","articles":[]},{"title":"全局快捷事件","level":"1.5.2","depth":2,"path":"zh-cn/funcs/global/global-shortcut.md","ref":"zh-cn/funcs/global/global-shortcut.md","articles":[]},{"title":"选择器&节点","level":"1.5.3","depth":2,"path":"zh-cn/funcs/global/selector-node.md","ref":"zh-cn/funcs/global/selector-node.md","articles":[]},{"title":"无障碍事件","level":"1.5.4","depth":2,"path":"zh-cn/funcs/acevent-api.md","ref":"zh-cn/funcs/acevent-api.md","articles":[]},{"title":"代理事件","level":"1.5.5","depth":2,"path":"zh-cn/funcs/event-api.md","ref":"zh-cn/funcs/event-api.md","articles":[]},{"title":"图色函数","level":"1.5.6","depth":2,"path":"zh-cn/funcs/image-api.md","ref":"zh-cn/funcs/image-api.md","articles":[]},{"title":"设备函数","level":"1.5.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},{"title":"文件函数","level":"1.5.8","depth":2,"path":"zh-cn/funcs/file-api.md","ref":"zh-cn/funcs/file-api.md","articles":[]},{"title":"网络函数","level":"1.5.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},{"title":"线程函数","level":"1.5.10","depth":2,"path":"zh-cn/funcs/thread-api.md","ref":"zh-cn/funcs/thread-api.md","articles":[]},{"title":"常用工具函数","level":"1.5.11","depth":2,"path":"zh-cn/funcs/utils-api.md","ref":"zh-cn/funcs/utils-api.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/global/global.md","mtime":"2020-03-07T14:12:01.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T14:21:31.796Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

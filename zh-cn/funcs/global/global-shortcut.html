@@ -677,12 +677,16 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = clickPoint(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = clickPoint(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="click"><a name="click" class="anchor-navigation-ex-anchor" href="#click"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. click</h2>
@@ -692,13 +696,17 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selector = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = click(selector);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selector = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = click(selector);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="clickrandom"><a name="clickrandom" class="anchor-navigation-ex-anchor" href="#clickrandom"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. clickRandom</h2>
@@ -708,13 +716,19 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selector = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = clickRandom(selector);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">
+loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selector = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = clickRandom(selector);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="clickrandomrect"><a name="clickrandomrect" class="anchor-navigation-ex-anchor" href="#clickrandomrect"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. clickRandomRect</h2>
@@ -724,17 +738,22 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">         <span class="hljs-keyword">var</span> rect = <span class="hljs-keyword">new</span> Rect();
-         rect.left = <span class="hljs-number">10</span>;
-         rect.right = <span class="hljs-number">200</span>;
-         rect.top = <span class="hljs-number">10</span>;
-         rect.bottom = <span class="hljs-number">400</span>;
-<span class="hljs-keyword">var</span> result = clickRandomRect(rect);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> rect = <span class="hljs-keyword">new</span> Rect();
+    rect.left = <span class="hljs-number">10</span>;
+    rect.right = <span class="hljs-number">200</span>;
+    rect.top = <span class="hljs-number">10</span>;
+    rect.bottom = <span class="hljs-number">400</span>;
+    <span class="hljs-keyword">var</span> result = clickRandomRect(rect);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="clicktext"><a name="clicktext" class="anchor-navigation-ex-anchor" href="#clicktext"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. clickText</h2>
@@ -744,12 +763,17 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = clickText(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> result = clickText(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
+  <span class="hljs-keyword">if</span> (result){
+       toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+  } <span class="hljs-keyword">else</span> {
     toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+  }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="longclick"><a name="longclick" class="anchor-navigation-ex-anchor" href="#longclick"><i class="fa fa-link" aria-hidden="true"></i></a>3.6. longClick</h2>
@@ -759,13 +783,19 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selector = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = longClick(selector);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selector = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = longClick(selector);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+
+main();
 </code></pre>
 </blockquote>
 <h2 id="longclickpoint"><a name="longclickpoint" class="anchor-navigation-ex-anchor" href="#longclickpoint"><i class="fa fa-link" aria-hidden="true"></i></a>3.7. longClickPoint</h2>
@@ -776,12 +806,17 @@
 <li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = longClickPoint(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = longClickPoint(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x70B9;&#x51FB;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h1 id="&#x6ED1;&#x52A8;&#x51FD;&#x6570;"><a name="&#x6ED1;&#x52A8;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x6ED1;&#x52A8;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6ED1;&#x52A8;&#x51FD;&#x6570;</h1>
@@ -795,13 +830,18 @@
 <li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F; false &#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = swipe(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = swipe(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="swipetopoint"><a name="swipetopoint" class="anchor-navigation-ex-anchor" href="#swipetopoint"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. swipeToPoint</h2>
@@ -815,12 +855,17 @@
 <li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;, false &#x6ED1;&#x52A8;&#x5931;&#x8D25;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = swipeToPoint(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = swipeToPoint(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
 <h2 id="swipefromdowntoup"><a name="swipefromdowntoup" class="anchor-navigation-ex-anchor" href="#swipefromdowntoup"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. swipeFromDownToUp</h2>
@@ -829,153 +874,199 @@
 <li>@param selectors &#x8282;&#x70B9;&#x9009;&#x62E9;&#x5668;</li>
 <li>@param distance  &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x662F;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = swipeFromDownToUp(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = swipeFromDownToUp(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromuptodown"><a name="swipefromuptodown" class="anchor-navigation-ex-anchor" href="#swipefromuptodown"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. swipeFromUpToDown</h2>
 <ul>
 <li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x4ECE;&#x4E0A;&#x5411;&#x4E0B;&#x6ED1;&#x52A8;</li>
 <li>@param selectors &#x8282;&#x70B9;&#x9009;&#x62E9;&#x5668;</li>
 <li>@param distance  &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x662F;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = swipeFromUpToDown(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = swipeFromUpToDown(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromrighttoleft"><a name="swipefromrighttoleft" class="anchor-navigation-ex-anchor" href="#swipefromrighttoleft"><i class="fa fa-link" aria-hidden="true"></i></a>4.5. swipeFromRightToLeft</h2>
 <ul>
 <li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x6ED1;&#x52A8;</li>
 <li>@param selectors &#x8282;&#x70B9;&#x9009;&#x62E9;&#x5668;</li>
 <li>@param distance  &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x662F;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = swipeFromRightToLeft(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = swipeFromRightToLeft(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromlefttoright"><a name="swipefromlefttoright" class="anchor-navigation-ex-anchor" href="#swipefromlefttoright"><i class="fa fa-link" aria-hidden="true"></i></a>4.6. swipeFromLeftToRight</h2>
 <ul>
 <li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x4ECE;&#x5DE6;&#x5411;&#x53F3;&#x6ED1;&#x52A8;</li>
 <li>@param selectors &#x8282;&#x70B9;&#x9009;&#x62E9;&#x5668;</li>
 <li>@param distance  &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x662F;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
-<span class="hljs-keyword">var</span> result = swipeFromLeftToRight(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6ED1;&#x52A8;&#x6210;&#x529F;&#xFF0C;false &#x6ED1;&#x52A8;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x6587;&#x672C;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = swipeFromLeftToRight(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromdowntoupinscreen"><a name="swipefromdowntoupinscreen" class="anchor-navigation-ex-anchor" href="#swipefromdowntoupinscreen"><i class="fa fa-link" aria-hidden="true"></i></a>4.7. swipeFromDownToUpInScreen</h2>
 <ul>
 <li>&#x5411;&#x4E0A;&#x6ED1;&#x52A8;</li>
 <li>@param distance &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = swipeFromDownToUpInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = swipeFromDownToUpInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromuptodowninscreen"><a name="swipefromuptodowninscreen" class="anchor-navigation-ex-anchor" href="#swipefromuptodowninscreen"><i class="fa fa-link" aria-hidden="true"></i></a>4.8. swipeFromUpToDownInScreen</h2>
 <ul>
 <li>&#x5411;&#x4E0B;&#x6ED1;&#x52A8;</li>
 <li>@param distance &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = swipeFromUpToDownInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = swipeFromUpToDownInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromrighttoleftinscreen"><a name="swipefromrighttoleftinscreen" class="anchor-navigation-ex-anchor" href="#swipefromrighttoleftinscreen"><i class="fa fa-link" aria-hidden="true"></i></a>4.9. swipeFromRightToLeftInScreen</h2>
 <ul>
 <li>&#x5411;&#x5DE6;&#x6ED1;&#x52A8;</li>
 <li>@param distance &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = swipeFromRightToLeftInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = swipeFromRightToLeftInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="swipefromlefttorightinscreen"><a name="swipefromlefttorightinscreen" class="anchor-navigation-ex-anchor" href="#swipefromlefttorightinscreen"><i class="fa fa-link" aria-hidden="true"></i></a>4.10. swipeFromLeftToRightInScreen</h2>
 <ul>
 <li>&#x5411;&#x53F3;&#x6ED1;&#x52A8;</li>
 <li>@param distance &#x6ED1;&#x52A8;&#x8DDD;&#x79BB; &#x5355;&#x4F4D;&#x50CF;&#x7D20;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = swipeFromLeftToRightInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-} <span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F;&#xFF0C;false &#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = swipeFromLeftToRightInScreen(<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6ED1;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="isscrollend"><a name="isscrollend" class="anchor-navigation-ex-anchor" href="#isscrollend"><i class="fa fa-link" aria-hidden="true"></i></a>4.11. isScrollEnd</h2>
 <ul>
 <li>&#x662F;&#x5426;&#x6EDA;&#x52A8;&#x5230;&#x5E95;&#x90E8;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x67E5;&#x4E0D;&#x5230;&#x5143;&#x7D20;&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;false</li>
 <li>@param distance &#x6EDA;&#x52A8;&#x65B9;&#x5411; UP,DOWN,LEFT,RIGHT</li>
 <li>@param selectors &#x9009;&#x62E9;&#x5668;</li>
-<li>@return false &#x4EE3;&#x8868;&#x672A;&#x6EDA;&#x52A8;&#x5230;&#x4F4D;&#xFF0C;true &#x4EE3;&#x8868;&#x6EDA;&#x52A8;&#x5B8C;&#x6210;&#x4E86;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().className(<span class="hljs-string">&quot;android.widget.ListView&quot;</span>);
-<span class="hljs-keyword">var</span> result = isScrollEnd(<span class="hljs-string">&quot;UP&quot;</span>,selectors);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6EDA;&#x52A8;&#x5B8C;&#x6210;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x6EDA;&#x52A8;&#x672A;&#x5B8C;&#x6210;&quot;</span>);
+<li>@return false &#x4EE3;&#x8868;&#x672A;&#x6EDA;&#x52A8;&#x5230;&#x4F4D;&#xFF0C;true &#x4EE3;&#x8868;&#x6EDA;&#x52A8;&#x5B8C;&#x6210;&#x4E86;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().className(<span class="hljs-string">&quot;android.widget.ListView&quot;</span>);
+    <span class="hljs-keyword">var</span> result = isScrollEnd(<span class="hljs-string">&quot;UP&quot;</span>,selectors);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6EDA;&#x52A8;&#x5B8C;&#x6210;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x6EDA;&#x52A8;&#x672A;&#x5B8C;&#x6210;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x62D6;&#x52A8;&#x51FD;&#x6570;"><a name="&#x62D6;&#x52A8;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x62D6;&#x52A8;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x62D6;&#x52A8;&#x51FD;&#x6570;</h1>
 <h2 id="drag"><a name="drag" class="anchor-navigation-ex-anchor" href="#drag"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. drag</h2>
 <ul>
@@ -985,378 +1076,503 @@
 <li>@param endX   &#x7ED3;&#x675F;&#x5750;&#x6807;&#x7684;X&#x8F74;&#x503C;</li>
 <li>@param endY   &#x7ED3;&#x675F;&#x5750;&#x6807;&#x7684;Y&#x8F74;&#x503C;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x62D6;&#x52A8;&#x6210;&#x529F;, false &#x62D6;&#x52A8;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = drag(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x62D6;&#x52A8;&#x6210;&#x529F;, false &#x62D6;&#x52A8;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = drag(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="dragto"><a name="dragto" class="anchor-navigation-ex-anchor" href="#dragto"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. dragTo</h2>
 <ul>
-<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x62D6;&#x52A8;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x5230;&#x76EE;&#x6807;&#x5143;&#x7D20;<ul>
+<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x62D6;&#x52A8;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x5230;&#x76EE;&#x6807;&#x5143;&#x7D20;</li>
 <li>@param selectors &#x9009;&#x62E9;&#x5668; {@link S}</li>
 <li>@param destObj   &#x76EE;&#x6807;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F; false &#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
-<span class="hljs-keyword">var</span> destObj = S.get().text(<span class="hljs-string">&quot;&#x65E5;&#x5386;&quot;</span>);
-<span class="hljs-keyword">var</span> result = dragTo(selectors,destObj,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F; false &#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
+    <span class="hljs-keyword">var</span> destObj = S.get().text(<span class="hljs-string">&quot;&#x65E5;&#x5386;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = dragTo(selectors,destObj,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="dragtopoint"><a name="dragtopoint" class="anchor-navigation-ex-anchor" href="#dragtopoint"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. dragToPoint</h2>
 <ul>
-<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x62D6;&#x52A8;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x5230;&#x76EE;&#x6807;X Y &#x5750;&#x6807;<ul>
+<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x62D6;&#x52A8;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x5230;&#x76EE;&#x6807;X Y &#x5750;&#x6807;</li>
 <li>@param selectors &#x539F;&#x59CB;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;</li>
 <li>@param endX      &#x76EE;&#x6807; X &#x5750;&#x6807;</li>
 <li>@param endY      &#x76EE;&#x6807; Y &#x5750;&#x6807;</li>
 <li>@param duration &#x6301;&#x7EED;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F; false &#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
-<span class="hljs-keyword">var</span> result = dragToPoint(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x6210;&#x529F; false &#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = dragToPoint(selectors,<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">200</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x62D6;&#x52A8;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <h1 id="&#x8F93;&#x5165;&#x6570;&#x636E;"><a name="&#x8F93;&#x5165;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x8F93;&#x5165;&#x6570;&#x636E;</h1>
 <h2 id="currentisourime"><a name="currentisourime" class="anchor-navigation-ex-anchor" href="#currentisourime"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. currentIsOurIme</h2>
 <ul>
 <li>&#x5F53;&#x524D;&#x662F;&#x5426;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x8F93;&#x5165;&#x6CD5;</li>
-<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = currentIsOurIme();
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = currentIsOurIme();
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="inputtext"><a name="inputtext" class="anchor-navigation-ex-anchor" href="#inputtext"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. inputText</h2>
 <ul>
-<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x8F93;&#x5165;&#x6570;&#x636E;<ul>
+<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x8F93;&#x5165;&#x6570;&#x636E;</li>
 <li>@param selectors  &#x9009;&#x62E9;&#x5668;</li>
 <li>@param content &#x6570;&#x636E;&#x5B57;&#x7B26;&#x4E32;</li>
-<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors=S.get().className(<span class="hljs-string">&quot;android.widget.EditText&quot;</span>);
-<span class="hljs-keyword">var</span> result = inputText(selectors,<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors=S.get().className(<span class="hljs-string">&quot;android.widget.EditText&quot;</span>);
+    <span class="hljs-keyword">var</span> result = inputText(selectors,<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="imeinputtext"><a name="imeinputtext" class="anchor-navigation-ex-anchor" href="#imeinputtext"><i class="fa fa-link" aria-hidden="true"></i></a>6.3. imeInputText</h2>
 <ul>
-<li>&#x4F7F;&#x7528;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x672C;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x5165;&#x6CD5;&#x4E3A;&#x9ED8;&#x8BA4;&#x8F93;&#x5165;&#x6CD5;<ul>
+<li>&#x4F7F;&#x7528;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x672C;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x5165;&#x6CD5;&#x4E3A;&#x9ED8;&#x8BA4;&#x8F93;&#x5165;&#x6CD5;</li>
 <li>@param selectors  &#x9009;&#x62E9;&#x5668;</li>
 <li>@param content &#x6570;&#x636E;&#x5B57;&#x7B26;&#x4E32;</li>
-<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors=S.get().className(<span class="hljs-string">&quot;android.widget.EditText&quot;</span>);
-<span class="hljs-keyword">var</span> result = imeInputText(selectors,<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors=S.get().className(<span class="hljs-string">&quot;android.widget.EditText&quot;</span>);
+    <span class="hljs-keyword">var</span> result = imeInputText(selectors,<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="cleartextfield"><a name="cleartextfield" class="anchor-navigation-ex-anchor" href="#cleartextfield"><i class="fa fa-link" aria-hidden="true"></i></a>6.4. clearTextField</h2>
 <ul>
 <li>&#x6E05;&#x9664;&#x6587;&#x672C;&#x6570;&#x636E;</li>
 <li>@param selectors &#x8282;&#x70B9;&#x9009;&#x62E9;&#x5668;</li>
-<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors=S.get().className(<span class="hljs-string">&quot;android.widget.EditText&quot;</span>);
-<span class="hljs-keyword">var</span> result = clearTextField(selectors);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors=S.get().className(<span class="hljs-string">&quot;android.widget.EditText&quot;</span>);
+    <span class="hljs-keyword">var</span> result = clearTextField(selectors);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x662F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5426;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x8282;&#x70B9;&#x64CD;&#x4F5C;"><a name="&#x8282;&#x70B9;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x8282;&#x70B9;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x8282;&#x70B9;&#x64CD;&#x4F5C;</h1>
 <h2 id="has"><a name="has" class="anchor-navigation-ex-anchor" href="#has"><i class="fa fa-link" aria-hidden="true"></i></a>7.1. has</h2>
 <ul>
 <li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</li>
 <li>@param selectors &#x9009;&#x62E9;&#x5668;</li>
-<li>@return {null|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
-<span class="hljs-keyword">var</span> result = has(selectors);
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x5B58;&#x5728;&#x8282;&#x70B9;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x4E0D;&#x5B58;&#x5728;&#x8282;&#x70B9;&quot;</span>);
+<li>@return {null|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().text(<span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>);
+    <span class="hljs-keyword">var</span> result = has(selectors);
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x5B58;&#x5728;&#x8282;&#x70B9;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x4E0D;&#x5B58;&#x5728;&#x8282;&#x70B9;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="gettext"><a name="gettext" class="anchor-navigation-ex-anchor" href="#gettext"><i class="fa fa-link" aria-hidden="true"></i></a>7.2. getText</h2>
 <ul>
-<li>&#x83B7;&#x53D6;&#x9009;&#x62E9;&#x5668;&#x5F97;&#x5230;&#x7684;&#x6587;&#x672C;&#x6570;&#x636E;<ul>
+<li>&#x83B7;&#x53D6;&#x9009;&#x62E9;&#x5668;&#x5F97;&#x5230;&#x7684;&#x6587;&#x672C;&#x6570;&#x636E;</li>
 <li>@param selectors &#x9009;&#x62E9;&#x5668;</li>
-<li>@return {&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;|null|&#x5B57;&#x7B26;&#x4E32;&#x96C6;&#x5408;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().className(<span class="hljs-string">&quot;android.widget.TextView&quot;</span>);
-<span class="hljs-keyword">var</span> result = getText(selectors);
-toast(<span class="hljs-string">&quot;result:&quot;</span>+result);
+<li>@return {&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;|null|&#x5B57;&#x7B26;&#x4E32;&#x96C6;&#x5408;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().className(<span class="hljs-string">&quot;android.widget.TextView&quot;</span>);
+    <span class="hljs-keyword">var</span> result = getText(selectors);
+    toast(<span class="hljs-string">&quot;result:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="getnodeinfo"><a name="getnodeinfo" class="anchor-navigation-ex-anchor" href="#getnodeinfo"><i class="fa fa-link" aria-hidden="true"></i></a>7.3. getNodeInfo</h2>
 <ul>
 <li>&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x4FE1;&#x606F;</li>
 <li>@param selectors &#x9009;&#x62E9;&#x5668;</li>
-<li>@return {null|NodeInfo&#x6570;&#x7EC4;|&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x96C6;&#x5408;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> selectors = S.get().className(<span class="hljs-string">&quot;android.widget.TextView&quot;</span>);
-<span class="hljs-keyword">var</span> result = getNodeInfo(selectors);
-toast(<span class="hljs-string">&quot;result:&quot;</span>+result);
+<li>@return {null|NodeInfo&#x6570;&#x7EC4;|&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x96C6;&#x5408;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> selectors = S.get().className(<span class="hljs-string">&quot;android.widget.TextView&quot;</span>);
+    <span class="hljs-keyword">var</span> result = getNodeInfo(selectors);
+    toast(<span class="hljs-string">&quot;result:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x7CFB;&#x7EDF;&#x6309;&#x952E;&#x76F8;&#x5173;"><a name="&#x7CFB;&#x7EDF;&#x6309;&#x952E;&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x6309;&#x952E;&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x7CFB;&#x7EDF;&#x6309;&#x952E;&#x76F8;&#x5173;</h1>
 <h2 id="home"><a name="home" class="anchor-navigation-ex-anchor" href="#home"><i class="fa fa-link" aria-hidden="true"></i></a>8.1. home</h2>
 <ul>
 <li>&#x8FD4;&#x56DE;&#x4E3B;&#x9875;</li>
-<li>@return {null|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = home();
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+<li>@return {null|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = home();
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="back"><a name="back" class="anchor-navigation-ex-anchor" href="#back"><i class="fa fa-link" aria-hidden="true"></i></a>8.2. back</h2>
 <ul>
 <li>&#x8FD4;&#x56DE;&#x952E;</li>
-<li>@return {null|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = back();
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+<li>@return {null|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = back();
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="opennotification"><a name="opennotification" class="anchor-navigation-ex-anchor" href="#opennotification"><i class="fa fa-link" aria-hidden="true"></i></a>8.3. openNotification</h2>
 <ul>
 <li>&#x6253;&#x5F00;&#x901A;&#x77E5;&#x680F;</li>
-<li>@return {null|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = openNotification();
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+<li>@return {null|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = openNotification();
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="openquicksettings"><a name="openquicksettings" class="anchor-navigation-ex-anchor" href="#openquicksettings"><i class="fa fa-link" aria-hidden="true"></i></a>8.4. openQuickSettings</h2>
 <ul>
 <li>&#x6253;&#x5F00;&#x5FEB;&#x901F;&#x8BBE;&#x7F6E;</li>
-<li>@return {null|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = openQuickSettings();
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+<li>@return {null|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = openQuickSettings();
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="recentapps"><a name="recentapps" class="anchor-navigation-ex-anchor" href="#recentapps"><i class="fa fa-link" aria-hidden="true"></i></a>8.5. recentApps</h2>
 <ul>
 <li>&#x6700;&#x8FD1;APP&#x4EFB;&#x52A1;&#x6309;&#x952E;</li>
-<li>@return {null|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = recentApps();
-<span class="hljs-keyword">if</span> (result){
-    toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
-}<span class="hljs-keyword">else</span> {
-    toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+<li>@return {null|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = recentApps();
+    <span class="hljs-keyword">if</span> (result){
+        toast(<span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        toast(<span class="hljs-string">&quot;&#x5931;&#x8D25;&quot;</span>);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="getrunningpkg"><a name="getrunningpkg" class="anchor-navigation-ex-anchor" href="#getrunningpkg"><i class="fa fa-link" aria-hidden="true"></i></a>8.6. getRunningPkg</h2>
 <ul>
 <li>&#x53D6;&#x5F97;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684;App&#x5305;&#x540D;</li>
-<li>@return {&#x5B57;&#x7B26;&#x4E32;|null}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = getRunningPkg();
+<li>@return {&#x5B57;&#x7B26;&#x4E32;|null}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = getRunningPkg();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="getrunningactivity"><a name="getrunningactivity" class="anchor-navigation-ex-anchor" href="#getrunningactivity"><i class="fa fa-link" aria-hidden="true"></i></a>8.7. getRunningActivity</h2>
 <ul>
 <li>&#x53D6;&#x5F97;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684;Activity&#x7C7B;&#x540D;</li>
-<li>@return {&#x5B57;&#x7B26;&#x4E32;|null}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = getRunningActivity();
+<li>@return {&#x5B57;&#x7B26;&#x4E32;|null}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = getRunningActivity();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x901A;&#x77E5;&#x680F;"><a name="&#x901A;&#x77E5;&#x680F;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x77E5;&#x680F;"><i class="fa fa-link" aria-hidden="true"></i></a>9. &#x901A;&#x77E5;&#x680F;</h1>
 <h2 id="requestnotificationpermission"><a name="requestnotificationpermission" class="anchor-navigation-ex-anchor" href="#requestnotificationpermission"><i class="fa fa-link" aria-hidden="true"></i></a>9.1. requestNotificationPermission</h2>
 <ul>
 <li>&#x8BF7;&#x6C42;&#x76D1;&#x542C;&#x72B6;&#x6001;&#x680F;&#x7684;&#x6743;&#x9650;</li>
 <li>@param timeout &#x8BF7;&#x6C42;&#x6743;&#x9650;&#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x662F;&#x79D2;</li>
-<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = requestNotificationPermission(<span class="hljs-number">10</span>);
-toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = requestNotificationPermission(<span class="hljs-number">10</span>);
+    toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="hasnotificationpermission"><a name="hasnotificationpermission" class="anchor-navigation-ex-anchor" href="#hasnotificationpermission"><i class="fa fa-link" aria-hidden="true"></i></a>9.2. hasNotificationPermission</h2>
 <ul>
 <li>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x542B;&#x6709;&#x72B6;&#x6001;&#x680F;&#x76D1;&#x542C;&#x6743;&#x9650;</li>
-<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = hasNotificationPermission();
-toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = hasNotificationPermission();
+    toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="getlastnotification"><a name="getlastnotification" class="anchor-navigation-ex-anchor" href="#getlastnotification"><i class="fa fa-link" aria-hidden="true"></i></a>9.3. getLastNotification</h2>
 <ul>
 <li>&#x83B7;&#x53D6;&#x6700;&#x8FD1;&#x901A;&#x77E5;&#x680F;&#x5BF9;&#x8C61;</li>
 <li>@param pkg &#x6307;&#x5B9A;&#x5305;&#x540D;</li>
 <li>@param size &#x6307;&#x5B9A;&#x83B7;&#x53D6;&#x7684;&#x6761;&#x6570;</li>
-<li>@return {NotificationInfo&#x6570;&#x7EC4;|null}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;100&#x6761;&#x901A;&#x77E5;&#x680F;&#x8BB0;&#x5F55;</span>
-<span class="hljs-keyword">var</span> result = getLastNotification(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">100</span>);
-toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+result);
+<li>@return {NotificationInfo&#x6570;&#x7EC4;|null}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;100&#x6761;&#x901A;&#x77E5;&#x680F;&#x8BB0;&#x5F55;</span>
+    <span class="hljs-keyword">var</span> result = getLastNotification(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">100</span>);
+    toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="shotnotification"><a name="shotnotification" class="anchor-navigation-ex-anchor" href="#shotnotification"><i class="fa fa-link" aria-hidden="true"></i></a>9.4. shotNotification</h2>
 <ul>
 <li>&#x5C06;&#x901A;&#x77E5;&#x53D1;&#x5C04;&#x5904;&#x7406;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x70B9;&#x51FB;&#x4E86;&#x901A;&#x77E5;&#x680F;</li>
 <li>@param seqId</li>
-<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;1&#x6761;&#x901A;&#x77E5;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x70B9;&#x51FB;</span>
-<span class="hljs-keyword">var</span> result = getLastNotification(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">1</span>);
-<span class="hljs-keyword">if</span> (result!=<span class="hljs-literal">null</span> &amp;&amp; result.length&gt;<span class="hljs-number">0</span>){
-    <span class="hljs-keyword">var</span> s = shotNotification(result[<span class="hljs-number">0</span>].seqId);
-    toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+s);
+<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;1&#x6761;&#x901A;&#x77E5;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x70B9;&#x51FB;</span>
+    <span class="hljs-keyword">var</span> result = getLastNotification(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">if</span> (result!=<span class="hljs-literal">null</span> &amp;&amp; result.length&gt;<span class="hljs-number">0</span>){
+        <span class="hljs-keyword">var</span> s = shotNotification(result[<span class="hljs-number">0</span>].seqId);
+        toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+s);
+    }   
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="cancelnotification"><a name="cancelnotification" class="anchor-navigation-ex-anchor" href="#cancelnotification"><i class="fa fa-link" aria-hidden="true"></i></a>9.5. cancelNotification</h2>
 <ul>
 <li>&#x5C06;&#x901A;&#x77E5;&#x8FDB;&#x884C;&#x53D6;&#x6D88;&#x64CD;&#x4F5C;</li>
 <li>@param seqId</li>
-<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;1&#x6761;&#x901A;&#x77E5;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x53D6;&#x6D88;</span>
-<span class="hljs-keyword">var</span> result = getLastNotification(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">1</span>);
-<span class="hljs-keyword">if</span> (result!=<span class="hljs-literal">null</span> &amp;&amp; result.length&gt;<span class="hljs-number">0</span>){
-    <span class="hljs-keyword">var</span> s = cancelNotification(result[<span class="hljs-number">0</span>].seqId);
-    toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+s);
+<li>@return {boolean|&#x5E03;&#x5C14;&#x578B;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;1&#x6761;&#x901A;&#x77E5;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x53D6;&#x6D88;</span>
+    <span class="hljs-keyword">var</span> result = getLastNotification(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">if</span> (result!=<span class="hljs-literal">null</span> &amp;&amp; result.length&gt;<span class="hljs-number">0</span>){
+        <span class="hljs-keyword">var</span> s = cancelNotification(result[<span class="hljs-number">0</span>].seqId);
+        toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+s);
+    }
 }
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="getlasttoast"><a name="getlasttoast" class="anchor-navigation-ex-anchor" href="#getlasttoast"><i class="fa fa-link" aria-hidden="true"></i></a>9.6. getLastToast</h2>
 <ul>
 <li>&#x83B7;&#x53D6;toast&#x6570;&#x636E;</li>
 <li>@param pkg &#x6307;&#x5B9A;&#x5305;&#x540D;</li>
 <li>@param size &#x6307;&#x5B9A;&#x83B7;&#x53D6;&#x7684;&#x6761;&#x6570;</li>
-<li>@return {null|ToastInfo&#x6570;&#x7EC4;}<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = getLastToast(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">100</span>);
-toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+result);
+<li>@return {null|ToastInfo&#x6570;&#x7EC4;}</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = getLastToast(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>,<span class="hljs-number">100</span>);
+    toast(<span class="hljs-string">&quot;&#x7ED3;&#x679C;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h1 id="&#x60AC;&#x6D6E;&#x7A97;&#x65E5;&#x5FD7;"><a name="&#x60AC;&#x6D6E;&#x7A97;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x60AC;&#x6D6E;&#x7A97;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>10. &#x60AC;&#x6D6E;&#x7A97;&#x65E5;&#x5FD7;</h1>
 <h2 id="requestshowlogpermission"><a name="requestshowlogpermission" class="anchor-navigation-ex-anchor" href="#requestshowlogpermission"><i class="fa fa-link" aria-hidden="true"></i></a>10.1. requestShowLogPermission</h2>
 <ul>
 <li>&#x8BF7;&#x6C42;&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;&#x7684;&#x6743;&#x9650;</li>
 <li>@param timeout &#x8BF7;&#x6C42;&#x6743;&#x9650;&#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x662F;&#x79D2;</li>
-<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = requestShowLogPermission(<span class="hljs-number">10</span>);
-toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = requestShowLogPermission(<span class="hljs-number">10</span>);
+    toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="hasshowlogpermission"><a name="hasshowlogpermission" class="anchor-navigation-ex-anchor" href="#hasshowlogpermission"><i class="fa fa-link" aria-hidden="true"></i></a>10.2. hasShowLogPermission</h2>
 <ul>
 <li>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x542B;&#x6709;&#x6D6E;&#x7A97;&#x6743;&#x9650;</li>
-<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = hasShowLogPermission();
-toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = hasShowLogPermission();
+    toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="showlogwindow"><a name="showlogwindow" class="anchor-navigation-ex-anchor" href="#showlogwindow"><i class="fa fa-link" aria-hidden="true"></i></a>10.3. showLogWindow</h2>
 <ul>
 <li>&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;</li>
-<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = showLogWindow();
-toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x5C55;&#x793A;:&quot;</span>+result);
+<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = showLogWindow();
+    toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x5C55;&#x793A;:&quot;</span>+result);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="setlogtext"><a name="setlogtext" class="anchor-navigation-ex-anchor" href="#setlogtext"><i class="fa fa-link" aria-hidden="true"></i></a>10.4. setLogText</h2>
 <ul>
 <li>&#x5C55;&#x793A;&#x6D88;&#x606F;&#x5230;&#x60AC;&#x6D6E;&#x7A97;&#x65E5;&#x5FD7;&#x4E2D;&#xFF0C;&#x989C;&#x8272;&#x662F;&#x767D;&#x8272;&#x7684;</li>
-<li>@param msg &#x6D88;&#x606F;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = setLogText(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x8FD0;&#x884C;...&quot;</span>);
+<li>@param msg &#x6D88;&#x606F;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = setLogText(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x8FD0;&#x884C;...&quot;</span>); 
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -1401,7 +1617,7 @@ toast(<span class="hljs-string">&quot;&#x662F;&#x5426;&#x5C55;&#x793A;:&quot;</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"全局快捷事件","level":"1.5.2","depth":2,"next":{"title":"选择器&节点","level":"1.5.3","depth":2,"path":"zh-cn/funcs/global/selector-node.md","ref":"zh-cn/funcs/global/selector-node.md","articles":[]},"previous":{"title":"全局模块","level":"1.5.1","depth":2,"path":"zh-cn/funcs/global/global.md","ref":"zh-cn/funcs/global/global.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/global/global-shortcut.md","mtime":"2020-03-02T08:34:10.735Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-04T03:42:22.861Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"全局快捷事件","level":"1.5.2","depth":2,"next":{"title":"选择器&节点","level":"1.5.3","depth":2,"path":"zh-cn/funcs/global/selector-node.md","ref":"zh-cn/funcs/global/selector-node.md","articles":[]},"previous":{"title":"全局模块","level":"1.5.1","depth":2,"path":"zh-cn/funcs/global/global.md","ref":"zh-cn/funcs/global/global.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/global/global-shortcut.md","mtime":"2020-03-07T14:13:37.692Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T14:21:31.796Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

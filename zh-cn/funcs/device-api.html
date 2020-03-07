@@ -678,8 +678,14 @@
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> imei = device.getImei();
-toast(imei);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> imei = device.getImei();
+    toast(imei);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetscreenwidth"><a name="devicegetscreenwidth" class="anchor-navigation-ex-anchor" href="#devicegetscreenwidth"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. device.getScreenWidth()</h2>
@@ -688,8 +694,14 @@ toast(imei);
 <li>@return &#x6574;&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> width = device.getScreenWidth();
-toast(width);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> width = device.getScreenWidth();
+    toast(width);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetscreenheight"><a name="devicegetscreenheight" class="anchor-navigation-ex-anchor" href="#devicegetscreenheight"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. device.getScreenHeight()</h2>
@@ -698,8 +710,14 @@ toast(width);
 <li>@return &#x6574;&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> height = device.getScreenHeight();
-toast(height);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> height = device.getScreenHeight();
+    toast(height);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetandroidid"><a name="devicegetandroidid" class="anchor-navigation-ex-anchor" href="#devicegetandroidid"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. device.getAndroidId()</h2>
@@ -708,8 +726,14 @@ toast(height);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> androidId = device.getAndroidId();
-toast(androidId);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> androidId = device.getAndroidId();
+    toast(androidId);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetbrand"><a name="devicegetbrand" class="anchor-navigation-ex-anchor" href="#devicegetbrand"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. device.getBrand()</h2>
@@ -718,8 +742,14 @@ toast(androidId);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> brand = device.getBrand();
-toast(brand);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> brand = device.getBrand();
+    toast(brand);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetmodel"><a name="devicegetmodel" class="anchor-navigation-ex-anchor" href="#devicegetmodel"><i class="fa fa-link" aria-hidden="true"></i></a>3.6. device.getModel()</h2>
@@ -728,8 +758,14 @@ toast(brand);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> model = device.getModel();
-toast(model);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> model = device.getModel();
+    toast(model);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetimsi"><a name="devicegetimsi" class="anchor-navigation-ex-anchor" href="#devicegetimsi"><i class="fa fa-link" aria-hidden="true"></i></a>3.7. device.getImsi()</h2>
@@ -738,8 +774,14 @@ toast(model);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> imsi = device.getImsi();
-toast(imsi);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> imsi = device.getImsi();
+    toast(imsi);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetserial"><a name="devicegetserial" class="anchor-navigation-ex-anchor" href="#devicegetserial"><i class="fa fa-link" aria-hidden="true"></i></a>3.8. device.getSerial()</h2>
@@ -748,8 +790,14 @@ toast(imsi);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> serial = device.getSerial();
-toast(serial);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> serial = device.getSerial();
+    toast(serial);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetsdkint"><a name="devicegetsdkint" class="anchor-navigation-ex-anchor" href="#devicegetsdkint"><i class="fa fa-link" aria-hidden="true"></i></a>3.9. device.getSdkInt()</h2>
@@ -758,8 +806,14 @@ toast(serial);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> sdkInt = device.getSdkInt();
-toast(sdkInt);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> sdkInt = device.getSdkInt();
+    toast(sdkInt);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetosversion"><a name="devicegetosversion" class="anchor-navigation-ex-anchor" href="#devicegetosversion"><i class="fa fa-link" aria-hidden="true"></i></a>3.10. device.getOSVersion()</h2>
@@ -768,8 +822,14 @@ toast(sdkInt);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> osVersion = device.getOSVersion();
-toast(osVersion);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> osVersion = device.getOSVersion();
+    toast(osVersion);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetmacaddress"><a name="devicegetmacaddress" class="anchor-navigation-ex-anchor" href="#devicegetmacaddress"><i class="fa fa-link" aria-hidden="true"></i></a>3.11. device.getMacAddress()</h2>
@@ -778,8 +838,14 @@ toast(osVersion);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> res = device.getMacAddress();
-toast(res);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> res = device.getMacAddress();
+    toast(res);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetbattery"><a name="devicegetbattery" class="anchor-navigation-ex-anchor" href="#devicegetbattery"><i class="fa fa-link" aria-hidden="true"></i></a>3.12. device.getBattery()</h2>
@@ -788,8 +854,14 @@ toast(res);
 <li>@return int&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> res = device.getBattery();
-toast(res);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> res = device.getBattery();
+    toast(res);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegettotalmem"><a name="devicegettotalmem" class="anchor-navigation-ex-anchor" href="#devicegettotalmem"><i class="fa fa-link" aria-hidden="true"></i></a>3.13. device.getTotalMem()</h2>
@@ -798,8 +870,14 @@ toast(res);
 <li>@return long&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> res = device.getTotalMem();
-toast(res);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> res = device.getTotalMem();
+    toast(res);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicegetavailmem"><a name="devicegetavailmem" class="anchor-navigation-ex-anchor" href="#devicegetavailmem"><i class="fa fa-link" aria-hidden="true"></i></a>3.14. device.getAvailMem()</h2>
@@ -808,8 +886,14 @@ toast(res);
 <li>@return long&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> res = device.getAvailMem();
-toast(res);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> res = device.getAvailMem();
+    toast(res);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="deviceischarging"><a name="deviceischarging" class="anchor-navigation-ex-anchor" href="#deviceischarging"><i class="fa fa-link" aria-hidden="true"></i></a>3.15. device.isCharging()</h2>
@@ -818,26 +902,44 @@ toast(res);
 <li>@return &#x5E03;&#x5C14;&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> res = device.isCharging();
-toast(res);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> res = device.isCharging();
+    toast(res);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="devicevibrate"><a name="devicevibrate" class="anchor-navigation-ex-anchor" href="#devicevibrate"><i class="fa fa-link" aria-hidden="true"></i></a>3.16. device.vibrate()</h2>
 <ul>
-<li>&#x53D1;&#x51FA;&#x9707;&#x52A8; &#x5355;&#x4F4D;&#x662F;&#x6BEB;&#x79D2;<blockquote>
-<pre><code class="lang-javascript"> device.vibrate(<span class="hljs-number">1</span>*<span class="hljs-number">1000</span>);
+<li>&#x53D1;&#x51FA;&#x9707;&#x52A8; &#x5355;&#x4F4D;&#x662F;&#x6BEB;&#x79D2;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+     device.vibrate(<span class="hljs-number">1</span>*<span class="hljs-number">1000</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="devicecancelvibration"><a name="devicecancelvibration" class="anchor-navigation-ex-anchor" href="#devicecancelvibration"><i class="fa fa-link" aria-hidden="true"></i></a>3.17. device.cancelVibration()</h2>
 <ul>
-<li>&#x53D6;&#x6D88;&#x9707;&#x52A8;<blockquote>
-<pre><code class="lang-javascript"> device.cancelVibration();
+<li>&#x53D6;&#x6D88;&#x9707;&#x52A8;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;device&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+     device.cancelVibration();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -882,7 +984,7 @@ toast(res);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"设备函数","level":"1.5.7","depth":2,"next":{"title":"文件函数","level":"1.5.8","depth":2,"path":"zh-cn/funcs/file-api.md","ref":"zh-cn/funcs/file-api.md","articles":[]},"previous":{"title":"图色函数","level":"1.5.6","depth":2,"path":"zh-cn/funcs/image-api.md","ref":"zh-cn/funcs/image-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/device-api.md","mtime":"2020-03-02T08:34:10.730Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-04T03:42:22.861Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"设备函数","level":"1.5.7","depth":2,"next":{"title":"文件函数","level":"1.5.8","depth":2,"path":"zh-cn/funcs/file-api.md","ref":"zh-cn/funcs/file-api.md","articles":[]},"previous":{"title":"图色函数","level":"1.5.6","depth":2,"path":"zh-cn/funcs/image-api.md","ref":"zh-cn/funcs/image-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/device-api.md","mtime":"2020-03-07T14:15:49.067Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T14:21:31.796Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

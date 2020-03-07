@@ -677,116 +677,182 @@
 <ul>
 <li>&#x8BF7;&#x6C42;&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;&#x7684;&#x6743;&#x9650;</li>
 <li>@param timeout &#x8BF7;&#x6C42;&#x6743;&#x9650;&#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x662F;&#x79D2;</li>
-<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x8BF7;&#x6C42;&#x60AC;&#x6D6E;&#x7A97;&#x6743;&#x9650;&#xFF0C;10&#x8D85;&#x65F6;&#x65F6;&#x95F4;</span>
-<span class="hljs-keyword">var</span> testData = utils.requestShowLogPermission(<span class="hljs-number">10</span>*<span class="hljs-number">1000</span>);
-toast(<span class="hljs-string">&quot;&#x6743;&#x9650;&#x8BF7;&#x6C42;&#x7ED3;&#x679C;:&quot;</span>+testData);
+<li>@return true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x8BF7;&#x6C42;&#x60AC;&#x6D6E;&#x7A97;&#x6743;&#x9650;&#xFF0C;10&#x8D85;&#x65F6;&#x65F6;&#x95F4;</span>
+    <span class="hljs-keyword">var</span> testData = utils.requestShowLogPermission(<span class="hljs-number">10</span>*<span class="hljs-number">1000</span>);
+    toast(<span class="hljs-string">&quot;&#x6743;&#x9650;&#x8BF7;&#x6C42;&#x7ED3;&#x679C;:&quot;</span>+testData);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilshasshowlogpermission"><a name="utilshasshowlogpermission" class="anchor-navigation-ex-anchor" href="#utilshasshowlogpermission"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.2. utils.hasShowLogPermission</h3>
 <ul>
 <li>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x542B;&#x6709;&#x6D6E;&#x7A97;&#x6743;&#x9650;</li>
-<li>@return true &#x6709;&#x6743;&#x9650;,false &#x4EE3;&#x8868;&#x65E0;&#x6743;&#x9650;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = utils.hasShowLogPermission();
-toast(<span class="hljs-string">&quot;&#x6743;&#x9650;:&quot;</span>+testData);
+<li>@return true &#x6709;&#x6743;&#x9650;,false &#x4EE3;&#x8868;&#x65E0;&#x6743;&#x9650;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = utils.hasShowLogPermission();
+    toast(<span class="hljs-string">&quot;&#x6743;&#x9650;:&quot;</span>+testData);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilsshowlogwindow"><a name="utilsshowlogwindow" class="anchor-navigation-ex-anchor" href="#utilsshowlogwindow"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.3. utils.showLogWindow</h3>
 <ul>
-<li>&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;<blockquote>
-<pre><code class="lang-javascript">utils.showLogWindow();
+<li>&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    utils.showLogWindow();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilssetlogtext"><a name="utilssetlogtext" class="anchor-navigation-ex-anchor" href="#utilssetlogtext"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.4. utils.setLogText</h3>
 <ul>
 <li>&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x5230;&#x6D6E;&#x7A97;&#x4E2D;</li>
-<li>@param log &#x65E5;&#x5FD7;<blockquote>
-<pre><code class="lang-javascript">utils.setLogText(<span class="hljs-string">&quot;test&quot;</span>);
+<li>@param log &#x65E5;&#x5FD7;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    utils.setLogText(<span class="hljs-string">&quot;test&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilshidelogwindow"><a name="utilshidelogwindow" class="anchor-navigation-ex-anchor" href="#utilshidelogwindow"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.5. utils.hideLogWindow</h3>
 <ul>
-<li>&#x9690;&#x85CF;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;<blockquote>
-<pre><code class="lang-javascript">utils.hideLogWindow();
+<li>&#x9690;&#x85CF;&#x65E5;&#x5FD7;&#x6D6E;&#x7A97;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    utils.hideLogWindow();
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilshidelogwindow_1"><a name="utilshidelogwindow_1" class="anchor-navigation-ex-anchor" href="#utilshidelogwindow_1"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.6. utils.hideLogWindow</h3>
 <ul>
 <li>&#x663E;&#x793A;&#x6D88;&#x606F;</li>
-<li>@param msg &#x6D88;&#x606F;&#x5185;&#x5BB9;<blockquote>
-<pre><code class="lang-javascript">utils.toast(<span class="hljs-string">&quot;test&quot;</span>);
+<li>@param msg &#x6D88;&#x606F;&#x5185;&#x5BB9;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    utils.toast(<span class="hljs-string">&quot;test&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="&#x6253;&#x5F00;app&#x76F8;&#x5173;"><a name="&#x6253;&#x5F00;app&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x5F00;app&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x6253;&#x5F00;App&#x76F8;&#x5173;</h2>
 <h3 id="utilsopenapp"><a name="utilsopenapp" class="anchor-navigation-ex-anchor" href="#utilsopenapp"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1. utils.openApp</h3>
 <ul>
 <li>&#x6253;&#x5F00;APP</li>
 <li>@param packageName &#x7A0B;&#x5E8F;&#x7684;&#x5305;&#x540D;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x6253;&#x5F00;&#x5FAE;&#x4FE1;</span>
-utils.openApp(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x6253;&#x5F00;&#x5FAE;&#x4FE1;</span>
+    utils.openApp(<span class="hljs-string">&quot;com.tencent.mm&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilsopenappbyname"><a name="utilsopenappbyname" class="anchor-navigation-ex-anchor" href="#utilsopenappbyname"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.2. utils.openAppByName</h3>
 <ul>
 <li>&#x6253;&#x5F00;APP&#xFF0C;&#x901A;&#x8FC7;&#x5E94;&#x7528;&#x540D;&#x79F0;</li>
 <li>@param appName &#x7A0B;&#x5E8F;&#x540D;&#x79F0;&#xFF0C;&#x6BD4;&#x5982;&#x4ECA;&#x65E5;&#x5934;&#x6761;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x6253;&#x5F00;&#x5FAE;&#x4FE1;</span>
-utils.openAppByName(<span class="hljs-string">&quot;&#x5FAE;&#x4FE1;&quot;</span>);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x6253;&#x5F00;&#x5FAE;&#x4FE1;</span>
+    utils.openAppByName(<span class="hljs-string">&quot;&#x5FAE;&#x4FE1;&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilsopenactivity"><a name="utilsopenactivity" class="anchor-navigation-ex-anchor" href="#utilsopenactivity"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.3. utils.openActivity</h3>
 <ul>
 <li>&#x6253;&#x5F00;&#x4E00;&#x4E2A;activity&#xFF0C;&#x901A;&#x8FC7;map&#x53C2;&#x6570;</li>
 <li>@param map &#x4F8B;&#x5982;{&quot;action&quot;:&quot;&quot;},key&#x7684;&#x56FA;&#x5B9A;&#x53EA;&#x6709;</li>
 <li>action,</li>
 <li>uri,pkg,className,flag,&#x5176;&#x4ED6;&#x7684;&#x90FD;&#x662F;&#x53C2;&#x6570;&#x4E86;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">//&#x6253;&#x5F00;&#x6296;&#x97F3;&#x76F4;&#x64AD;</span>
-<span class="hljs-keyword">var</span> map={
-    <span class="hljs-string">&quot;uri&quot;</span>:<span class="hljs-string">&quot;snssdk1128://aweme/live/6701887916223941379&quot;</span>,
-};
-utils.openActivity(map);
+<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x6253;&#x5F00;&#x6296;&#x97F3;&#x76F4;&#x64AD;</span>
+    <span class="hljs-keyword">var</span> map={
+        <span class="hljs-string">&quot;uri&quot;</span>:<span class="hljs-string">&quot;snssdk1128://aweme/live/6701887916223941379&quot;</span>,
+    };
+    utils.openActivity(map);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="&#x56FE;&#x5E93;&#x76F8;&#x5173;"><a name="&#x56FE;&#x5E93;&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x5E93;&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x56FE;&#x5E93;&#x76F8;&#x5173;</h2>
 <h3 id="utilsinsertimagetoalbum"><a name="utilsinsertimagetoalbum" class="anchor-navigation-ex-anchor" href="#utilsinsertimagetoalbum"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.1. utils.insertImageToAlbum</h3>
 <ul>
 <li>&#x5C06;&#x56FE;&#x7247;&#x63D2;&#x5165;&#x5230;&#x76F8;&#x518C;&#x4E2D;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x4F1A;&#x7ACB;&#x523B;&#x66F4;&#x65B0;&#x76F8;&#x518C;&#x6570;&#x636E;</li>
-<li>@param path &#x56FE;&#x7247;&#x8DEF;&#x5F84;<blockquote>
-<pre><code class="lang-javascript">utils.insertImageToAlbum(<span class="hljs-string">&quot;/sdcard/a.png&quot;</span>);
+<li>@param path &#x56FE;&#x7247;&#x8DEF;&#x5F84;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    utils.insertImageToAlbum(<span class="hljs-string">&quot;/sdcard/a.png&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h3 id="utilsinsertvideotoalbum"><a name="utilsinsertvideotoalbum" class="anchor-navigation-ex-anchor" href="#utilsinsertvideotoalbum"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.2. utils.insertVideoToAlbum</h3>
 <ul>
 <li>&#x5C06;&#x89C6;&#x9891;&#x63D2;&#x5165;&#x5230;&#x76F8;&#x518C;&#x4E2D;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x4F1A;&#x7ACB;&#x523B;&#x66F4;&#x65B0;&#x76F8;&#x518C;&#x6570;&#x636E;</li>
-<li>@param path &#x89C6;&#x9891;&#x8DEF;&#x5F84;<blockquote>
-<pre><code class="lang-javascript">utils.insertVideoToAlbum(<span class="hljs-string">&quot;/sdcard/a.mp4&quot;</span>);
+<li>@param path &#x89C6;&#x9891;&#x8DEF;&#x5F84;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    utils.insertVideoToAlbum(<span class="hljs-string">&quot;/sdcard/a.mp4&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
-</li>
-</ul>
 <h2 id="&#x5176;&#x4ED6;"><a name="&#x5176;&#x4ED6;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x5176;&#x4ED6;</h2>
 <h3 id="utilsreadconfigint"><a name="utilsreadconfigint" class="anchor-navigation-ex-anchor" href="#utilsreadconfigint"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.1. utils.readConfigInt</h3>
 <ul>
@@ -796,7 +862,13 @@ utils.openActivity(map);
 <li>@return &#x6574;&#x578B;&#xFF0C;&#x627E;&#x4E0D;&#x5230;&#x5C31;&#x8FD4;&#x56DE;0</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = utils.readConfigInt(jsonObject,<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = utils.readConfigInt(jsonObject,<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsreadjsonstring"><a name="utilsreadjsonstring" class="anchor-navigation-ex-anchor" href="#utilsreadjsonstring"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.2. utils.readJSONString</h3>
@@ -807,7 +879,13 @@ utils.openActivity(map);
 <li>@return &#x5B57;&#x7B26;&#x4E32; &#x627E;&#x4E0D;&#x5230;&#x5C31;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> testData = utils.readConfigString(jsonObject,<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> testData = utils.readConfigString(jsonObject,<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsisobjectnull"><a name="utilsisobjectnull" class="anchor-navigation-ex-anchor" href="#utilsisobjectnull"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.3. utils.isObjectNull</h3>
@@ -817,7 +895,13 @@ utils.openActivity(map);
 <li>@return true&#x6216;&#x8005;false</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> isNull = utils.isObjectNull(<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> isNull = utils.isObjectNull(<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsisobjectnotnull"><a name="utilsisobjectnotnull" class="anchor-navigation-ex-anchor" href="#utilsisobjectnotnull"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.4. utils.isObjectNotNull</h3>
@@ -827,7 +911,13 @@ utils.openActivity(map);
 <li>@return true&#x6216;&#x8005;false</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> isNull = utils.isObjectNotNull(<span class="hljs-string">&quot;test_key&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> isNull = utils.isObjectNotNull(<span class="hljs-string">&quot;test_key&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsgetratio"><a name="utilsgetratio" class="anchor-navigation-ex-anchor" href="#utilsgetratio"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.5. utils.getRatio</h3>
@@ -837,8 +927,14 @@ utils.openActivity(map);
 <li>@return true&#x6216;&#x8005;false</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> ratio = utils.getRatio(<span class="hljs-number">20</span>f);
-toast(ratio);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> ratio = utils.getRatio(<span class="hljs-number">20</span>f);
+    toast(ratio);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsgetrangeint"><a name="utilsgetrangeint" class="anchor-navigation-ex-anchor" href="#utilsgetrangeint"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.6. utils.getRangeInt</h3>
@@ -849,8 +945,14 @@ toast(ratio);
 <li>@return &#x5728;min&#x548C;max&#x4E2D;&#x95F4;&#x7684;&#x503C;,&#x5305;&#x542B;&#x6700;&#x5927;&#x548C;&#x6700;&#x5C0F;&#x503C;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> value = utils.getRangeInt(<span class="hljs-number">1</span>,<span class="hljs-number">100</span>);
-toast(value);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> value = utils.getRangeInt(<span class="hljs-number">1</span>,<span class="hljs-number">100</span>);
+    toast(value);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsistrue"><a name="utilsistrue" class="anchor-navigation-ex-anchor" href="#utilsistrue"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.7. utils.isTrue</h3>
@@ -860,7 +962,13 @@ toast(value);
 <li>@return true &#x6216;&#x8005; false</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> value = utils.isTrue(<span class="hljs-literal">true</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> value = utils.isTrue(<span class="hljs-literal">true</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsfilemd5"><a name="utilsfilemd5" class="anchor-navigation-ex-anchor" href="#utilsfilemd5"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.8. utils.fileMd5</h3>
@@ -870,7 +978,13 @@ toast(value);
 <li>@return &#x6587;&#x4EF6;MD5&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;null</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> md5 = utils.fileMd5(<span class="hljs-string">&quot;/sdcard/a.txt&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> md5 = utils.fileMd5(<span class="hljs-string">&quot;/sdcard/a.txt&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsdatamd5"><a name="utilsdatamd5" class="anchor-navigation-ex-anchor" href="#utilsdatamd5"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.9. utils.dataMd5</h3>
@@ -880,7 +994,13 @@ toast(value);
 <li>@return &#x6570;&#x636E;MD5&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;null</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> md5 = utils.dataMd5(<span class="hljs-string">&quot;data&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> md5 = utils.dataMd5(<span class="hljs-string">&quot;data&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsrandomint"><a name="utilsrandomint" class="anchor-navigation-ex-anchor" href="#utilsrandomint"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.10. utils.randomInt</h3>
@@ -890,7 +1010,13 @@ toast(value);
 <li>@return &#x6574;&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> r = utils.randomInt(<span class="hljs-number">2</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> r = utils.randomInt(<span class="hljs-number">2</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsrandomcharnumber"><a name="utilsrandomcharnumber" class="anchor-navigation-ex-anchor" href="#utilsrandomcharnumber"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.11. utils.randomCharNumber</h3>
@@ -900,7 +1026,13 @@ toast(value);
 <li>@return &#x5B57;&#x7B26;&#x4E32;&#x6570;&#x5B57;&#x6DF7;&#x5408;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> r = utils.randomCharNumber(<span class="hljs-number">2</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> r = utils.randomCharNumber(<span class="hljs-number">2</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsgetapkpkgname"><a name="utilsgetapkpkgname" class="anchor-navigation-ex-anchor" href="#utilsgetapkpkgname"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.12. utils.getApkPkgName</h3>
@@ -910,7 +1042,13 @@ toast(value);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> pkgName = utils.getApkPkgName(<span class="hljs-string">&quot;/sdcard/app.apk&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> pkgName = utils.getApkPkgName(<span class="hljs-string">&quot;/sdcard/app.apk&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsisappexist"><a name="utilsisappexist" class="anchor-navigation-ex-anchor" href="#utilsisappexist"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.13. utils.isAppExist</h3>
@@ -920,7 +1058,13 @@ toast(value);
 <li>@return true &#x4EE3;&#x8868;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#xFF0C;false&#x4EE3;&#x8868;&#x672A;&#x5B89;&#x88C5;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = utils.isAppExist(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = utils.isAppExist(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsgetappversioncode"><a name="utilsgetappversioncode" class="anchor-navigation-ex-anchor" href="#utilsgetappversioncode"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.14. utils.getAppVersionCode</h3>
@@ -930,7 +1074,13 @@ toast(value);
 <li>@return &#x6574;&#x578B;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> versionCode = utils.getAppVersionCode(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> versionCode = utils.getAppVersionCode(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h3 id="utilsgetappversionname"><a name="utilsgetappversionname" class="anchor-navigation-ex-anchor" href="#utilsgetappversionname"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.15. utils.getAppVersionName</h3>
@@ -940,7 +1090,13 @@ toast(value);
 <li>@return &#x5B57;&#x7B26;&#x4E32; &#x4F8B;&#x5982; 1.0.0</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> r = utils.getAppVersionName(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;utils&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> r = utils.getAppVersionName(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 
@@ -987,7 +1143,7 @@ toast(value);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常用工具函数","level":"1.5.11","depth":2,"next":{"title":"UI定制","level":"1.6","depth":1,"path":"zh-cn/funcs/ui-custom.md","ref":"zh-cn/funcs/ui-custom.md","articles":[{"title":"LinearLayout线性布局","level":"1.6.1","depth":2,"path":"zh-cn/funcs/ui/linearlayout.md","ref":"zh-cn/funcs/ui/linearlayout.md","articles":[]},{"title":"FrameLayout帧布局","level":"1.6.2","depth":2,"path":"zh-cn/funcs/ui/framelayout.md","ref":"zh-cn/funcs/ui/framelayout.md","articles":[]},{"title":"RelativeLayout绝对布局","level":"1.6.3","depth":2,"path":"zh-cn/funcs/ui/relativelayout.md","ref":"zh-cn/funcs/ui/relativelayout.md","articles":[]},{"title":"ScrollView滚动框","level":"1.6.4","depth":2,"path":"zh-cn/funcs/ui/scrollview.md","ref":"zh-cn/funcs/ui/scrollview.md","articles":[]},{"title":"View视图","level":"1.6.5","depth":2,"path":"zh-cn/funcs/ui/view.md","ref":"zh-cn/funcs/ui/view.md","articles":[]},{"title":"Button按钮","level":"1.6.6","depth":2,"path":"zh-cn/funcs/ui/button.md","ref":"zh-cn/funcs/ui/button.md","articles":[]},{"title":"TextView文本","level":"1.6.7","depth":2,"path":"zh-cn/funcs/ui/textview.md","ref":"zh-cn/funcs/ui/textview.md","articles":[]},{"title":"EditText输入框","level":"1.6.8","depth":2,"path":"zh-cn/funcs/ui/edittext.md","ref":"zh-cn/funcs/ui/edittext.md","articles":[]},{"title":"CheckBox复选框","level":"1.6.9","depth":2,"path":"zh-cn/funcs/ui/checkbox.md","ref":"zh-cn/funcs/ui/checkbox.md","articles":[]},{"title":"RadioGroup布局","level":"1.6.10","depth":2,"path":"zh-cn/funcs/ui/radiogroup.md","ref":"zh-cn/funcs/ui/radiogroup.md","articles":[]},{"title":"RadioButton单选框","level":"1.6.11","depth":2,"path":"zh-cn/funcs/ui/radiobutton.md","ref":"zh-cn/funcs/ui/radiobutton.md","articles":[]},{"title":"Spinner下拉选择框","level":"1.6.12","depth":2,"path":"zh-cn/funcs/ui/spinner.md","ref":"zh-cn/funcs/ui/spinner.md","articles":[]}]},"previous":{"title":"线程函数","level":"1.5.10","depth":2,"path":"zh-cn/funcs/thread-api.md","ref":"zh-cn/funcs/thread-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/utils-api.md","mtime":"2020-03-02T08:34:10.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-04T03:42:22.861Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常用工具函数","level":"1.5.11","depth":2,"next":{"title":"UI定制","level":"1.6","depth":1,"path":"zh-cn/funcs/ui-custom.md","ref":"zh-cn/funcs/ui-custom.md","articles":[{"title":"LinearLayout线性布局","level":"1.6.1","depth":2,"path":"zh-cn/funcs/ui/linearlayout.md","ref":"zh-cn/funcs/ui/linearlayout.md","articles":[]},{"title":"FrameLayout帧布局","level":"1.6.2","depth":2,"path":"zh-cn/funcs/ui/framelayout.md","ref":"zh-cn/funcs/ui/framelayout.md","articles":[]},{"title":"RelativeLayout绝对布局","level":"1.6.3","depth":2,"path":"zh-cn/funcs/ui/relativelayout.md","ref":"zh-cn/funcs/ui/relativelayout.md","articles":[]},{"title":"ScrollView滚动框","level":"1.6.4","depth":2,"path":"zh-cn/funcs/ui/scrollview.md","ref":"zh-cn/funcs/ui/scrollview.md","articles":[]},{"title":"View视图","level":"1.6.5","depth":2,"path":"zh-cn/funcs/ui/view.md","ref":"zh-cn/funcs/ui/view.md","articles":[]},{"title":"Button按钮","level":"1.6.6","depth":2,"path":"zh-cn/funcs/ui/button.md","ref":"zh-cn/funcs/ui/button.md","articles":[]},{"title":"TextView文本","level":"1.6.7","depth":2,"path":"zh-cn/funcs/ui/textview.md","ref":"zh-cn/funcs/ui/textview.md","articles":[]},{"title":"EditText输入框","level":"1.6.8","depth":2,"path":"zh-cn/funcs/ui/edittext.md","ref":"zh-cn/funcs/ui/edittext.md","articles":[]},{"title":"CheckBox复选框","level":"1.6.9","depth":2,"path":"zh-cn/funcs/ui/checkbox.md","ref":"zh-cn/funcs/ui/checkbox.md","articles":[]},{"title":"RadioGroup布局","level":"1.6.10","depth":2,"path":"zh-cn/funcs/ui/radiogroup.md","ref":"zh-cn/funcs/ui/radiogroup.md","articles":[]},{"title":"RadioButton单选框","level":"1.6.11","depth":2,"path":"zh-cn/funcs/ui/radiobutton.md","ref":"zh-cn/funcs/ui/radiobutton.md","articles":[]},{"title":"Spinner下拉选择框","level":"1.6.12","depth":2,"path":"zh-cn/funcs/ui/spinner.md","ref":"zh-cn/funcs/ui/spinner.md","articles":[]}]},"previous":{"title":"线程函数","level":"1.5.10","depth":2,"path":"zh-cn/funcs/thread-api.md","ref":"zh-cn/funcs/thread-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/utils-api.md","mtime":"2020-03-07T14:20:51.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T14:21:31.796Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -6,6 +6,7 @@
 
 # 载入模块
 
+
 > ```javascript
 > loadECModule("shell");
 > ```
@@ -15,8 +16,15 @@
 * 安装 apk
 * @param path 文件路径
 * @return true 代表安装成功，false 代表安装失败
+
 > ```javascript
-> var result = shell.installApp("/sdcard/app.apk");
+> loadECModule("global");
+> loadECModule("shell");
+>     
+> function main(){
+>     var result = shell.installApp("/sdcard/app.apk");
+> }
+> main();
 > ```
 
 
@@ -25,8 +33,15 @@
 * @param packageName 应用程序的包名
 * @return true 代表卸载成功，false 代表卸载失败
 
+
 > ```javascript
-> var result = shell.uninstallApp("com.ss.android.article.news");
+> loadECModule("global");
+> loadECModule("shell");
+>     
+> function main(){
+>     var result = shell.uninstallApp("com.ss.android.article.news");
+> }
+> main();
 > ```
 
 
@@ -36,8 +51,15 @@
 * @param packageName 应用程序的包名
 * @return true 代表成功，false 代表失败
 
+
 > ```javascript
-> var result = shell.stopApp("com.ss.android.article.news");
+> loadECModule("global");
+> loadECModule("shell");
+>     
+> function main(){
+>     var result = shell.stopApp("com.ss.android.article.news");
+> }
+> main();
 > ```
 
 
@@ -49,8 +71,15 @@
 * @param command 命令，例如安装App ： pm install /sdcard/app.apk
 * @return 命令执行后返回的字符串结果
 
+
 > ```javascript
-> var result = shell.execCommand("pm install /sdcard/app.apk");
+> loadECModule("global");
+> loadECModule("shell");
+>     
+> function main(){
+>     var result = shell.execCommand("pm install /sdcard/app.apk");
+> }
+> main();
 > ```
 
 

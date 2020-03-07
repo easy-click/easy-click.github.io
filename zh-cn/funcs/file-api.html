@@ -679,8 +679,14 @@
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data = file.readFile(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-toast(data);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> data = file.readFile(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
+    toast(data);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="filewritefile"><a name="filewritefile" class="anchor-navigation-ex-anchor" href="#filewritefile"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. file.writeFile</h2>
@@ -690,8 +696,14 @@ toast(data);
 <li>@param path &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data=<span class="hljs-string">&quot;Test&quot;</span>;
-file.writeFile(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> data=<span class="hljs-string">&quot;Test&quot;</span>;
+    file.writeFile(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="filecreate"><a name="filecreate" class="anchor-navigation-ex-anchor" href="#filecreate"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. file.create</h2>
@@ -701,8 +713,14 @@ file.writeFile(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span
 <li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x521B;&#x5EFA;&#x6210;&#x529F;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> create=file.create(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-toast(create);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> create=file.create(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
+    toast(create);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="filereadassets"><a name="filereadassets" class="anchor-navigation-ex-anchor" href="#filereadassets"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. file.readAssets</h2>
@@ -712,8 +730,14 @@ toast(create);
 <li>@return &#x5B57;&#x7B26;&#x4E32;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data=file.readAssets(<span class="hljs-string">&quot;data/test.txt&quot;</span>);
-toast(data);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> data=file.readAssets(<span class="hljs-string">&quot;data/test.txt&quot;</span>);
+    toast(data);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="filedeleteallfile"><a name="filedeleteallfile" class="anchor-navigation-ex-anchor" href="#filedeleteallfile"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. file.deleteAllFile</h2>
@@ -722,7 +746,13 @@ toast(data);
 <li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
 </ul>
 <blockquote>
-<pre><code class="lang-javascript">file.deleteAllFile(<span class="hljs-string">&quot;data/test.txt&quot;</span>);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    file.deleteAllFile(<span class="hljs-string">&quot;data/test.txt&quot;</span>);
+}
+main();
 </code></pre>
 </blockquote>
 <h2 id="fileappendline"><a name="fileappendline" class="anchor-navigation-ex-anchor" href="#fileappendline"><i class="fa fa-link" aria-hidden="true"></i></a>3.6. file.appendLine</h2>
@@ -731,9 +761,15 @@ toast(data);
 <li>@param data &#x884C;&#x6570;&#x636E;</li>
 <li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
 <li>@return &#x5E03;&#x5C14;&#x578B; true&#x4EE3;&#x8868;&#x6210;&#x529F; false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> data=<span class="hljs-string">&quot;sss&quot;</span>;
-<span class="hljs-keyword">var</span> t=file.appendLine(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-toast(t);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> data=<span class="hljs-string">&quot;sss&quot;</span>;
+    <span class="hljs-keyword">var</span> t=file.appendLine(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
+    toast(t);
+}
+main();
 </code></pre>
 </blockquote>
 </li>
@@ -744,8 +780,14 @@ toast(t);
 <li>@param path   &#x8DEF;&#x5F84;</li>
 <li>@param lineNo &#x884C;&#x53F7;</li>
 <li>@return &#x5B57;&#x7B26;&#x4E32; &#x8FD4;&#x56DE;&#x4E00;&#x884C;&#x5B57;&#x7B26;&#x4E32;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> t=file.readLine(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>,<span class="hljs-number">1</span>);
-toast(t);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> t=file.readLine(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>,<span class="hljs-number">1</span>);
+    toast(t);
+}
+main();
 </code></pre>
 </blockquote>
 </li>
@@ -755,8 +797,14 @@ toast(t);
 <li>&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
 <li>@return &#x5B57;&#x7B26;&#x4E32;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> t=file.readAllLines(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-toast(t);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> t=file.readAllLines(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
+    toast(t);
+}
+main();
 </code></pre>
 </blockquote>
 </li>
@@ -766,8 +814,14 @@ toast(t);
 <li>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x5939;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
 <li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> t=file.mkdirs(<span class="hljs-string">&quot;/sdcard/testdir/&quot;</span>);
-toast(t);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> t=file.mkdirs(<span class="hljs-string">&quot;/sdcard/testdir/&quot;</span>);
+    toast(t);
+}
+main();
 </code></pre>
 </blockquote>
 </li>
@@ -777,8 +831,14 @@ toast(t);
 <li>&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;&#x662F;&#x5426;&#x5B58;&#x5728;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
 <li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> t=file.exists(<span class="hljs-string">&quot;/sdcard/testdir/&quot;</span>);
-toast(t);
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;file&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> t=file.exists(<span class="hljs-string">&quot;/sdcard/testdir/&quot;</span>);
+    toast(t);
+}
+main();
 </code></pre>
 </blockquote>
 </li>
@@ -827,7 +887,7 @@ toast(t);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"文件函数","level":"1.5.8","depth":2,"next":{"title":"网络函数","level":"1.5.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},"previous":{"title":"设备函数","level":"1.5.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/file-api.md","mtime":"2020-03-02T08:34:10.734Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-04T03:42:22.861Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"文件函数","level":"1.5.8","depth":2,"next":{"title":"网络函数","level":"1.5.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},"previous":{"title":"设备函数","level":"1.5.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/file-api.md","mtime":"2020-03-07T14:02:53.990Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T14:21:31.796Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
