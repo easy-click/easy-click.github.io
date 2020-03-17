@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>UI定制 · EasyClick开发文档</title>
+        <title>Shell命令函数 · EasyClick开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ui/linearlayout.html" />
+    <link rel="next" href="ui-custom.html" />
     
     
-    <link rel="prev" href="shell-api.html" />
+    <link rel="prev" href="utils-api.html" />
     
 
     
@@ -397,7 +397,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.12" data-path="shell-api.html">
+        <li class="chapter active" data-level="1.5.12" data-path="shell-api.html">
             
                 <a href="shell-api.html">
             
@@ -415,7 +415,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="ui-custom.html">
+        <li class="chapter " data-level="1.6" data-path="ui-custom.html">
             
                 <a href="ui-custom.html">
             
@@ -659,7 +659,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >UI定制</a>
+        <a href="../.." >Shell命令函数</a>
     </h1>
 </div>
 
@@ -674,155 +674,80 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;"><b>2. </b>&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;</a></li><li><span class="title-icon "></span><a href="#&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;"><b>3. </b>&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x516C;&#x6709;&#x5C5E;&#x6027;"><b>4. </b>&#x516C;&#x6709;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;"><b>5. </b>UI&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;</a></li><li><span class="title-icon "></span><a href="#ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><b>6. </b>UI&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;</a></li></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
-<p>EasyClick &#x9075;&#x5FAA;&#x4E86;Android&#x7684;UI&#x8BBE;&#x8BA1;&#x65B9;&#x5F0F;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;Android UI&#x7684;&#x7B80;&#x5316;&#x7248;&#x672C;</p>
-<h1 id="&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;"><a name="&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;" class="anchor-navigation-ex-anchor" href="#&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;</h1>
-<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x591A;tab&#x652F;&#x6301;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x5DE5;&#x7A0B;&#x7684;layout&#x5DE5;&#x7A0B;&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;tab.ini&#x6587;&#x4EF6;&#x5373;&#x53EF;
-&#x5185;&#x5BB9;&#x662F; tab&#x540D;&#x79F0;=&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982;</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x8F7D;&#x5165;&#x6A21;&#x5757;"><b>2. </b>&#x8F7D;&#x5165;&#x6A21;&#x5757;</a></li><ul><li><span class="title-icon "></span><a href="#shellinstallapp"><b>2.1. </b>shell.installApp</a></li><li><span class="title-icon "></span><a href="#shelluninstallapp"><b>2.2. </b>shell.uninstallApp</a></li><li><span class="title-icon "></span><a href="#shellstopapp"><b>2.3. </b>shell.stopApp</a></li><li><span class="title-icon "></span><a href="#shellexeccommand"><b>2.4. </b>shell.execCommand</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
+<ul>
+<li>&#x4EE3;&#x7406;&#x6A21;&#x5F0F;&#x4E0B;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6237;&#x6267;&#x884C;shell&#x547D;&#x4EE4;</li>
+<li>shell&#x6A21;&#x5757;&#x7684;&#x5BF9;&#x8C61;&#x524D;&#x7F00;&#x662F;shell&#xFF0C;&#x4F8B;&#x5982; shell.installApp()&#x8FD9;&#x6837;&#x8C03;&#x7528;</li>
+</ul>
+<h1 id="&#x8F7D;&#x5165;&#x6A21;&#x5757;"><a name="&#x8F7D;&#x5165;&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#&#x8F7D;&#x5165;&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x8F7D;&#x5165;&#x6A21;&#x5757;</h1>
 <blockquote>
-<pre><code class="lang-ini">&#x53C2;&#x6570;&#x914D;&#x7F6E;=main.xml
-&#x6CE8;&#x518C;&#x4F7F;&#x7528;=reg.xml
-&#x4F7F;&#x7528;&#x8BF4;&#x660E;=intr.xml
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;shell&quot;</span>);
 </code></pre>
 </blockquote>
-<h1 id="&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;"><a name="&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x89C6;&#x56FE;</h1>
+<h2 id="shellinstallapp"><a name="shellinstallapp" class="anchor-navigation-ex-anchor" href="#shellinstallapp"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. shell.installApp</h2>
 <ul>
-<li><a href="ui/linearlayout.html">LinearLayout &#x7EBF;&#x6027;&#x5E03;&#x5C40;</a></li>
-<li><a href="ui/framelayout.html">FrameLayout &#x5E27;&#x5E03;&#x5C40;</a></li>
-<li><a href="ui/relativelayout.html">RelativeLayout &#x7EDD;&#x5BF9;&#x5E03;&#x5C40;</a></li>
-<li><a href="ui/scrollview.html">ScrollView &#x6EDA;&#x52A8;&#x6846;</a></li>
-<li><a href="ui/view.html">View&#x89C6;&#x56FE;</a></li>
-<li><a href="ui/button.html">Button &#x6309;&#x94AE;</a></li>
-<li><a href="ui/textview.html">TextView &#x6587;&#x672C;&#x89C6;&#x56FE;</a></li>
-<li><a href="ui/edittext.html">EditText &#x8F93;&#x5165;&#x6846;</a></li>
-<li><a href="ui/checkbox.html">CheckBox &#x590D;&#x9009;&#x6846;</a></li>
-<li><a href="ui/radiogroup.html">RadioGroup&#x5E03;&#x5C40;</a></li>
-<li><a href="ui/radiobutton.html">RadioButton &#x5355;&#x9009;&#x6846;</a></li>
-<li><a href="ui/spinner.html">Spinner &#x4E0B;&#x62C9;&#x9009;&#x62E9;&#x6846;</a></li>
+<li>&#x5B89;&#x88C5; apk</li>
+<li>@param path &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>@return true &#x4EE3;&#x8868;&#x5B89;&#x88C5;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5B89;&#x88C5;&#x5931;&#x8D25;</li>
 </ul>
-<h1 id="&#x516C;&#x6709;&#x5C5E;&#x6027;"><a name="&#x516C;&#x6709;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x516C;&#x6709;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x516C;&#x6709;&#x5C5E;&#x6027;</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">&#x5C5E;&#x6027;&#x540D;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
-<th style="text-align:center">&#x53EF;&#x9009;&#x503C;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">layout_width</td>
-<td style="text-align:center">&#x5BBD;&#x5EA6;</td>
-<td style="text-align:center">wrap_content: &#x548C;&#x81EA;&#x8EAB;&#x5185;&#x5BB9;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br> match_parent:&#x548C;&#x7236;&#x7EC4;&#x4EF6;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br>&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">layout_height</td>
-<td style="text-align:center">&#x9AD8;&#x5EA6;</td>
-<td style="text-align:center">wrap_content: &#x548C;&#x81EA;&#x8EAB;&#x5185;&#x5BB9;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br> match_parent:&#x548C;&#x7236;&#x7EC4;&#x4EF6;&#x4E00;&#x6837;&#x7684;&#x957F;&#x5EA6;<br>&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">background</td>
-<td style="text-align:center">&#x80CC;&#x666F;&#x8272;</td>
-<td style="text-align:center">16&#x8FDB;&#x5236;&#x7684;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x4F8B;&#x5982;#FFFFFF&#x6216;&#x8005;#FFFFFFFF</td>
-</tr>
-<tr>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">&#x6807;&#x7B7E;</td>
-<td style="text-align:center">&#x4E2D;&#x82F1;&#x6587;&#x90FD;&#x53EF;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;tag&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x503C;</td>
-</tr>
-<tr>
-<td style="text-align:center">visibility</td>
-<td style="text-align:center">&#x662F;&#x5426;&#x53EF;&#x5C55;&#x793A;</td>
-<td style="text-align:center">gone:&#x4E0D;&#x5C55;&#x793A;<br>visible:&#x5C55;&#x793A;<br>invisible:&#x4E0D;&#x5C55;&#x793A;&#x4F46;&#x662F;&#x5360;&#x7528;&#x7A7A;&#x95F4;</td>
-</tr>
-<tr>
-<td style="text-align:center">clickable</td>
-<td style="text-align:center">&#x662F;&#x5426;&#x53EF;&#x70B9;&#x51FB;</td>
-<td style="text-align:center">true: &#x53EF;&#x70B9;&#x51FB; <br>false: &#x4E0D;&#x53EF;&#x70B9;&#x51FB;</td>
-</tr>
-<tr>
-<td style="text-align:center">enable</td>
-<td style="text-align:center">&#x662F;&#x5426;&#x542F;&#x7528;</td>
-<td style="text-align:center">true: &#x542F;&#x7528; <br>false: &#x7981;&#x7528;</td>
-</tr>
-<tr>
-<td style="text-align:center">minHeight</td>
-<td style="text-align:center">&#x6700;&#x5C0F;&#x9AD8;&#x5EA6;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">minWidth</td>
-<td style="text-align:center">&#x6700;&#x5C0F;&#x5BBD;&#x5EA6;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">paddingLeft</td>
-<td style="text-align:center">&#x5DE6;&#x5185;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">paddingTop</td>
-<td style="text-align:center">&#x4E0A;&#x5185;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">paddingRight</td>
-<td style="text-align:center">&#x53F3;&#x5185;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">paddingBottom</td>
-<td style="text-align:center">&#x4E0B;&#x5185;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">padding</td>
-<td style="text-align:center">&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x5185;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">layout_gravity</td>
-<td style="text-align:center">&#x81EA;&#x8EAB;&#x76F8;&#x5F53;&#x4E8E;&#x7236;&#x5BB9;&#x5668;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</td>
-<td style="text-align:center"><a href="https://blog.csdn.net/gaojinshan/article/details/44917205" target="_blank">&#x7528;&#x6CD5;&#x53C2;&#x8003;</a><br>top<br>bottom<br>left<br>right<br>center_vertical<br>fill_vertical<br>center_horizontal<br>fill_horizontal<br>center<br>fill<br>clip_vertical<br>clip_horizontal<br></td>
-</tr>
-<tr>
-<td style="text-align:center">layout_margin</td>
-<td style="text-align:center">&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x5916;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">layout_marginLeft</td>
-<td style="text-align:center">&#x5DE6;&#x5916;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">layout_marginRight</td>
-<td style="text-align:center">&#x53F3;&#x5916;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">layout_marginTop</td>
-<td style="text-align:center">&#x4E0A;&#x5916;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-<tr>
-<td style="text-align:center">layout_marginBottom</td>
-<td style="text-align:center">&#x4E0B;&#x5916;&#x8FB9;&#x8DDD;</td>
-<td style="text-align:center">&#x5177;&#x4F53;&#x6570;&#x5B57;+dp</td>
-</tr>
-</tbody>
-</table>
-<h1 id="ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;"><a name="ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;" class="anchor-navigation-ex-anchor" href="#ui&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>5. UI&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x89E3;&#x91CA;</h1>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;shell&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = shell.installApp(<span class="hljs-string">&quot;/sdcard/app.apk&quot;</span>);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="shelluninstallapp"><a name="shelluninstallapp" class="anchor-navigation-ex-anchor" href="#shelluninstallapp"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. shell.uninstallApp</h2>
 <ul>
-<li>&#x5C5E;&#x6027;&#x4E3A;&#xFF1A;layout_width, layout_height</li>
-<li>match_parent &#x586B;&#x5145;&#x6EE1;&#x7236;&#x5BB9;&#x5668;</li>
-<li>wrap_content &#x4EE5;&#x81EA;&#x8EAB;&#x5B9E;&#x9645;&#x5BBD;&#x5EA6;&#x4E3A;&#x51C6;</li>
-<li>&#x6570;&#x5B57;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;12dp&#xFF0C;&#x4EE3;&#x8868;12&#x4E2A;dp&#x5BBD;&#x5EA6;&#xFF0C;dp&#x662F;android&#x7684;&#x5BBD;&#x5EA6;&#x5355;&#x4F4D;</li>
+<li>&#x5378;&#x8F7D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</li>
+<li>@param packageName &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5305;&#x540D;</li>
+<li>@return true &#x4EE3;&#x8868;&#x5378;&#x8F7D;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5378;&#x8F7D;&#x5931;&#x8D25;</li>
 </ul>
-<h1 id="ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><a name="ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;" class="anchor-navigation-ex-anchor" href="#ui&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>6. UI&#x754C;&#x9762;&#x53C2;&#x6570;&#x8BFB;&#x53D6;</h1>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;shell&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = shell.uninstallApp(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="shellstopapp"><a name="shellstopapp" class="anchor-navigation-ex-anchor" href="#shellstopapp"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. shell.stopApp</h2>
 <ul>
-<li>&#x53C2;&#x8003;  <a href="global/global.html#ui&#x53C2;&#x6570;&#x8BFB;&#x53D6;">&#x5168;&#x5C40;&#x6A21;&#x5757;UI&#x53C2;&#x6570;&#x8BFB;&#x53D6;</a></li>
+<li>&#x505C;&#x6B62;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x5E94;&#x7528;</li>
+<li>@param packageName &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5305;&#x540D;</li>
+<li>@return true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
 </ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;shell&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = shell.stopApp(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="shellexeccommand"><a name="shellexeccommand" class="anchor-navigation-ex-anchor" href="#shellexeccommand"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. shell.execCommand</h2>
+<ul>
+<li>&#x6267;&#x884C;Shell&#x547D;&#x4EE4;</li>
+<li>@param command &#x547D;&#x4EE4;&#xFF0C;&#x4F8B;&#x5982;&#x5B89;&#x88C5;App &#xFF1A; pm install /sdcard/app.apk</li>
+<li>@return &#x547D;&#x4EE4;&#x6267;&#x884C;&#x540E;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x679C;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">loadECModule(<span class="hljs-string">&quot;global&quot;</span>);
+loadECModule(<span class="hljs-string">&quot;shell&quot;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = shell.execCommand(<span class="hljs-string">&quot;pm install /sdcard/app.apk&quot;</span>);
+}
+main();
+</code></pre>
+</blockquote>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -851,12 +776,12 @@
 
             
                 
-                <a href="shell-api.html" class="navigation navigation-prev " aria-label="Previous page: Shell命令函数">
+                <a href="utils-api.html" class="navigation navigation-prev " aria-label="Previous page: 常用工具函数">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ui/linearlayout.html" class="navigation navigation-next " aria-label="Next page: LinearLayout线性布局">
+                <a href="ui-custom.html" class="navigation navigation-next " aria-label="Next page: UI定制">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -867,7 +792,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"UI定制","level":"1.6","depth":1,"next":{"title":"LinearLayout线性布局","level":"1.6.1","depth":2,"path":"zh-cn/funcs/ui/linearlayout.md","ref":"zh-cn/funcs/ui/linearlayout.md","articles":[]},"previous":{"title":"Shell命令函数","level":"1.5.12","depth":2,"path":"zh-cn/funcs/shell-api.md","ref":"zh-cn/funcs/shell-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/ui-custom.md","mtime":"2020-03-10T09:06:11.013Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-17T13:06:12.983Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Shell命令函数","level":"1.5.12","depth":2,"next":{"title":"UI定制","level":"1.6","depth":1,"path":"zh-cn/funcs/ui-custom.md","ref":"zh-cn/funcs/ui-custom.md","articles":[{"title":"LinearLayout线性布局","level":"1.6.1","depth":2,"path":"zh-cn/funcs/ui/linearlayout.md","ref":"zh-cn/funcs/ui/linearlayout.md","articles":[]},{"title":"FrameLayout帧布局","level":"1.6.2","depth":2,"path":"zh-cn/funcs/ui/framelayout.md","ref":"zh-cn/funcs/ui/framelayout.md","articles":[]},{"title":"RelativeLayout绝对布局","level":"1.6.3","depth":2,"path":"zh-cn/funcs/ui/relativelayout.md","ref":"zh-cn/funcs/ui/relativelayout.md","articles":[]},{"title":"ScrollView滚动框","level":"1.6.4","depth":2,"path":"zh-cn/funcs/ui/scrollview.md","ref":"zh-cn/funcs/ui/scrollview.md","articles":[]},{"title":"View视图","level":"1.6.5","depth":2,"path":"zh-cn/funcs/ui/view.md","ref":"zh-cn/funcs/ui/view.md","articles":[]},{"title":"Button按钮","level":"1.6.6","depth":2,"path":"zh-cn/funcs/ui/button.md","ref":"zh-cn/funcs/ui/button.md","articles":[]},{"title":"TextView文本","level":"1.6.7","depth":2,"path":"zh-cn/funcs/ui/textview.md","ref":"zh-cn/funcs/ui/textview.md","articles":[]},{"title":"EditText输入框","level":"1.6.8","depth":2,"path":"zh-cn/funcs/ui/edittext.md","ref":"zh-cn/funcs/ui/edittext.md","articles":[]},{"title":"CheckBox复选框","level":"1.6.9","depth":2,"path":"zh-cn/funcs/ui/checkbox.md","ref":"zh-cn/funcs/ui/checkbox.md","articles":[]},{"title":"RadioGroup布局","level":"1.6.10","depth":2,"path":"zh-cn/funcs/ui/radiogroup.md","ref":"zh-cn/funcs/ui/radiogroup.md","articles":[]},{"title":"RadioButton单选框","level":"1.6.11","depth":2,"path":"zh-cn/funcs/ui/radiobutton.md","ref":"zh-cn/funcs/ui/radiobutton.md","articles":[]},{"title":"Spinner下拉选择框","level":"1.6.12","depth":2,"path":"zh-cn/funcs/ui/spinner.md","ref":"zh-cn/funcs/ui/spinner.md","articles":[]}]},"previous":{"title":"常用工具函数","level":"1.5.11","depth":2,"path":"zh-cn/funcs/utils-api.md","ref":"zh-cn/funcs/utils-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/shell-api.md","mtime":"2020-03-17T13:01:43.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-17T13:06:12.983Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
