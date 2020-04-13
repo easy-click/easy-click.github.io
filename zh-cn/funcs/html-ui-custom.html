@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>文件函数 · EasyClick开发文档</title>
+        <title>H5 UI定制 · EasyClick开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="http-api.html" />
+    <link rel="next" href="plugin/plugins.html" />
     
     
-    <link rel="prev" href="device-api.html" />
+    <link rel="prev" href="ui/webview.html" />
     
 
     
@@ -358,7 +358,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.8" data-path="file-api.html">
+        <li class="chapter " data-level="1.6.8" data-path="file-api.html">
             
                 <a href="file-api.html">
             
@@ -616,7 +616,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="html-ui-custom.html">
+        <li class="chapter active" data-level="1.8" data-path="html-ui-custom.html">
             
                 <a href="html-ui-custom.html">
             
@@ -711,7 +711,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >文件函数</a>
+        <a href="../.." >H5 UI定制</a>
     </h1>
 </div>
 
@@ -726,163 +726,99 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;"><b>2. </b>&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#filereadfile"><b>2.1. </b>file.readFile</a></li><li><span class="title-icon "></span><a href="#filewritefile"><b>2.2. </b>file.writeFile</a></li><li><span class="title-icon "></span><a href="#filecreate"><b>2.3. </b>file.create</a></li><li><span class="title-icon "></span><a href="#filereadassets"><b>2.4. </b>file.readAssets</a></li><li><span class="title-icon "></span><a href="#filedeleteallfile"><b>2.5. </b>file.deleteAllFile</a></li><li><span class="title-icon "></span><a href="#fileappendline"><b>2.6. </b>file.appendLine</a></li><li><span class="title-icon "></span><a href="#filereadline"><b>2.7. </b>file.readLine</a></li><li><span class="title-icon "></span><a href="#filereadalllines"><b>2.8. </b>file.readAllLines</a></li><li><span class="title-icon "></span><a href="#filemkdirs"><b>2.9. </b>file.mkdirs</a></li><li><span class="title-icon "></span><a href="#fileexists"><b>2.10. </b>file.exists</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;"><b>2. </b>&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;</a></li><li><span class="title-icon "></span><a href="#&#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x65B9;&#x6CD5;"><b>3. </b>&#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x65B9;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x811A;&#x672C;"><b>3.1. </b>&#x542F;&#x52A8;&#x811A;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x9690;&#x85CF;&#x5F00;&#x59CB;&#x6309;&#x94AE;"><b>3.2. </b>&#x9690;&#x85CF;&#x5F00;&#x59CB;&#x6309;&#x94AE;</a></li><li><span class="title-icon "></span><a href="#&#x663E;&#x793A;&#x5F00;&#x59CB;&#x6309;&#x94AE;"><b>3.3. </b>&#x663E;&#x793A;&#x5F00;&#x59CB;&#x6309;&#x94AE;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;json&#x5B57;&#x7B26;&#x4E32;"><b>3.4. </b>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;"><b>3.5. </b>&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</a></li><li><span class="title-icon "></span><a href="#&#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x914D;&#x7F6E;"><b>3.6. </b>&#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x6253;&#x5F00;ec&#x7684;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;"><b>3.7. </b>&#x6253;&#x5F00;EC&#x7684;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x663E;&#x793A;toast&#x6D88;&#x606F;"><b>3.8. </b>&#x663E;&#x793A;Toast&#x6D88;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x6A21;&#x5F0F;"><b>3.9. </b>&#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6A21;&#x5F0F;"><b>3.10. </b>&#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;"><b>3.11. </b>&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;"><b>3.12. </b>&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x670D;&#x52A1;&#x73AF;&#x5883;"><b>3.13. </b>&#x542F;&#x52A8;&#x670D;&#x52A1;&#x73AF;&#x5883;</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
 <ul>
-<li>&#x6587;&#x4EF6;&#x6A21;&#x5757;&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x662F;&#x8DDF;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x8054;</li>
-<li>&#x6587;&#x4EF6;&#x6A21;&#x5757;&#x7684;&#x5BF9;&#x8C61;&#x524D;&#x7F00;&#x662F;file&#xFF0C;&#x4F8B;&#x5982; file.readFile()&#x8FD9;&#x6837;&#x8C03;&#x7528;</li>
+<li>EasyClick &#x4F7F;&#x7528;WebView&#x652F;&#x6491;HTML&#x7684;UI&#x65B9;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x6269;&#x5C55;&#x4E86;JS&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;EC&#x7A0B;&#x5E8F;&#x3002;</li>
+<li>&#x65B0;&#x5EFA;&#x5DE5;&#x7A0B;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x9009;&#x62E9;QQ FrozenUI&#x6A21;&#x677F;&#x6216;&#x8005;&#x5FAE;&#x4FE1;&#x7684;WEUI&#x6A21;&#x677F;</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x7F16;&#x5199;&#x7CBE;&#x7F8E;&#x7684;HTML&#x9875;&#x9762;&#xFF0C;&#x66F4;&#x591A;JS&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;&#x8BF7;&#x53C2;&#x8003;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x7528;&#x6CD5;</li>
 </ul>
-<h1 id="&#x51FD;&#x6570;"><a name="&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x51FD;&#x6570;</h1>
-<h2 id="filereadfile"><a name="filereadfile" class="anchor-navigation-ex-anchor" href="#filereadfile"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. file.readFile</h2>
-<ul>
-<li>&#x5C06;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;</li>
-<li>@param path &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
-<li>@return &#x5B57;&#x7B26;&#x4E32;</li>
-</ul>
+<h1 id="&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;"><a name="&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;" class="anchor-navigation-ex-anchor" href="#&#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x591A;tab&#x6807;&#x7B7E;&#x652F;&#x6301;</h1>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x591A;tab&#x652F;&#x6301;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x5DE5;&#x7A0B;&#x7684;layout&#x5DE5;&#x7A0B;&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;tab.ini&#x6587;&#x4EF6;&#x5373;&#x53EF;
+&#x5185;&#x5BB9;&#x662F; tab&#x540D;&#x79F0;=&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982;</p>
 <blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> data = file.readFile(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-    toast(data);
-}
-main();
+<pre><code class="lang-ini">&#x53C2;&#x6570;&#x914D;&#x7F6E;=main.html
+&#x6CE8;&#x518C;&#x4F7F;&#x7528;=reg.html
+&#x4F7F;&#x7528;&#x8BF4;&#x660E;=intr.html
 </code></pre>
 </blockquote>
-<h2 id="filewritefile"><a name="filewritefile" class="anchor-navigation-ex-anchor" href="#filewritefile"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. file.writeFile</h2>
+<h1 id="&#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x65B9;&#x6CD5;"><a name="&#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x65B9;&#x6CD5;</h1>
 <ul>
-<li>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5230;&#x6587;&#x4EF6;&#x4E2D;</li>
-<li>@param data &#x5B57;&#x7B26;&#x4E32; &#x6570;&#x636E;</li>
-<li>@param path &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x6269;&#x5C55;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x7F51;&#x9875;&#x548C;EC&#x7A0B;&#x5E8F;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x8C03;&#x7528;&#x624D;&#x884C;</li>
 </ul>
+<h2 id="&#x542F;&#x52A8;&#x811A;&#x672C;"><a name="&#x542F;&#x52A8;&#x811A;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x542F;&#x52A8;&#x811A;&#x672C;</h2>
 <blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> data=<span class="hljs-string">&quot;Test&quot;</span>;
-    file.writeFile(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-}
-main();
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.ec.start()
 </code></pre>
 </blockquote>
-<h2 id="filecreate"><a name="filecreate" class="anchor-navigation-ex-anchor" href="#filecreate"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. file.create</h2>
-<ul>
-<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;</li>
-<li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x521B;&#x5EFA;&#x6210;&#x529F;</li>
-</ul>
+<h2 id="&#x9690;&#x85CF;&#x5F00;&#x59CB;&#x6309;&#x94AE;"><a name="&#x9690;&#x85CF;&#x5F00;&#x59CB;&#x6309;&#x94AE;" class="anchor-navigation-ex-anchor" href="#&#x9690;&#x85CF;&#x5F00;&#x59CB;&#x6309;&#x94AE;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x9690;&#x85CF;&#x5F00;&#x59CB;&#x6309;&#x94AE;</h2>
 <blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> create=file.create(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-    toast(create);
-}
-main();
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.ec.hideStartBtn()
 </code></pre>
 </blockquote>
-<h2 id="filereadassets"><a name="filereadassets" class="anchor-navigation-ex-anchor" href="#filereadassets"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. file.readAssets</h2>
-<ul>
-<li>&#x4ECE;APK&#x7684;assets&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;</li>
-<li>@param path assets&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x4F8B;&#x5982; data/a.txt</li>
-<li>@return &#x5B57;&#x7B26;&#x4E32;</li>
-</ul>
+<h2 id="&#x663E;&#x793A;&#x5F00;&#x59CB;&#x6309;&#x94AE;"><a name="&#x663E;&#x793A;&#x5F00;&#x59CB;&#x6309;&#x94AE;" class="anchor-navigation-ex-anchor" href="#&#x663E;&#x793A;&#x5F00;&#x59CB;&#x6309;&#x94AE;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x663E;&#x793A;&#x5F00;&#x59CB;&#x6309;&#x94AE;</h2>
 <blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> data=file.readAssets(<span class="hljs-string">&quot;data/test.txt&quot;</span>);
-    toast(data);
-}
-main();
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.ec.displayStartBtn()
 </code></pre>
 </blockquote>
-<h2 id="filedeleteallfile"><a name="filedeleteallfile" class="anchor-navigation-ex-anchor" href="#filedeleteallfile"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. file.deleteAllFile</h2>
-<ul>
-<li>&#x5220;&#x9664;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;</li>
-<li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
-</ul>
+<h2 id="&#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;json&#x5B57;&#x7B26;&#x4E32;"><a name="&#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;json&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;json&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x83B7;&#x53D6;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</h2>
 <blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    file.deleteAllFile(<span class="hljs-string">&quot;data/test.txt&quot;</span>);
-}
-main();
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s= <span class="hljs-built_in">window</span>.ec.getConfigJSON();
+alert(s);
 </code></pre>
 </blockquote>
-<h2 id="fileappendline"><a name="fileappendline" class="anchor-navigation-ex-anchor" href="#fileappendline"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. file.appendLine</h2>
-<ul>
-<li>&#x5199;&#x5165;&#x4E00;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x4E2D;,&#x8FFD;&#x52A0;&#x6A21;&#x5F0F;</li>
-<li>@param data &#x884C;&#x6570;&#x636E;</li>
-<li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true&#x4EE3;&#x8868;&#x6210;&#x529F; false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> data=<span class="hljs-string">&quot;sss&quot;</span>;
-    <span class="hljs-keyword">var</span> t=file.appendLine(data,<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-    toast(t);
-}
-main();
+<h2 id="&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;"><a name="&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. &#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s= <span class="hljs-built_in">window</span>.ec.getConfig(<span class="hljs-string">&quot;name&quot;</span>);
+alert(s);
 </code></pre>
 </blockquote>
-</li>
-</ul>
-<h2 id="filereadline"><a name="filereadline" class="anchor-navigation-ex-anchor" href="#filereadline"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. file.readLine</h2>
-<ul>
-<li>&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x884C;&#x53F7;&#x4E0D;&#x5BF9;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x7A7A;</li>
-<li>@param path   &#x8DEF;&#x5F84;</li>
-<li>@param lineNo &#x884C;&#x53F7;</li>
-<li>@return &#x5B57;&#x7B26;&#x4E32; &#x8FD4;&#x56DE;&#x4E00;&#x884C;&#x5B57;&#x7B26;&#x4E32;<blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> t=file.readLine(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>,<span class="hljs-number">1</span>);
-    toast(t);
-}
-main();
+<h2 id="&#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x914D;&#x7F6E;"><a name="&#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>3.6. &#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x914D;&#x7F6E;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s= <span class="hljs-built_in">window</span>.ec.save(<span class="hljs-string">&quot;name&quot;</span>,<span class="hljs-string">&quot;123&quot;</span>);
+alert(s);
+</code></pre>
+<p>window.ec.saveConfig(&quot;name&quot;, name);</p>
+</blockquote>
+<h2 id="&#x6253;&#x5F00;ec&#x7684;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;"><a name="&#x6253;&#x5F00;ec&#x7684;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x5F00;ec&#x7684;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>3.7. &#x6253;&#x5F00;EC&#x7684;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.ec.openECSystemSetting()
 </code></pre>
 </blockquote>
-</li>
-</ul>
-<h2 id="filereadalllines"><a name="filereadalllines" class="anchor-navigation-ex-anchor" href="#filereadalllines"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. file.readAllLines</h2>
-<ul>
-<li>&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;</li>
-<li>@param path   &#x8DEF;&#x5F84;</li>
-<li>@return &#x5B57;&#x7B26;&#x4E32;<blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> t=file.readAllLines(<span class="hljs-string">&quot;/sdcard/test.txt&quot;</span>);
-    toast(t);
-}
-main();
+<h2 id="&#x663E;&#x793A;toast&#x6D88;&#x606F;"><a name="&#x663E;&#x793A;toast&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x663E;&#x793A;toast&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.8. &#x663E;&#x793A;Toast&#x6D88;&#x606F;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.ec.toast(<span class="hljs-string">&quot;&#x6211;&#x662F;toast&#x6D88;&#x606F;&quot;</span>)
 </code></pre>
 </blockquote>
-</li>
-</ul>
-<h2 id="filemkdirs"><a name="filemkdirs" class="anchor-navigation-ex-anchor" href="#filemkdirs"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. file.mkdirs</h2>
-<ul>
-<li>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x5939;</li>
-<li>@param path   &#x8DEF;&#x5F84;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> t=file.mkdirs(<span class="hljs-string">&quot;/sdcard/testdir/&quot;</span>);
-    toast(t);
-}
-main();
+<h2 id="&#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x6A21;&#x5F0F;"><a name="&#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.9. &#x662F;&#x5426;&#x662F;&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x6A21;&#x5F0F;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s = <span class="hljs-built_in">window</span>.ec.isAccMode();
+alert(s);
 </code></pre>
 </blockquote>
-</li>
-</ul>
-<h2 id="fileexists"><a name="fileexists" class="anchor-navigation-ex-anchor" href="#fileexists"><i class="fa fa-link" aria-hidden="true"></i></a>2.10. file.exists</h2>
-<ul>
-<li>&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;&#x662F;&#x5426;&#x5B58;&#x5728;</li>
-<li>@param path   &#x8DEF;&#x5F84;</li>
-<li>@return &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
-<pre><code class="lang-javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> t=file.exists(<span class="hljs-string">&quot;/sdcard/testdir/&quot;</span>);
-    toast(t);
-}
-main();
+<h2 id="&#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6A21;&#x5F0F;"><a name="&#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.10. &#x662F;&#x5426;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6A21;&#x5F0F;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s = <span class="hljs-built_in">window</span>.ec.isAgentMode();
+alert(s);
 </code></pre>
 </blockquote>
-</li>
-</ul>
+<h2 id="&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;"><a name="&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>3.11. &#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s = <span class="hljs-built_in">window</span>.ec.isAccServiceOk();
+alert(s);
+</code></pre>
+</blockquote>
+<h2 id="&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;"><a name="&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>3.12. &#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s = <span class="hljs-built_in">window</span>.ec.isAgentServiceOk();
+alert(s);
+</code></pre>
+</blockquote>
+<h2 id="&#x542F;&#x52A8;&#x670D;&#x52A1;&#x73AF;&#x5883;"><a name="&#x542F;&#x52A8;&#x670D;&#x52A1;&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x670D;&#x52A1;&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>3.13. &#x542F;&#x52A8;&#x670D;&#x52A1;&#x73AF;&#x5883;</h2>
+<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> s = <span class="hljs-built_in">window</span>.ec.startEnv();
+alert(s);
+</code></pre>
+</blockquote>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -911,12 +847,12 @@ main();
 
             
                 
-                <a href="device-api.html" class="navigation navigation-prev " aria-label="Previous page: 设备函数">
+                <a href="ui/webview.html" class="navigation navigation-prev " aria-label="Previous page: WebView内嵌浏览器">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="http-api.html" class="navigation navigation-next " aria-label="Next page: 网络函数">
+                <a href="plugin/plugins.html" class="navigation navigation-next " aria-label="Next page: 插件开发">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -927,7 +863,7 @@ main();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"文件函数","level":"1.6.8","depth":2,"next":{"title":"网络函数","level":"1.6.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},"previous":{"title":"设备函数","level":"1.6.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/file-api.md","mtime":"2020-04-10T06:50:01.978Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T02:05:03.892Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"H5 UI定制","level":"1.8","depth":1,"next":{"title":"插件开发","level":"1.9","depth":1,"path":"zh-cn/funcs/plugin/plugins.md","ref":"zh-cn/funcs/plugin/plugins.md","articles":[]},"previous":{"title":"WebView内嵌浏览器","level":"1.7.13","depth":2,"path":"zh-cn/funcs/ui/webview.md","ref":"zh-cn/funcs/ui/webview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/html-ui-custom.md","mtime":"2020-04-13T01:40:34.881Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T02:05:03.892Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
