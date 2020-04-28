@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Shell命令函数 · EasyClick开发文档</title>
+        <title>Sqlite命令函数 · EasyClick开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="sqlite-api.html" />
+    <link rel="next" href="ui-custom.html" />
     
     
-    <link rel="prev" href="utils-api.html" />
+    <link rel="prev" href="shell-api.html" />
     
 
     
@@ -410,7 +410,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.12" data-path="shell-api.html">
+        <li class="chapter " data-level="1.6.12" data-path="shell-api.html">
             
                 <a href="shell-api.html">
             
@@ -423,7 +423,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.13" data-path="sqlite-api.html">
+        <li class="chapter active" data-level="1.6.13" data-path="sqlite-api.html">
             
                 <a href="sqlite-api.html">
             
@@ -1035,7 +1035,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Shell命令函数</a>
+        <a href="../.." >Sqlite命令函数</a>
     </h1>
 </div>
 
@@ -1050,63 +1050,180 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><ul><li><span class="title-icon "></span><a href="#shellinstallapp"><b>1.1. </b>shell.installApp</a></li><li><span class="title-icon "></span><a href="#shelluninstallapp"><b>1.2. </b>shell.uninstallApp</a></li><li><span class="title-icon "></span><a href="#shellstopapp"><b>1.3. </b>shell.stopApp</a></li><li><span class="title-icon "></span><a href="#shellexeccommand"><b>1.4. </b>shell.execCommand</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;"><b>2. </b>&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#sqliteconnectorcreatedb-&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;"><b>2.1. </b>sqlite.connectOrCreateDb &#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#sqlitecreatetable-&#x521B;&#x5EFA;&#x8868;"><b>2.2. </b>sqlite.createTable &#x521B;&#x5EFA;&#x8868;</a></li><li><span class="title-icon "></span><a href="#sqliteinsert-&#x63D2;&#x5165;&#x6570;&#x636E;"><b>2.3. </b>sqlite.insert &#x63D2;&#x5165;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#sqliteupdate-&#x66F4;&#x65B0;&#x6570;&#x636E;"><b>2.4. </b>sqlite.update &#x66F4;&#x65B0;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#sqlitequery-&#x67E5;&#x8BE2;&#x6570;&#x636E;"><b>2.5. </b>sqlite.query &#x67E5;&#x8BE2;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#sqlitedelete-&#x5220;&#x9664;&#x6570;&#x636E;"><b>2.6. </b>sqlite.delete &#x5220;&#x9664;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#sqliteexecsql-&#x6267;&#x884C;sql"><b>2.7. </b>sqlite.execSql &#x6267;&#x884C;sql</a></li><li><span class="title-icon "></span><a href="#sqlitedropdatabase-&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;"><b>2.8. </b>sqlite.dropDatabase &#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#sqlitedroptable-&#x5220;&#x9664;&#x8868;"><b>2.9. </b>sqlite.dropTable &#x5220;&#x9664;&#x8868;</a></li><li><span class="title-icon "></span><a href="#sqliteclose-&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;"><b>2.10. </b>sqlite.close &#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
 <ul>
-<li>&#x4EE3;&#x7406;&#x6A21;&#x5F0F;&#x4E0B;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6237;&#x6267;&#x884C;shell&#x547D;&#x4EE4;</li>
-<li>shell&#x6A21;&#x5757;&#x7684;&#x5BF9;&#x8C61;&#x524D;&#x7F00;&#x662F;shell&#xFF0C;&#x4F8B;&#x5982; shell.installApp()&#x8FD9;&#x6837;&#x8C03;&#x7528;</li>
+<li>sqlite&#x6A21;&#x5757;&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x4E8E;&#x64CD;&#x4F5C;sqlite&#x6570;&#x636E;&#x5E93;</li>
+<li>sqlite&#x6A21;&#x5757;&#x7684;&#x5BF9;&#x8C61;&#x524D;&#x7F00;&#x662F;sqlite&#xFF0C;&#x4F8B;&#x5982; sqlite.close()&#x8FD9;&#x6837;&#x8C03;&#x7528;</li>
+<li>sqlite &#x6559;&#x7A0B;&#xFF1A;<a href="https://www.runoob.com/sqlite/sqlite-tutorial.html" target="_blank">https://www.runoob.com/sqlite/sqlite-tutorial.html</a></li>
 </ul>
-<h2 id="shellinstallapp"><a name="shellinstallapp" class="anchor-navigation-ex-anchor" href="#shellinstallapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. shell.installApp</h2>
+<h1 id="&#x51FD;&#x6570;"><a name="&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x51FD;&#x6570;</h1>
+<h2 id="sqliteconnectorcreatedb-&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;"><a name="sqliteconnectorcreatedb-&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#sqliteconnectorcreatedb-&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. sqlite.connectOrCreateDb &#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;</h2>
 <ul>
-<li>&#x5B89;&#x88C5; apk</li>
-<li>@param path &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
-<li>@return true &#x4EE3;&#x8868;&#x5B89;&#x88C5;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5B89;&#x88C5;&#x5931;&#x8D25;</li>
+<li>&#x521B;&#x5EFA;&#x6216;&#x8005;&#x94FE;&#x63A5;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;</li>
+<li>@param dbName &#x6570;&#x636E;&#x5E93;&#x540D;&#x79F0;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
 </ul>
 <blockquote>
 <pre><code class="lang-javascript">
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> result = shell.installApp(<span class="hljs-string">&quot;/sdcard/app.apk&quot;</span>);
+    <span class="hljs-keyword">var</span> create = sqlite.connectOrCreateDb(<span class="hljs-string">&quot;test.db&quot;</span>);
+    logd(<span class="hljs-string">&quot;create db result&#xFF1A;&quot;</span>+create);
 }
 main();
 </code></pre>
 </blockquote>
-<h2 id="shelluninstallapp"><a name="shelluninstallapp" class="anchor-navigation-ex-anchor" href="#shelluninstallapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. shell.uninstallApp</h2>
+<h2 id="sqlitecreatetable-&#x521B;&#x5EFA;&#x8868;"><a name="sqlitecreatetable-&#x521B;&#x5EFA;&#x8868;" class="anchor-navigation-ex-anchor" href="#sqlitecreatetable-&#x521B;&#x5EFA;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. sqlite.createTable &#x521B;&#x5EFA;&#x8868;</h2>
 <ul>
-<li>&#x5378;&#x8F7D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</li>
-<li>@param packageName &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5305;&#x540D;</li>
-<li>@return true &#x4EE3;&#x8868;&#x5378;&#x8F7D;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5378;&#x8F7D;&#x5931;&#x8D25;</li>
+<li>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;</li>
+<li>@param tableName &#x8868;&#x540D;&#x79F0;</li>
+<li>@param columns &#x5217;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982; [&quot;name&quot;,&quot;pwd&quot;]</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
 </ul>
 <blockquote>
 <pre><code class="lang-javascript">
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> result = shell.uninstallApp(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> columns=[<span class="hljs-string">&quot;name&quot;</span>,<span class="hljs-string">&quot;pwd&quot;</span>];
+    <span class="hljs-keyword">var</span> createTable = sqlite.createTable(tableName,columns);
+    logd(<span class="hljs-string">&quot;createTable result&#xFF1A;&quot;</span>+createTable);
 }
 main();
 </code></pre>
 </blockquote>
-<h2 id="shellstopapp"><a name="shellstopapp" class="anchor-navigation-ex-anchor" href="#shellstopapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. shell.stopApp</h2>
+<h2 id="sqliteinsert-&#x63D2;&#x5165;&#x6570;&#x636E;"><a name="sqliteinsert-&#x63D2;&#x5165;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#sqliteinsert-&#x63D2;&#x5165;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. sqlite.insert &#x63D2;&#x5165;&#x6570;&#x636E;</h2>
 <ul>
-<li>&#x505C;&#x6B62;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x5E94;&#x7528;</li>
-<li>@param packageName &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5305;&#x540D;</li>
-<li>@return true &#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF0C;false &#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+<li>&#x63D2;&#x5165;&#x6570;&#x636E;</li>
+<li>@param tableName &#x8868;&#x540D;</li>
+<li>@param map &#x6570;&#x636E;&#x7684;map&#x8868;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
 </ul>
 <blockquote>
 <pre><code class="lang-javascript">
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> result = shell.stopApp(<span class="hljs-string">&quot;com.ss.android.article.news&quot;</span>);
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> map={
+            <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;&#x6211;&#x662F;&#x540D;&#x79F0;&quot;</span>,
+            <span class="hljs-string">&quot;pwd&quot;</span>:<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5BC6;&#x7801;&quot;</span>
+            };
+    <span class="hljs-keyword">var</span> insert = sqlite.insert(tableName,map);
+    logd(<span class="hljs-string">&quot;insert result&#xFF1A;&quot;</span>+insert);
 }
 main();
 </code></pre>
 </blockquote>
-<h2 id="shellexeccommand"><a name="shellexeccommand" class="anchor-navigation-ex-anchor" href="#shellexeccommand"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. shell.execCommand</h2>
+<h2 id="sqliteupdate-&#x66F4;&#x65B0;&#x6570;&#x636E;"><a name="sqliteupdate-&#x66F4;&#x65B0;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#sqliteupdate-&#x66F4;&#x65B0;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. sqlite.update &#x66F4;&#x65B0;&#x6570;&#x636E;</h2>
 <ul>
-<li>&#x6267;&#x884C;Shell&#x547D;&#x4EE4;</li>
-<li>@param command &#x547D;&#x4EE4;&#xFF0C;&#x4F8B;&#x5982;&#x5B89;&#x88C5;App &#xFF1A; pm install /sdcard/app.apk</li>
-<li>@return &#x547D;&#x4EE4;&#x6267;&#x884C;&#x540E;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x679C;</li>
+<li>&#x66F4;&#x65B0;&#x6570;&#x636E;</li>
+<li>@param tablename &#x8868;&#x540D;&#x79F0;</li>
+<li>@param map &#x6570;&#x636E;&#x7684;map&#x8868;</li>
+<li>@param where &#x6761;&#x4EF6;&#x8BED;&#x53E5;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
 </ul>
 <blockquote>
 <pre><code class="lang-javascript">
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-keyword">var</span> result = shell.execCommand(<span class="hljs-string">&quot;pm install /sdcard/app.apk&quot;</span>);
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> map={
+            <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;&#x6211;&#x662F;&#x540D;&#x79F0;22&quot;</span>
+            };
+    <span class="hljs-keyword">var</span> where=<span class="hljs-string">&quot;id&gt;3&quot;</span>;
+    <span class="hljs-keyword">var</span> update = sqlite.update(tableName,map,where);
+    logd(<span class="hljs-string">&quot;update result&#xFF1A;&quot;</span>+update);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="sqlitequery-&#x67E5;&#x8BE2;&#x6570;&#x636E;"><a name="sqlitequery-&#x67E5;&#x8BE2;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#sqlitequery-&#x67E5;&#x8BE2;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. sqlite.query &#x67E5;&#x8BE2;&#x6570;&#x636E;</h2>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x6570;&#x636E;</li>
+<li>@param sql sql&#x8BED;&#x53E5;</li>
+<li>@return JSON | &#x6570;&#x636E;&#x96C6;&#x5408;&#x5BF9;&#x8C61;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> sql=<span class="hljs-string">&quot;select * from &quot;</span>+tableName;
+    <span class="hljs-keyword">var</span> data = sqlite.query(sql);
+    logd(<span class="hljs-string">&quot;data result&#xFF1A;&quot;</span>+<span class="hljs-built_in">JSON</span>.stringify(data));
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="sqlitedelete-&#x5220;&#x9664;&#x6570;&#x636E;"><a name="sqlitedelete-&#x5220;&#x9664;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#sqlitedelete-&#x5220;&#x9664;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. sqlite.delete &#x5220;&#x9664;&#x6570;&#x636E;</h2>
+<ul>
+<li>&#x5220;&#x9664;&#x6570;&#x636E;</li>
+<li>@param sql sql&#x8BED;&#x53E5;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> sql=<span class="hljs-string">&quot;delete from &quot;</span>+tableName+<span class="hljs-string">&quot; where id&gt;3;&quot;</span>;
+    <span class="hljs-keyword">var</span> result = sqlite.delete(sql);
+    logd(<span class="hljs-string">&quot;delete result&#xFF1A;&quot;</span>+ result);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="sqliteexecsql-&#x6267;&#x884C;sql"><a name="sqliteexecsql-&#x6267;&#x884C;sql" class="anchor-navigation-ex-anchor" href="#sqliteexecsql-&#x6267;&#x884C;sql"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. sqlite.execSql &#x6267;&#x884C;sql</h2>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x6570;&#x636E;</li>
+<li>@param sql sql&#x8BED;&#x53E5;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> sql=<span class="hljs-string">&quot;delete from &quot;</span>+tableName+<span class="hljs-string">&quot; where id&gt;3;&quot;</span>;
+    <span class="hljs-keyword">var</span> result = sqlite.execSql(sql);
+    logd(<span class="hljs-string">&quot;execSql result&#xFF1A;&quot;</span>+ result);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="sqlitedropdatabase-&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;"><a name="sqlitedropdatabase-&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#sqlitedropdatabase-&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. sqlite.dropDatabase &#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</h2>
+<ul>
+<li>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = sqlite.dropDatabase();
+    logd(<span class="hljs-string">&quot;dropDatabase result&#xFF1A;&quot;</span>+ result);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="sqlitedroptable-&#x5220;&#x9664;&#x8868;"><a name="sqlitedroptable-&#x5220;&#x9664;&#x8868;" class="anchor-navigation-ex-anchor" href="#sqlitedroptable-&#x5220;&#x9664;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. sqlite.dropTable &#x5220;&#x9664;&#x8868;</h2>
+<ul>
+<li>&#x5220;&#x9664;&#x8868;
+@param table &#x8868;&#x540D;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> tableName=<span class="hljs-string">&quot;tbl_user&quot;</span>;
+    <span class="hljs-keyword">var</span> result = sqlite.dropTable(tableName);
+    logd(<span class="hljs-string">&quot;dropTable result&#xFF1A;&quot;</span>+ result);
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="sqliteclose-&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;"><a name="sqliteclose-&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;" class="anchor-navigation-ex-anchor" href="#sqliteclose-&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>2.10. sqlite.close &#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;</h2>
+<ul>
+<li>&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;</li>
+<li>@return boolean true &#x4EE3;&#x8868;&#x8BF7;&#x6C42;&#x6743;&#x9650;&#x6210;&#x529F;&#xFF0C;false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> result = sqlite.close();
+    logd(<span class="hljs-string">&quot;close result&#xFF1A;&quot;</span>+ result);
 }
 main();
 </code></pre>
@@ -1139,12 +1256,12 @@ main();
 
             
                 
-                <a href="utils-api.html" class="navigation navigation-prev " aria-label="Previous page: 常用工具函数">
+                <a href="shell-api.html" class="navigation navigation-prev " aria-label="Previous page: Shell命令函数">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="sqlite-api.html" class="navigation navigation-next " aria-label="Next page: Sqlite命令函数">
+                <a href="ui-custom.html" class="navigation navigation-next " aria-label="Next page: 原生UI定制">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1155,7 +1272,7 @@ main();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Shell命令函数","level":"1.6.12","depth":2,"next":{"title":"Sqlite命令函数","level":"1.6.13","depth":2,"path":"zh-cn/funcs/sqlite-api.md","ref":"zh-cn/funcs/sqlite-api.md","articles":[]},"previous":{"title":"常用工具函数","level":"1.6.11","depth":2,"path":"zh-cn/funcs/utils-api.md","ref":"zh-cn/funcs/utils-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/shell-api.md","mtime":"2020-04-14T01:27:43.459Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-28T09:50:25.215Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sqlite命令函数","level":"1.6.13","depth":2,"next":{"title":"原生UI定制","level":"1.7","depth":1,"path":"zh-cn/funcs/ui-custom.md","ref":"zh-cn/funcs/ui-custom.md","articles":[{"title":"LinearLayout线性布局","level":"1.7.1","depth":2,"path":"zh-cn/funcs/ui/linearlayout.md","ref":"zh-cn/funcs/ui/linearlayout.md","articles":[]},{"title":"FrameLayout帧布局","level":"1.7.2","depth":2,"path":"zh-cn/funcs/ui/framelayout.md","ref":"zh-cn/funcs/ui/framelayout.md","articles":[]},{"title":"RelativeLayout绝对布局","level":"1.7.3","depth":2,"path":"zh-cn/funcs/ui/relativelayout.md","ref":"zh-cn/funcs/ui/relativelayout.md","articles":[]},{"title":"ScrollView滚动框","level":"1.7.4","depth":2,"path":"zh-cn/funcs/ui/scrollview.md","ref":"zh-cn/funcs/ui/scrollview.md","articles":[]},{"title":"View视图","level":"1.7.5","depth":2,"path":"zh-cn/funcs/ui/view.md","ref":"zh-cn/funcs/ui/view.md","articles":[]},{"title":"Button按钮","level":"1.7.6","depth":2,"path":"zh-cn/funcs/ui/button.md","ref":"zh-cn/funcs/ui/button.md","articles":[]},{"title":"TextView文本","level":"1.7.7","depth":2,"path":"zh-cn/funcs/ui/textview.md","ref":"zh-cn/funcs/ui/textview.md","articles":[]},{"title":"EditText输入框","level":"1.7.8","depth":2,"path":"zh-cn/funcs/ui/edittext.md","ref":"zh-cn/funcs/ui/edittext.md","articles":[]},{"title":"CheckBox复选框","level":"1.7.9","depth":2,"path":"zh-cn/funcs/ui/checkbox.md","ref":"zh-cn/funcs/ui/checkbox.md","articles":[]},{"title":"RadioGroup布局","level":"1.7.10","depth":2,"path":"zh-cn/funcs/ui/radiogroup.md","ref":"zh-cn/funcs/ui/radiogroup.md","articles":[]},{"title":"RadioButton单选框","level":"1.7.11","depth":2,"path":"zh-cn/funcs/ui/radiobutton.md","ref":"zh-cn/funcs/ui/radiobutton.md","articles":[]},{"title":"Spinner下拉选择框","level":"1.7.12","depth":2,"path":"zh-cn/funcs/ui/spinner.md","ref":"zh-cn/funcs/ui/spinner.md","articles":[]},{"title":"WebView内嵌浏览器","level":"1.7.13","depth":2,"path":"zh-cn/funcs/ui/webview.md","ref":"zh-cn/funcs/ui/webview.md","articles":[]}]},"previous":{"title":"Shell命令函数","level":"1.6.12","depth":2,"path":"zh-cn/funcs/shell-api.md","ref":"zh-cn/funcs/shell-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/sqlite-api.md","mtime":"2020-04-27T02:20:25.285Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-28T09:50:25.215Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

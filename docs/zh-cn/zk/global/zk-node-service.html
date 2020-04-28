@@ -1,0 +1,1395 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>节点服务接口 · EasyClick开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="zk-global-click.html" />
+    
+    
+    <link rel="prev" href="zk-global-log.html" />
+    
+
+    
+        <link rel="shortcut icon" href="/zh-cn/images/ico.png" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/zh-cn/images/ico.png">
+    
+    
+        
+    
+    
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../features.html">
+            
+                <a href="../../features.html">
+            
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../changelog.html">
+            
+                <a href="../../changelog.html">
+            
+                    
+                    更改记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../getting-start.html">
+            
+                <a href="../../getting-start.html">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../funcs/devtools/dev-tools.html">
+            
+                <a href="../../funcs/devtools/dev-tools.html">
+            
+                    
+                    开发工具介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../funcs/devtools/dev-tools-install.html">
+            
+                <a href="../../funcs/devtools/dev-tools-install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../funcs/devtools/dev-tools-project.html">
+            
+                <a href="../../funcs/devtools/dev-tools-project.html">
+            
+                    
+                    工程相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../funcs/devtools/dev-tools-device.html">
+            
+                <a href="../../funcs/devtools/dev-tools-device.html">
+            
+                    
+                    设备相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../funcs/devtools/dev-tools-screen.html">
+            
+                <a href="../../funcs/devtools/dev-tools-screen.html">
+            
+                    
+                    屏幕相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../funcs/devtools/dev-tools-settings.html">
+            
+                <a href="../../funcs/devtools/dev-tools-settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../funcs.html">
+            
+                <a href="../../funcs.html">
+            
+                    
+                    功能函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../funcs/global/global.html">
+            
+                <a href="../../funcs/global/global.html">
+            
+                    
+                    全局模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../funcs/global/global-shortcut.html">
+            
+                <a href="../../funcs/global/global-shortcut.html">
+            
+                    
+                    全局快捷事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../funcs/global/selector-node.html">
+            
+                <a href="../../funcs/global/selector-node.html">
+            
+                    
+                    选择器&节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../funcs/acevent-api.html">
+            
+                <a href="../../funcs/acevent-api.html">
+            
+                    
+                    无障碍事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../funcs/event-api.html">
+            
+                <a href="../../funcs/event-api.html">
+            
+                    
+                    代理事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../funcs/image-api.html">
+            
+                <a href="../../funcs/image-api.html">
+            
+                    
+                    图色函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../funcs/device-api.html">
+            
+                <a href="../../funcs/device-api.html">
+            
+                    
+                    设备函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../funcs/file-api.html">
+            
+                <a href="../../funcs/file-api.html">
+            
+                    
+                    文件函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../funcs/http-api.html">
+            
+                <a href="../../funcs/http-api.html">
+            
+                    
+                    网络函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../funcs/thread-api.html">
+            
+                <a href="../../funcs/thread-api.html">
+            
+                    
+                    线程函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../funcs/utils-api.html">
+            
+                <a href="../../funcs/utils-api.html">
+            
+                    
+                    常用工具函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../../funcs/shell-api.html">
+            
+                <a href="../../funcs/shell-api.html">
+            
+                    
+                    Shell命令函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../../funcs/sqlite-api.html">
+            
+                <a href="../../funcs/sqlite-api.html">
+            
+                    
+                    Sqlite命令函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../funcs/ui-custom.html">
+            
+                <a href="../../funcs/ui-custom.html">
+            
+                    
+                    原生UI定制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../funcs/ui/linearlayout.html">
+            
+                <a href="../../funcs/ui/linearlayout.html">
+            
+                    
+                    LinearLayout线性布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../funcs/ui/framelayout.html">
+            
+                <a href="../../funcs/ui/framelayout.html">
+            
+                    
+                    FrameLayout帧布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../funcs/ui/relativelayout.html">
+            
+                <a href="../../funcs/ui/relativelayout.html">
+            
+                    
+                    RelativeLayout绝对布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../funcs/ui/scrollview.html">
+            
+                <a href="../../funcs/ui/scrollview.html">
+            
+                    
+                    ScrollView滚动框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../funcs/ui/view.html">
+            
+                <a href="../../funcs/ui/view.html">
+            
+                    
+                    View视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../funcs/ui/button.html">
+            
+                <a href="../../funcs/ui/button.html">
+            
+                    
+                    Button按钮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../funcs/ui/textview.html">
+            
+                <a href="../../funcs/ui/textview.html">
+            
+                    
+                    TextView文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../../funcs/ui/edittext.html">
+            
+                <a href="../../funcs/ui/edittext.html">
+            
+                    
+                    EditText输入框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../../funcs/ui/checkbox.html">
+            
+                <a href="../../funcs/ui/checkbox.html">
+            
+                    
+                    CheckBox复选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../../funcs/ui/radiogroup.html">
+            
+                <a href="../../funcs/ui/radiogroup.html">
+            
+                    
+                    RadioGroup布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../../funcs/ui/radiobutton.html">
+            
+                <a href="../../funcs/ui/radiobutton.html">
+            
+                    
+                    RadioButton单选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../../funcs/ui/spinner.html">
+            
+                <a href="../../funcs/ui/spinner.html">
+            
+                    
+                    Spinner下拉选择框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../../funcs/ui/webview.html">
+            
+                <a href="../../funcs/ui/webview.html">
+            
+                    
+                    WebView内嵌浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../funcs/html-ui-custom.html">
+            
+                <a href="../../funcs/html-ui-custom.html">
+            
+                    
+                    H5 UI定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../hot-update.html">
+            
+                <a href="../../hot-update.html">
+            
+                    
+                    热更新功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../zk.html">
+            
+                <a href="../zk.html">
+            
+                    
+                    企业版中控接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../zk-node.html">
+            
+                <a href="../zk-node.html">
+            
+                    
+                    全局节点模块接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1.1" data-path="zk-global-log.html">
+            
+                <a href="zk-global-log.html">
+            
+                    
+                    日志接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.1.2" data-path="zk-node-service.html">
+            
+                <a href="zk-node-service.html">
+            
+                    
+                    节点服务接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.3" data-path="zk-global-click.html">
+            
+                <a href="zk-global-click.html">
+            
+                    
+                    点击动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.4" data-path="zk-global-multitouch.html">
+            
+                <a href="zk-global-multitouch.html">
+            
+                    
+                    多点触摸动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.5" data-path="zk-global-swipe.html">
+            
+                <a href="zk-global-swipe.html">
+            
+                    
+                    滑动动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.6" data-path="zk-global-drag.html">
+            
+                <a href="zk-global-drag.html">
+            
+                    
+                    拖动动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.7" data-path="zk-global-input.html">
+            
+                <a href="zk-global-input.html">
+            
+                    
+                    输入动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.8" data-path="zk-global-node.html">
+            
+                <a href="zk-global-node.html">
+            
+                    
+                    节点操作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.9" data-path="zk-global-systemkey.html">
+            
+                <a href="zk-global-systemkey.html">
+            
+                    
+                    系统按键接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.10" data-path="zk-global-notice.html">
+            
+                <a href="zk-global-notice.html">
+            
+                    
+                    通知栏接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.11" data-path="zk-global-floatview.html">
+            
+                <a href="zk-global-floatview.html">
+            
+                    
+                    悬浮窗接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../zk-agent.html">
+            
+                <a href="../zk-agent.html">
+            
+                    
+                    代理事件模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../zk-image.html">
+            
+                <a href="../zk-image.html">
+            
+                    
+                    图色模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../zk-device.md">
+            
+                <span>
+            
+                    
+                    设备模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../zk-file.md">
+            
+                <span>
+            
+                    
+                    文件模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../zk-http.md">
+            
+                <span>
+            
+                    
+                    网络模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../zk-utils.md">
+            
+                <span>
+            
+                    
+                    常用工具模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../zk-shell.md">
+            
+                <span>
+            
+                    
+                    Shell命令模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../zk-sqlite.md">
+            
+                <span>
+            
+                    
+                    Sqlite模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../funcs/plugin/plugins.html">
+            
+                <a href="../../funcs/plugin/plugins.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../question-answer.html">
+            
+                <a href="../../question-answer.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../agreement.html">
+            
+                <a href="../../agreement.html">
+            
+                    
+                    用户协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../declare.html">
+            
+                <a href="../../declare.html">
+            
+                    
+                    免责声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    技术交流 QQ群：777164022
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >节点服务接口</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;"><b>1. </b>&#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;</a></li><ul><li><span class="title-icon "></span><a href="#exit-&#x9000;&#x51FA;&#x811A;&#x672C;"><b>1.1. </b>exit &#x9000;&#x51FA;&#x811A;&#x672C;</a></li><li><span class="title-icon "></span><a href="#openecsystemsetting-&#x6253;&#x5F00;ec&#x8BBE;&#x7F6E;"><b>1.2. </b>openECSystemSetting &#x6253;&#x5F00;EC&#x8BBE;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#isaccmode-&#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;"><b>1.3. </b>isAccMode &#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#isaccserviceok-&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><b>1.4. </b>isAccServiceOk &#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</a></li><li><span class="title-icon "></span><a href="#isagentmode-&#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;"><b>1.5. </b>isAgentMode &#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#isagentserviceok-&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><b>1.6. </b>isAgentServiceOk &#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</a></li><li><span class="title-icon "></span><a href="#isserviceok-&#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><b>1.7. </b>isServiceOk &#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</a></li><li><span class="title-icon "></span><a href="#startenv-&#x542F;&#x52A8;&#x73AF;&#x5883;"><b>1.8. </b>startEnv &#x542F;&#x52A8;&#x73AF;&#x5883;</a></li><li><span class="title-icon "></span><a href="#setecsystemsetting-&#x8BBE;&#x7F6E;ec&#x7CFB;&#x7EDF;&#x53C2;&#x6570;"><b>1.9. </b>setECSystemSetting &#x8BBE;&#x7F6E;EC&#x7CFB;&#x7EDF;&#x53C2;&#x6570;</a></li></ul></ul></div><a href="#&#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;"><a name="&#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8282;&#x70B9;&#x670D;&#x52A1;&#x76F8;&#x5173;</h1>
+<h2 id="exit-&#x9000;&#x51FA;&#x811A;&#x672C;"><a name="exit-&#x9000;&#x51FA;&#x811A;&#x672C;" class="anchor-navigation-ex-anchor" href="#exit-&#x9000;&#x51FA;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. exit &#x9000;&#x51FA;&#x811A;&#x672C;</h2>
+<ul>
+<li>&#x9000;&#x51FA;&#x811A;&#x672C;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;exit&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="openecsystemsetting-&#x6253;&#x5F00;ec&#x8BBE;&#x7F6E;"><a name="openecsystemsetting-&#x6253;&#x5F00;ec&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#openecsystemsetting-&#x6253;&#x5F00;ec&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. openECSystemSetting &#x6253;&#x5F00;EC&#x8BBE;&#x7F6E;</h2>
+<ul>
+<li>&#x6253;&#x5F00;EC&#x8BBE;&#x7F6E;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;openECSystemSetting&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="isaccmode-&#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;"><a name="isaccmode-&#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#isaccmode-&#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. isAccMode &#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;</h2>
+<ul>
+<li>&#x662F;&#x5426;&#x65E0;&#x969C;&#x788D;&#x6A21;&#x5F0F;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;isAccMode&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="isaccserviceok-&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><a name="isaccserviceok-&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;" class="anchor-navigation-ex-anchor" href="#isaccserviceok-&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. isAccServiceOk &#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</h2>
+<ul>
+<li>&#x65E0;&#x969C;&#x788D;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;isAccServiceOk&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="isagentmode-&#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;"><a name="isagentmode-&#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#isagentmode-&#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. isAgentMode &#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</h2>
+<ul>
+<li>&#x662F;&#x5426;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;isAgentMode&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="isagentserviceok-&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><a name="isagentserviceok-&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;" class="anchor-navigation-ex-anchor" href="#isagentserviceok-&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. isAgentServiceOk &#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</h2>
+<ul>
+<li>&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;isAgentServiceOk&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="isserviceok-&#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><a name="isserviceok-&#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;" class="anchor-navigation-ex-anchor" href="#isserviceok-&#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. isServiceOk &#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</h2>
+<ul>
+<li>&#x8282;&#x70B9;&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF0C;&#x4E0D;&#x533A;&#x5206;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;isServiceOk&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="startenv-&#x542F;&#x52A8;&#x73AF;&#x5883;"><a name="startenv-&#x542F;&#x52A8;&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#startenv-&#x542F;&#x52A8;&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. startEnv &#x542F;&#x52A8;&#x73AF;&#x5883;</h2>
+<ul>
+<li>&#x542F;&#x52A8;&#x73AF;&#x5883;&#xFF0C;&#x6700;&#x597D;&#x5148;&#x6FC0;&#x6D3B;&#x624B;&#x673A;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x73AF;&#x5883;&#xFF0C;&#x4E14;&#x514D;root</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;startEnv&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="setecsystemsetting-&#x8BBE;&#x7F6E;ec&#x7CFB;&#x7EDF;&#x53C2;&#x6570;"><a name="setecsystemsetting-&#x8BBE;&#x7F6E;ec&#x7CFB;&#x7EDF;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#setecsystemsetting-&#x8BBE;&#x7F6E;ec&#x7CFB;&#x7EDF;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. setECSystemSetting &#x8BBE;&#x7F6E;EC&#x7CFB;&#x7EDF;&#x53C2;&#x6570;</h2>
+<ul>
+<li>&#x8BBE;&#x7F6E;EC&#x7CFB;&#x7EDF;&#x53C2;&#x6570;</li>
+<li>@param settings JSON&#x5185;&#x90E8;&#x5C5E;&#x6027;&#x89E3;&#x91CA;:<ul>
+<li>running_mode&#xFF1A;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x503C;&#x4E3A; &#x65E0;&#x969C;&#x788D; &#x6216;&#x8005; &#x4EE3;&#x7406;</li>
+<li>auto_start_service: &#x662F;&#x5426;&#x81EA;&#x542F;&#x52A8;&#x670D;&#x52A1;&#xFF0C;&#x503C;&#x4E3A; &#x662F;&#x6216;&#x8005;&#x5426;</li>
+<li>daemon_service: &#x662F;&#x5426;&#x5B88;&#x62A4;&#x670D;&#x52A1;&#xFF0C;&#x503C;&#x4E3A; &#x662F;&#x6216;&#x8005;&#x5426;</li>
+<li>volume_start_tc: &#x662F;&#x5426;&#x97F3;&#x91CF;&#x952E;&#x542F;&#x52A8;&#x811A;&#x672C;&#xFF0C;&#x503C;&#x4E3A; &#x662F;&#x6216;&#x8005;&#x5426;</li>
+<li>log_float_window: &#x662F;&#x5426;&#x5C55;&#x793A;&#x65E5;&#x5FD7;&#x60AC;&#x6D6E;&#x7A97;&#xFF0C;&#x503C;&#x4E3A; &#x662F;&#x6216;&#x8005;&#x5426;</li>
+</ul>
+</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x662F;&#xFF0C;false&#x4EE3;&#x8868;&#x5426;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;setECSystemSetting&quot;</span>,
+                  <span class="hljs-string">&quot;settings&quot;</span>:{
+                     <span class="hljs-string">&quot;running_mode&quot;</span>:<span class="hljs-string">&quot;&#x65E0;&#x969C;&#x788D;&quot;</span>,
+                     <span class="hljs-string">&quot;log_float_window&quot;</span>:<span class="hljs-string">&quot;&#x662F;&quot;</span>
+                }       
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zk-global-log.html" class="navigation navigation-prev " aria-label="Previous page: 日志接口">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="zk-global-click.html" class="navigation navigation-next " aria-label="Next page: 点击动作接口">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"节点服务接口","level":"1.10.1.2","depth":3,"next":{"title":"点击动作接口","level":"1.10.1.3","depth":3,"path":"zh-cn/zk/global/zk-global-click.md","ref":"zh-cn/zk/global/zk-global-click.md","articles":[]},"previous":{"title":"日志接口","level":"1.10.1.1","depth":3,"path":"zh-cn/zk/global/zk-global-log.md","ref":"zh-cn/zk/global/zk-global-log.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/zk/global/zk-node-service.md","mtime":"2020-04-27T07:51:10.446Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-28T09:50:25.215Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

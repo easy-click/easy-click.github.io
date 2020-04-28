@@ -1,0 +1,1740 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>节点操作接口 · EasyClick开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="zk-global-systemkey.html" />
+    
+    
+    <link rel="prev" href="zk-global-input.html" />
+    
+
+    
+        <link rel="shortcut icon" href="/zh-cn/images/ico.png" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/zh-cn/images/ico.png">
+    
+    
+        
+    
+    
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../features.html">
+            
+                <a href="../../features.html">
+            
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../changelog.html">
+            
+                <a href="../../changelog.html">
+            
+                    
+                    更改记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../getting-start.html">
+            
+                <a href="../../getting-start.html">
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../funcs/devtools/dev-tools.html">
+            
+                <a href="../../funcs/devtools/dev-tools.html">
+            
+                    
+                    开发工具介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../funcs/devtools/dev-tools-install.html">
+            
+                <a href="../../funcs/devtools/dev-tools-install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../funcs/devtools/dev-tools-project.html">
+            
+                <a href="../../funcs/devtools/dev-tools-project.html">
+            
+                    
+                    工程相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../funcs/devtools/dev-tools-device.html">
+            
+                <a href="../../funcs/devtools/dev-tools-device.html">
+            
+                    
+                    设备相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../funcs/devtools/dev-tools-screen.html">
+            
+                <a href="../../funcs/devtools/dev-tools-screen.html">
+            
+                    
+                    屏幕相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../funcs/devtools/dev-tools-settings.html">
+            
+                <a href="../../funcs/devtools/dev-tools-settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../funcs.html">
+            
+                <a href="../../funcs.html">
+            
+                    
+                    功能函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../funcs/global/global.html">
+            
+                <a href="../../funcs/global/global.html">
+            
+                    
+                    全局模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../funcs/global/global-shortcut.html">
+            
+                <a href="../../funcs/global/global-shortcut.html">
+            
+                    
+                    全局快捷事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../funcs/global/selector-node.html">
+            
+                <a href="../../funcs/global/selector-node.html">
+            
+                    
+                    选择器&节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../funcs/acevent-api.html">
+            
+                <a href="../../funcs/acevent-api.html">
+            
+                    
+                    无障碍事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../funcs/event-api.html">
+            
+                <a href="../../funcs/event-api.html">
+            
+                    
+                    代理事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../funcs/image-api.html">
+            
+                <a href="../../funcs/image-api.html">
+            
+                    
+                    图色函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../funcs/device-api.html">
+            
+                <a href="../../funcs/device-api.html">
+            
+                    
+                    设备函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../funcs/file-api.html">
+            
+                <a href="../../funcs/file-api.html">
+            
+                    
+                    文件函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../funcs/http-api.html">
+            
+                <a href="../../funcs/http-api.html">
+            
+                    
+                    网络函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../funcs/thread-api.html">
+            
+                <a href="../../funcs/thread-api.html">
+            
+                    
+                    线程函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../funcs/utils-api.html">
+            
+                <a href="../../funcs/utils-api.html">
+            
+                    
+                    常用工具函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../../funcs/shell-api.html">
+            
+                <a href="../../funcs/shell-api.html">
+            
+                    
+                    Shell命令函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../../funcs/sqlite-api.html">
+            
+                <a href="../../funcs/sqlite-api.html">
+            
+                    
+                    Sqlite命令函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../funcs/ui-custom.html">
+            
+                <a href="../../funcs/ui-custom.html">
+            
+                    
+                    原生UI定制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../funcs/ui/linearlayout.html">
+            
+                <a href="../../funcs/ui/linearlayout.html">
+            
+                    
+                    LinearLayout线性布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../funcs/ui/framelayout.html">
+            
+                <a href="../../funcs/ui/framelayout.html">
+            
+                    
+                    FrameLayout帧布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../funcs/ui/relativelayout.html">
+            
+                <a href="../../funcs/ui/relativelayout.html">
+            
+                    
+                    RelativeLayout绝对布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../funcs/ui/scrollview.html">
+            
+                <a href="../../funcs/ui/scrollview.html">
+            
+                    
+                    ScrollView滚动框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../funcs/ui/view.html">
+            
+                <a href="../../funcs/ui/view.html">
+            
+                    
+                    View视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../funcs/ui/button.html">
+            
+                <a href="../../funcs/ui/button.html">
+            
+                    
+                    Button按钮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../funcs/ui/textview.html">
+            
+                <a href="../../funcs/ui/textview.html">
+            
+                    
+                    TextView文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../../funcs/ui/edittext.html">
+            
+                <a href="../../funcs/ui/edittext.html">
+            
+                    
+                    EditText输入框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../../funcs/ui/checkbox.html">
+            
+                <a href="../../funcs/ui/checkbox.html">
+            
+                    
+                    CheckBox复选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../../funcs/ui/radiogroup.html">
+            
+                <a href="../../funcs/ui/radiogroup.html">
+            
+                    
+                    RadioGroup布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../../funcs/ui/radiobutton.html">
+            
+                <a href="../../funcs/ui/radiobutton.html">
+            
+                    
+                    RadioButton单选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../../funcs/ui/spinner.html">
+            
+                <a href="../../funcs/ui/spinner.html">
+            
+                    
+                    Spinner下拉选择框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../../funcs/ui/webview.html">
+            
+                <a href="../../funcs/ui/webview.html">
+            
+                    
+                    WebView内嵌浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../funcs/html-ui-custom.html">
+            
+                <a href="../../funcs/html-ui-custom.html">
+            
+                    
+                    H5 UI定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../hot-update.html">
+            
+                <a href="../../hot-update.html">
+            
+                    
+                    热更新功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../zk.html">
+            
+                <a href="../zk.html">
+            
+                    
+                    企业版中控接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../zk-node.html">
+            
+                <a href="../zk-node.html">
+            
+                    
+                    全局节点模块接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1.1" data-path="zk-global-log.html">
+            
+                <a href="zk-global-log.html">
+            
+                    
+                    日志接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.2" data-path="zk-node-service.html">
+            
+                <a href="zk-node-service.html">
+            
+                    
+                    节点服务接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.3" data-path="zk-global-click.html">
+            
+                <a href="zk-global-click.html">
+            
+                    
+                    点击动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.4" data-path="zk-global-multitouch.html">
+            
+                <a href="zk-global-multitouch.html">
+            
+                    
+                    多点触摸动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.5" data-path="zk-global-swipe.html">
+            
+                <a href="zk-global-swipe.html">
+            
+                    
+                    滑动动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.6" data-path="zk-global-drag.html">
+            
+                <a href="zk-global-drag.html">
+            
+                    
+                    拖动动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.7" data-path="zk-global-input.html">
+            
+                <a href="zk-global-input.html">
+            
+                    
+                    输入动作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.1.8" data-path="zk-global-node.html">
+            
+                <a href="zk-global-node.html">
+            
+                    
+                    节点操作接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.9" data-path="zk-global-systemkey.html">
+            
+                <a href="zk-global-systemkey.html">
+            
+                    
+                    系统按键接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.10" data-path="zk-global-notice.html">
+            
+                <a href="zk-global-notice.html">
+            
+                    
+                    通知栏接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.11" data-path="zk-global-floatview.html">
+            
+                <a href="zk-global-floatview.html">
+            
+                    
+                    悬浮窗接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../zk-agent.html">
+            
+                <a href="../zk-agent.html">
+            
+                    
+                    代理事件模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../zk-image.html">
+            
+                <a href="../zk-image.html">
+            
+                    
+                    图色模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../zk-device.md">
+            
+                <span>
+            
+                    
+                    设备模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../zk-file.md">
+            
+                <span>
+            
+                    
+                    文件模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../zk-http.md">
+            
+                <span>
+            
+                    
+                    网络模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../zk-utils.md">
+            
+                <span>
+            
+                    
+                    常用工具模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../zk-shell.md">
+            
+                <span>
+            
+                    
+                    Shell命令模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../zk-sqlite.md">
+            
+                <span>
+            
+                    
+                    Sqlite模块接口 - 开发中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../funcs/plugin/plugins.html">
+            
+                <a href="../../funcs/plugin/plugins.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../question-answer.html">
+            
+                <a href="../../question-answer.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../agreement.html">
+            
+                <a href="../../agreement.html">
+            
+                    
+                    用户协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../declare.html">
+            
+                <a href="../../declare.html">
+            
+                    
+                    免责声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    技术交流 QQ群：777164022
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >节点操作接口</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;"><b>1. </b>&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;</a></li><ul><li><span class="title-icon "></span><a href="#has-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;"><b>1.1. </b>has &#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</a></li><li><span class="title-icon "></span><a href="#waitexistactivity-&#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;"><b>1.2. </b>waitExistActivity &#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#waitexistnode-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;"><b>1.3. </b>waitExistNode &#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</a></li><li><span class="title-icon "></span><a href="#getnodeinfo-&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;"><b>1.4. </b>getNodeInfo &#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#getonenodeinfo-&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;"><b>1.5. </b>getOneNodeInfo &#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#setfetchnodemode-&#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;"><b>1.6. </b>setFetchNodeMode &#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#dumpxml-&#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;xml"><b>1.7. </b>dumpXml &#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;XML</a></li></ul><li><span class="title-icon "></span><a href="#&#x5355;&#x8282;&#x70B9;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;"><b>2. </b>&#x5355;&#x8282;&#x70B9;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#getnodeinfoparent-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;"><b>2.1. </b>getNodeInfoParent &#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#getnodeinfochild-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;"><b>2.2. </b>getNodeInfoChild &#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#getnodeinfoallchildren-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;"><b>2.3. </b>getNodeInfoAllChildren &#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#getprevioussiblingnodeinfo-&#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><b>2.4. </b>getPreviousSiblingNodeInfo &#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#getnextsiblingnodeinfo-&#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><b>2.5. </b>getNextSiblingNodeInfo &#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#getsiblingnodeinfo-&#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><b>2.6. </b>getSiblingNodeInfo &#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#inputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;"><b>2.7. </b>inputTextNodeInfo &#x8282;&#x70B9;&#x8F93;&#x5165;</a></li><li><span class="title-icon "></span><a href="#pastetextnodeinfo-&#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;"><b>2.8. </b>pasteTextNodeInfo &#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;</a></li><li><span class="title-icon "></span><a href="#imeinputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;"><b>2.9. </b>imeInputTextNodeInfo &#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;</a></li><li><span class="title-icon "></span><a href="#cleartextnodeinfo-&#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;"><b>2.10. </b>clearTextNodeInfo &#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#refreshnodeinfo-&#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;"><b>2.11. </b>refreshNodeInfo &#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#isvalidnodeinfo-&#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;"><b>2.12. </b>isValidNodeInfo &#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;</a></li></ul></ul></div><a href="#&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;"><a name="&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;</h1>
+<h2 id="has-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;"><a name="has-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;" class="anchor-navigation-ex-anchor" href="#has-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. has &#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</h2>
+<ul>
+<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</li>
+<li>@param  selectors &#x9009;&#x62E9;&#x5668;&#x6570;&#x7EC4;&#xFF0C;&#x66F4;&#x591A;&#x9009;&#x62E9;&#x5668;&#x5C5E;&#x6027;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;<a href="../../funcs/global/selector-node.html#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x9009;&#x62E9;&#x5668;&#x4E0E;&#x8282;&#x70B9;&#x5C5E;&#x6027;</a></li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x6210;&#x529F; false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;has&quot;</span>,
+             <span class="hljs-string">&quot;selectors&quot;</span>: [{
+                 <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>
+             }]
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="waitexistactivity-&#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;"><a name="waitexistactivity-&#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;" class="anchor-navigation-ex-anchor" href="#waitexistactivity-&#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. waitExistActivity &#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;</h2>
+<ul>
+<li><p>&#x7B49;&#x5F85;activity&#x754C;&#x9762;&#x51FA;&#x73B0;</p>
+</li>
+<li><p>@param  activity activity&#x7C7B;&#x540D;</p>
+</li>
+<li>@param  timeout &#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x6210;&#x529F; false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;waitExistActivity&quot;</span>,
+             <span class="hljs-string">&quot;activity&quot;</span>:<span class="hljs-string">&quot;com.aaa.Activity&quot;</span>,
+            <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">10000</span>
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="waitexistnode-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;"><a name="waitexistnode-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;" class="anchor-navigation-ex-anchor" href="#waitexistnode-&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. waitExistNode &#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</h2>
+<ul>
+<li>&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5668;&#x5224;&#x65AD;&#x5E76;&#x7B49;&#x5F85;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5B58;&#x5728;</li>
+<li>@param  selectors &#x9009;&#x62E9;&#x5668;&#x6570;&#x7EC4;&#xFF0C;&#x66F4;&#x591A;&#x9009;&#x62E9;&#x5668;&#x5C5E;&#x6027;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;<a href="../../funcs/global/selector-node.html#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x9009;&#x62E9;&#x5668;&#x4E0E;&#x8282;&#x70B9;&#x5C5E;&#x6027;</a></li>
+<li>@param  timeout &#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x6210;&#x529F; false&#x4EE3;&#x8868;&#x5931;&#x8D25;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;waitExistNode&quot;</span>,
+             <span class="hljs-string">&quot;selectors&quot;</span>: [{
+                 <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>
+             }],
+            <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">10000</span>
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getnodeinfo-&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;"><a name="getnodeinfo-&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#getnodeinfo-&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. getNodeInfo &#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;</h2>
+<ul>
+<li>&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;</li>
+<li>@param  selectors &#x9009;&#x62E9;&#x5668;&#x6570;&#x7EC4;&#xFF0C;&#x66F4;&#x591A;&#x9009;&#x62E9;&#x5668;&#x5C5E;&#x6027;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;<a href="../../funcs/global/selector-node.html#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x9009;&#x62E9;&#x5668;&#x4E0E;&#x8282;&#x70B9;&#x5C5E;&#x6027;</a></li>
+<li>@param  timeout &#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
+<li>@return &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x96C6;&#x5408;JSON&#x5B57;&#x7B26;&#x4E32;<a href="../../funcs/global/selector-node.html#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x5C5E;&#x6027;</a></li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;getNodeInfo&quot;</span>,
+             <span class="hljs-string">&quot;selectors&quot;</span>: [{
+                 <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>
+             }],
+            <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">10000</span>
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getonenodeinfo-&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;"><a name="getonenodeinfo-&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#getonenodeinfo-&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. getOneNodeInfo &#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;</h2>
+<ul>
+<li>&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;</li>
+<li>@param  selectors &#x9009;&#x62E9;&#x5668;&#x6570;&#x7EC4;&#xFF0C;&#x66F4;&#x591A;&#x9009;&#x62E9;&#x5668;&#x5C5E;&#x6027;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;<a href="../../funcs/global/selector-node.html#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x9009;&#x62E9;&#x5668;&#x4E0E;&#x8282;&#x70B9;&#x5C5E;&#x6027;</a></li>
+<li>@param  timeout &#x8D85;&#x65F6;&#x65F6;&#x95F4; &#x5355;&#x4F4D;&#x6BEB;&#x79D2;</li>
+<li>@return &#x5355;&#x4E2A;&#x8282;&#x70B9;&#x4FE1;&#x606F;JSON&#x5B57;&#x7B26;&#x4E32;<a href="../../funcs/global/selector-node.html#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x5C5E;&#x6027;</a></li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;getNodeInfo&quot;</span>,
+             <span class="hljs-string">&quot;selectors&quot;</span>: [{
+                 <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&quot;</span>
+             }],
+            <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">10000</span>
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="setfetchnodemode-&#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;"><a name="setfetchnodemode-&#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#setfetchnodemode-&#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. setFetchNodeMode &#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;</h2>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x6A21;&#x5F0F;</li>
+<li>@param mode 1 &#x662F;&#x589E;&#x5F3A;&#x578B;&#xFF0C; 2 &#x662F;&#x5FEB;&#x901F;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x589E;&#x5F3A;&#x578B;</li>
+<li>@param fetchInvisibleNode &#x662F;&#x5426;&#x6293;&#x53D6;&#x9690;&#x85CF;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E0D;&#x6293;&#x53D6;</li>
+<li>@param fetchNotImportantNode &#x662F;&#x5426;&#x6293;&#x53D6;&#x4E0D;&#x91CD;&#x8981;&#x7684;&#x5143;&#x7D20;</li>
+<li>@return &#x5E03;&#x5C14;&#x578B;&#xFF0C;true&#x4EE3;&#x8868;&#x6210;&#x529F; false&#x4EE3;&#x8868;&#x5931;&#x8D25;<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;setFetchNodeMode&quot;</span>,
+             <span class="hljs-string">&quot;mode&quot;</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">&quot;fetchInvisibleNode&quot;</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;fetchNotImportantNode&quot;</span>:<span class="hljs-literal">true</span>,
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+</li>
+</ul>
+<h2 id="dumpxml-&#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;xml"><a name="dumpxml-&#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;xml" class="anchor-navigation-ex-anchor" href="#dumpxml-&#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;xml"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. dumpXml &#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;XML</h2>
+<ul>
+<li>&#x5C06;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53D8;&#x6210;XML</li>
+<li>@return &#x5B57;&#x7B26;&#x4E32;<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+             <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;dumpXml&quot;</span>
+         };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+</li>
+</ul>
+<h1 id="&#x5355;&#x8282;&#x70B9;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;"><a name="&#x5355;&#x8282;&#x70B9;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x8282;&#x70B9;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5355;&#x8282;&#x70B9;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li>&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#x5747;&#x662F;&#x5EFA;&#x7ACB;&#x5728;&#x53D6;&#x5F97;&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x6709;&#x8282;&#x70B9;&#x7684;nid&#x7684;&#x65F6;&#x5019;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#xFF0C;&#x5982;&#x4F55;&#x53D6;&#x5F97;&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x8BF7;&#x770B;getOneNodeInfo&#x6216;&#x8005;getNodeInfo&#x65B9;&#x6CD5;</li>
+</ul>
+<h2 id="getnodeinfoparent-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;"><a name="getnodeinfoparent-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#getnodeinfoparent-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. getNodeInfoParent &#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;</h2>
+<ul>
+<li>&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x7236;&#x7EA7;&#x8282;&#x70B9;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@return  &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;getNodeInfoParent&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getnodeinfochild-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;"><a name="getnodeinfochild-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#getnodeinfochild-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. getNodeInfoChild &#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;</h2>
+<ul>
+<li>&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@param index &#x8282;&#x70B9;&#x6240;&#x6709; &#x4ECE;0&#x5F00;&#x59CB;</li>
+<li>@return  &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;getNodeInfoChild&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>,
+                <span class="hljs-string">&quot;index&quot;</span>:<span class="hljs-number">0</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getnodeinfoallchildren-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;"><a name="getnodeinfoallchildren-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#getnodeinfoallchildren-&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. getNodeInfoAllChildren &#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;</h2>
+<ul>
+<li>&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;</li>
+<li><p>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></p>
+</li>
+<li><p>@return  &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x6570;&#x7EC4;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</p>
+</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;getNodeInfoAllChildren&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getprevioussiblingnodeinfo-&#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><a name="getprevioussiblingnodeinfo-&#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#getprevioussiblingnodeinfo-&#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. getPreviousSiblingNodeInfo &#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</h2>
+<ul>
+<li>&#x524D;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</li>
+<li><p>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></p>
+</li>
+<li><p>@return  &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x6570;&#x7EC4;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</p>
+</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;getPreviousSiblingNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getnextsiblingnodeinfo-&#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><a name="getnextsiblingnodeinfo-&#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#getnextsiblingnodeinfo-&#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. getNextSiblingNodeInfo &#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</h2>
+<ul>
+<li>&#x540E;&#x9762;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</li>
+<li><p>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></p>
+</li>
+<li><p>@return  &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x6570;&#x7EC4;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</p>
+</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;getNextSiblingNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="getsiblingnodeinfo-&#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><a name="getsiblingnodeinfo-&#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#getsiblingnodeinfo-&#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. getSiblingNodeInfo &#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;</h2>
+<ul>
+<li>&#x6240;&#x6709;&#x5144;&#x5F1F;&#x8282;&#x70B9;</li>
+<li><p>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></p>
+</li>
+<li><p>@return  &#x8282;&#x70B9;&#x4FE1;&#x606F;&#x6570;&#x7EC4;&#x7684;JSON&#x5B57;&#x7B26;&#x4E32;</p>
+</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;getSiblingNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="inputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;"><a name="inputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;" class="anchor-navigation-ex-anchor" href="#inputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. inputTextNodeInfo &#x8282;&#x70B9;&#x8F93;&#x5165;</h2>
+<ul>
+<li>&#x8282;&#x70B9;&#x8F93;&#x5165;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@param content &#x8981;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;</li>
+<li>@return   &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x4FDD;&#x5B58;&#xFF0C;false&#x4EE3;&#x8868;&#x4E0D;&#x4FDD;&#x5B58;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;inputTextNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>,
+                <span class="hljs-string">&quot;content&quot;</span>:<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="pastetextnodeinfo-&#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;"><a name="pastetextnodeinfo-&#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;" class="anchor-navigation-ex-anchor" href="#pastetextnodeinfo-&#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. pasteTextNodeInfo &#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;</h2>
+<ul>
+<li>&#x8282;&#x70B9;&#x7C98;&#x8D34;&#x8F93;&#x5165;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@param content &#x8981;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;</li>
+<li>@return   &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x4FDD;&#x5B58;&#xFF0C;false&#x4EE3;&#x8868;&#x4E0D;&#x4FDD;&#x5B58;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;pasteTextNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>,
+                <span class="hljs-string">&quot;content&quot;</span>:<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="imeinputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;"><a name="imeinputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;" class="anchor-navigation-ex-anchor" href="#imeinputtextnodeinfo-&#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. imeInputTextNodeInfo &#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;</h2>
+<ul>
+<li>&#x8282;&#x70B9;&#x8F93;&#x5165;&#x6CD5;&#x8F93;&#x5165;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@param rect &#x8282;&#x70B9;&#x6240;&#x5728;&#x7684;bounds&#x77E9;&#x5F62;&#x6846;</li>
+<li>@param content &#x8981;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;</li>
+<li>@return   &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x4FDD;&#x5B58;&#xFF0C;false&#x4EE3;&#x8868;&#x4E0D;&#x4FDD;&#x5B58;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;pasteTextNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>,
+                <span class="hljs-string">&quot;content&quot;</span>:<span class="hljs-string">&quot;&#x6211;&#x662F;&#x5185;&#x5BB9;&quot;</span>,
+                <span class="hljs-string">&quot;rect&quot;</span>:{
+                    <span class="hljs-string">&quot;left&quot;</span>:<span class="hljs-number">100</span>,
+                    <span class="hljs-string">&quot;top&quot;</span>:<span class="hljs-number">100</span>,
+                    <span class="hljs-string">&quot;right&quot;</span>:<span class="hljs-number">1000</span>,
+                    <span class="hljs-string">&quot;bottom&quot;</span>:<span class="hljs-number">1000</span>,
+                }           
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="cleartextnodeinfo-&#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;"><a name="cleartextnodeinfo-&#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#cleartextnodeinfo-&#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.10. clearTextNodeInfo &#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;</h2>
+<ul>
+<li>&#x6E05;&#x9664;&#x8282;&#x70B9;&#x6570;&#x636E;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@return   &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x4FDD;&#x5B58;&#xFF0C;false&#x4EE3;&#x8868;&#x4E0D;&#x4FDD;&#x5B58;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;clearTextNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="refreshnodeinfo-&#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;"><a name="refreshnodeinfo-&#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#refreshnodeinfo-&#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.11. refreshNodeInfo &#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;</h2>
+<ul>
+<li>&#x5237;&#x65B0;&#x8282;&#x70B9;&#x6570;&#x636E;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@return   &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x4FDD;&#x5B58;&#xFF0C;false&#x4EE3;&#x8868;&#x4E0D;&#x4FDD;&#x5B58;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;refreshNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+<h2 id="isvalidnodeinfo-&#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;"><a name="isvalidnodeinfo-&#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;" class="anchor-navigation-ex-anchor" href="#isvalidnodeinfo-&#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;"><i class="fa fa-link" aria-hidden="true"></i></a>2.12. isValidNodeInfo &#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;</h2>
+<ul>
+<li>&#x8282;&#x70B9;&#x662F;&#x5426;&#x6709;&#x6548;</li>
+<li>@param nid nodeinfo&#x7684;nid&#x503C;<a href="zh-cn/funcs/global/selector-node.md#&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;">&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7C7B;</a></li>
+<li>@return   &#x5E03;&#x5C14;&#x578B; true &#x4EE3;&#x8868;&#x4FDD;&#x5B58;&#xFF0C;false&#x4EE3;&#x8868;&#x4E0D;&#x4FDD;&#x5B58;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;request&apos;</span>);
+    <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/global&quot;</span>;
+    <span class="hljs-keyword">var</span> p = {
+                 <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;isValidNodeInfo&quot;</span>,
+                <span class="hljs-string">&quot;nid&quot;</span>:<span class="hljs-string">&quot;&#x8FD9;&#x4E2A;&#x662F;nodeinfo&#x7684;nid&#x503C;&quot;</span>
+             };
+    <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.stringify(p);
+    request({
+              url: url,
+              method: <span class="hljs-string">&quot;POST&quot;</span>,
+              json: <span class="hljs-literal">true</span>,
+              headers: {
+                 <span class="hljs-string">&quot;content-type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>,
+              },
+             body: data
+          }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response, body</span>) </span>{
+              <span class="hljs-keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="hljs-number">200</span>) {
+                  <span class="hljs-built_in">console</span>.log(body) 
+          }
+}
+</code></pre>
+</blockquote>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zk-global-input.html" class="navigation navigation-prev " aria-label="Previous page: 输入动作接口">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="zk-global-systemkey.html" class="navigation navigation-next " aria-label="Next page: 系统按键接口">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"节点操作接口","level":"1.10.1.8","depth":3,"next":{"title":"系统按键接口","level":"1.10.1.9","depth":3,"path":"zh-cn/zk/global/zk-global-systemkey.md","ref":"zh-cn/zk/global/zk-global-systemkey.md","articles":[]},"previous":{"title":"输入动作接口","level":"1.10.1.7","depth":3,"path":"zh-cn/zk/global/zk-global-input.md","ref":"zh-cn/zk/global/zk-global-input.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/zk/global/zk-global-node.md","mtime":"2020-04-28T01:48:35.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-28T09:50:25.215Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
