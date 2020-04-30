@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>企业版中控接口 · EasyClick开发文档</title>
+        <title>EC状态控制接口 · EasyClick开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zk-ec-state.html" />
+    <link rel="next" href="zk-node.html" />
     
     
-    <link rel="prev" href="../hot-update.html" />
+    <link rel="prev" href="zk.html" />
     
 
     
@@ -655,7 +655,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.10" data-path="zk.html">
+        <li class="chapter " data-level="1.10" data-path="zk.html">
             
                 <a href="zk.html">
             
@@ -669,7 +669,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="zk-ec-state.html">
+        <li class="chapter active" data-level="1.10.1" data-path="zk-ec-state.html">
             
                 <a href="zk-ec-state.html">
             
@@ -1048,7 +1048,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >企业版中控接口</a>
+        <a href="../.." >EC状态控制接口</a>
     </h1>
 </div>
 
@@ -1063,97 +1063,64 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;"><b>1. </b>&#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;</a></li><li><span class="title-icon "></span><a href="#&#x4E2D;&#x63A7;&#x5BF9;&#x63A5;"><b>2. </b>&#x4E2D;&#x63A7;&#x5BF9;&#x63A5;</a></li><li><span class="title-icon "></span><a href="#ec&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#x662F;&#x4EC0;&#x4E48;"><b>3. </b>EC&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#x662F;&#x4EC0;&#x4E48;</a></li><li><span class="title-icon "></span><a href="#usb&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x6A21;&#x5F0F;"><b>4. </b>USB&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#wifi&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;"><b>5. </b>WIFI&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;"><b>6. </b>&#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x53E3;&#x8FD4;&#x56DE;"><b>7. </b>&#x63A5;&#x53E3;&#x8FD4;&#x56DE;</a></li><li><span class="title-icon "></span><a href="#&#x4E2D;&#x63A7;&#x63A5;&#x53E3;"><b>8. </b>&#x4E2D;&#x63A7;&#x63A5;&#x53E3;</a></li></ul></div><a href="#&#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;"><a name="&#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x4EC0;&#x4E48;&#x662F;&#x4E2D;&#x63A7;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><ul><li><span class="title-icon "></span><a href="#run-&#x8FD0;&#x884C;&#x811A;&#x672C;post&#x4E0A;&#x4F20;&#x6587;&#x4EF6;"><b>1.1. </b>run &#x8FD0;&#x884C;&#x811A;&#x672C;(POST&#x4E0A;&#x4F20;&#x6587;&#x4EF6;)</a></li><li><span class="title-icon "></span><a href="#run-&#x8FD0;&#x884C;&#x811A;&#x672C;get&#x65B9;&#x5F0F;"><b>1.2. </b>run &#x8FD0;&#x884C;&#x811A;&#x672C;(GET&#x65B9;&#x5F0F;)</a></li><li><span class="title-icon "></span><a href="#stop-&#x505C;&#x6B62;&#x811A;&#x672C;get&#x65B9;&#x5F0F;"><b>1.3. </b>stop &#x505C;&#x6B62;&#x811A;&#x672C;(GET&#x65B9;&#x5F0F;)</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
 <ul>
-<li>&#x4E2D;&#x63A7;&#x5E73;&#x53F0;&#x662F;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#x8BBE;&#x5907;&#x7684;&#x5E73;&#x53F0;</li>
+<li>&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x63A7;&#x5236;EC&#x8FD0;&#x884C;&#x811A;&#x672C;&#x5305;&#xFF0C;&#x6216;&#x8005;&#x505C;&#x6B62;&#x811A;&#x672C;&#x8FD0;&#x884C;&#x7684;</li>
+<li>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x63A5;&#x53E3;&#x4E3A; /script</li>
+<li>&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#x5747;&#x4E3A;USB&#x8FDE;&#x63A5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BBE;&#x5907;&#x63A5;&#x53E3;&#x8F6C;&#x5230;&#x672C;&#x673A;&#x7684; 20391&#x7AEF;&#x53E3;&#x4E3A;&#x4F8B;&#xFF0C;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x4E3A; <a href="http://127.0.0.1:20391/script" target="_blank">http://127.0.0.1:20391/script</a></li>
+<li>&#x4EE5;&#x4E0B;&#x7684;&#x4F8B;&#x5B50;&#x5747;&#x662F;&#x4F7F;&#x7528;nodejs&#x505A;post json&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x66F4;&#x6539;</li>
 </ul>
-<h1 id="&#x4E2D;&#x63A7;&#x5BF9;&#x63A5;"><a name="&#x4E2D;&#x63A7;&#x5BF9;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x4E2D;&#x63A7;&#x5BF9;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x4E2D;&#x63A7;&#x5BF9;&#x63A5;</h1>
+<h2 id="run-&#x8FD0;&#x884C;&#x811A;&#x672C;post&#x4E0A;&#x4F20;&#x6587;&#x4EF6;"><a name="run-&#x8FD0;&#x884C;&#x811A;&#x672C;post&#x4E0A;&#x4F20;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#run-&#x8FD0;&#x884C;&#x811A;&#x672C;post&#x4E0A;&#x4F20;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. run &#x8FD0;&#x884C;&#x811A;&#x672C;(POST&#x4E0A;&#x4F20;&#x6587;&#x4EF6;)</h2>
 <ul>
-<li><p>&#x5DF2;&#x6709;&#x7684;&#x4E2D;&#x63A7;&#x5E73;&#x53F0;&#x5982;&#x4F55;&#x5BF9;&#x63A5;&#x5230;EC&#x7A0B;&#x5E8F;&#x4E2D;?</p>
-</li>
-<li><p>EC&#x5F00;&#x653E;&#x7684;&#x63A5;&#x53E3;&#x5747;&#x4F7F;&#x7528;HTTP POST&#x65B9;&#x5F0F;&#x5373;&#x53EF;&#x8BF7;&#x6C42;&#x5230;&#xFF0C;&#x53C2;&#x6570;&#x4E00;&#x5F8B;&#x4F7F;&#x7528;JSON&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x592A;&#x7406;&#x89E3;POST JSON&#xFF0C;&#x8BF7;&#x770B;&#x8FD9;&#x4E2A;&#x6587;&#x7AE0;&#xFF1A;
-<a href="https://www.cnblogs.com/bookyao/p/12134438.html" target="_blank">https://www.cnblogs.com/bookyao/p/12134438.html</a>
-&#x4EE5;&#x53CA;java&#x5982;&#x4F55;&#x8FDB;&#x884C;POST JSON: 
-<a href="https://blog.csdn.net/qq_26975307/article/details/82713725" target="_blank">https://blog.csdn.net/qq_26975307/article/details/82713725</a></p>
-</li>
-</ul>
-<h1 id="ec&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#x662F;&#x4EC0;&#x4E48;"><a name="ec&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#x662F;&#x4EC0;&#x4E48;" class="anchor-navigation-ex-anchor" href="#ec&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#x662F;&#x4EC0;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>3. EC&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#x662F;&#x4EC0;&#x4E48;</h1>
-<ul>
-<li>EC&#x5728;&#x624B;&#x673A;&#x7AEF;&#x7684;&#x7AEF;&#x53E3;&#x662F; 20390</li>
-</ul>
-<h1 id="usb&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x6A21;&#x5F0F;"><a name="usb&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#usb&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. USB&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x6A21;&#x5F0F;</h1>
-<ul>
-<li><p>&#x5982;&#x679C;&#x662F;USB&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x7684;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;adb forward&#x547D;&#x4EE4;&#x5C06;EC&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x5230;&#x7535;&#x8111;&#x7AEF;&#x53E3;&#xFF0C;&#x6559;&#x7A0B;&#xFF1A;<a href="https://www.jianshu.com/p/63c4d5c31909" target="_blank">https://www.jianshu.com/p/63c4d5c31909</a></p>
-</li>
-<li><p>&#x4F8B;&#x5982;&#x5C06;&#x8BBE;&#x5907;&#x7684;20391&#x8F6C;&#x53D1;&#x5230;&#x7535;&#x8111;&#x7684;20391&#x7AEF;&#x53E3;&#x4E0A;&#xFF1A;</p>
-</li>
-</ul>
-<blockquote>
-<pre><code>adb -s &#x624B;&#x673A;&#x7684;&#x5E8F;&#x5217;&#x53F7;1 forward tcp:20391 tcp:20390
-</code></pre></blockquote>
-<ul>
-<li><p>&#x8F6C;&#x53D1;&#x7AEF;&#x53E3;&#x5230;&#x7535;&#x8111;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00; <a href="http://127.0.0.1:20391" target="_blank">http://127.0.0.1:20391</a>    &#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;OK&#x51E0;&#x4E2A;&#x5B57;&#x6837;&#xFF0C;&#x4EE3;&#x8868;&#x6210;&#x529F;&#x8F6C;&#x53D1;</p>
-</li>
-<li><p>&#x5982;&#x679C;&#x6709;&#x591A;&#x53F0;&#x8BBE;&#x5907;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x4F9D;&#x6B21;&#x9012;&#x589E;</p>
-</li>
-</ul>
-<blockquote>
-<pre><code>adb -s &#x624B;&#x673A;&#x7684;&#x5E8F;&#x5217;&#x53F7;1 forward tcp:20391 tcp:20390
-adb -s &#x624B;&#x673A;&#x7684;&#x5E8F;&#x5217;&#x53F7;2 forward tcp:20392 tcp:20390
-adb -s &#x624B;&#x673A;&#x7684;&#x5E8F;&#x5217;&#x53F7;3 forward tcp:20393 tcp:20390
-</code></pre></blockquote>
-<ul>
-<li>&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x624B;&#x673A;&#x5E8F;&#x5217;&#x53F7;&#x6559;&#x7A0B; <a href="https://www.cnblogs.com/yjlch1016/p/8512592.html" target="_blank">https://www.cnblogs.com/yjlch1016/p/8512592.html</a></li>
-</ul>
-<h1 id="wifi&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;"><a name="wifi&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#wifi&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>5. WIFI&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;</h1>
-<ul>
-<li>&#x5982;&#x679C;&#x4E2D;&#x63A7;&#x548C;&#x8BBE;&#x5907;&#x5728;&#x540C;&#x4E00;&#x5C40;&#x57DF;&#x7F51;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x627E;&#x5230;&#x624B;&#x673A;IP&#xFF0C;&#x76F4;&#x63A5;&#x8BF7;&#x6C42;&#x624B;&#x673A;&#x5230;20390&#x7AEF;&#x53E3;</li>
-</ul>
-<h1 id="&#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;"><a name="&#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;</h1>
-<ul>
-<li>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x6309;&#x952E;&#x7CBE;&#x7075;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x8C03;&#x7528;EC&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x8BF7;&#x6C42; <a href="http://127.0.0.1:20390" target="_blank">http://127.0.0.1:20390</a></li>
-<li>&#x5982;&#x679C;&#x662F;&#x6309;&#x952E;&#x7CBE;&#x7075;&#x8C03;&#x7528;EC&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x6253;&#x4F01;&#x4E1A;&#x7248;&#x672C;&#x7684;APK&#x5305;</li>
-</ul>
-<h1 id="&#x63A5;&#x53E3;&#x8FD4;&#x56DE;"><a name="&#x63A5;&#x53E3;&#x8FD4;&#x56DE;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x8FD4;&#x56DE;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x63A5;&#x53E3;&#x8FD4;&#x56DE;</h1>
-<p>&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x793A;&#x4F8B;&#xFF1A;</p>
-<blockquote>
-<pre><code class="lang-javascript">{
-    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-number">1</span>,
-    <span class="hljs-string">&quot;msg&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;data&quot;</span>:<span class="hljs-literal">true</span>
+<li>&#x8FD0;&#x884C;&#x811A;&#x672C;<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> FormData = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;form-data&apos;</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+<span class="hljs-comment">// type =run &#x4EE3;&#x8868;&#x8FD0;&#x884C;</span>
+ <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/script?type=run&quot;</span>;
+<span class="hljs-keyword">var</span> form = <span class="hljs-keyword">new</span> FormData();
+<span class="hljs-comment">//&#x8FDC;&#x7A0B;&#x7AEF;&#x63A5;&#x6536;iec&#x6587;&#x4EF6;&#x7684;key&#x662F; file</span>
+form.append(<span class="hljs-string">&apos;file&apos;</span>, fs.createReadStream(<span class="hljs-string">&apos;C:\test.iec&apos;</span>));
+form.submit(url, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(res);
+});
 }
 </code></pre>
 </blockquote>
-<ul>
-<li>code&#xFF1A; &#x4EE3;&#x8868;&#x670D;&#x52A1;&#x63A5;&#x53E3;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF0C;1 &#x4EE3;&#x8868;&#x6B63;&#x5E38;&#x670D;&#x52A1;&#xFF0C;0 &#x4EE3;&#x8868;&#x5931;&#x8D25;&#xFF0C;&#x5982;&#x679C;&#x4E3A;0&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;msg&#x7684;&#x6D88;&#x606F;</li>
-<li>msg&#xFF1A;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;</li>
-<li>data&#xFF1A;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5E03;&#x5C14;&#x578B;&#xFF0C;&#x62A4;&#x7740;&#x6570;&#x636E;JSON&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BF7;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x8FDB;&#x884C;&#x5904;&#x7406;</li>
-</ul>
-<h1 id="&#x4E2D;&#x63A7;&#x63A5;&#x53E3;"><a name="&#x4E2D;&#x63A7;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x4E2D;&#x63A7;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x4E2D;&#x63A7;&#x63A5;&#x53E3;</h1>
-<ul>
-<li><a href="zk-ec-state.html">EC&#x72B6;&#x6001;&#x63A7;&#x5236;&#x63A5;&#x53E3;</a></li>
-<li><a href="zk-node.html">&#x5168;&#x5C40;&#x8282;&#x70B9;&#x6A21;&#x5757;&#x63A5;&#x53E3;</a><ul>
-<li><a href="global/zk-global-log.html">&#x65E5;&#x5FD7;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-node-service.html">&#x8282;&#x70B9;&#x670D;&#x52A1;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-click.html">&#x70B9;&#x51FB;&#x52A8;&#x4F5C;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-multitouch.html">&#x591A;&#x70B9;&#x89E6;&#x6478;&#x52A8;&#x4F5C;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-swipe.html">&#x6ED1;&#x52A8;&#x52A8;&#x4F5C;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-drag.html">&#x62D6;&#x52A8;&#x52A8;&#x4F5C;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-input.html">&#x8F93;&#x5165;&#x52A8;&#x4F5C;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-node.html">&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-systemkey.html">&#x7CFB;&#x7EDF;&#x6309;&#x952E;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-notice.html">&#x901A;&#x77E5;&#x680F;&#x63A5;&#x53E3;</a></li>
-<li><a href="global/zk-global-floatview.html">&#x60AC;&#x6D6E;&#x7A97;&#x63A5;&#x53E3;</a></li>
-</ul>
 </li>
-<li><a href="zh-agent.md">&#x4EE3;&#x7406;&#x4E8B;&#x4EF6;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zh-image.md">&#x56FE;&#x8272;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zh-device.md">&#x8BBE;&#x5907;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zh-file.md">&#x6587;&#x4EF6;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zh-http.md">&#x7F51;&#x7EDC;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zh-utils.md">&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zh-shell.md">Shell&#x547D;&#x4EE4;&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
-<li><a href="zk-sqlite.md">Sqlite&#x6A21;&#x5757;&#x63A5;&#x53E3; - &#x5F00;&#x53D1;&#x4E2D;</a></li>
+</ul>
+<h2 id="run-&#x8FD0;&#x884C;&#x811A;&#x672C;get&#x65B9;&#x5F0F;"><a name="run-&#x8FD0;&#x884C;&#x811A;&#x672C;get&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#run-&#x8FD0;&#x884C;&#x811A;&#x672C;get&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. run &#x8FD0;&#x884C;&#x811A;&#x672C;(GET&#x65B9;&#x5F0F;)</h2>
+<ul>
+<li>&#x8FD0;&#x884C;&#x811A;&#x672C;<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;http&quot;</span>)
+<span class="hljs-comment">// type =run &#x4EE3;&#x8868;&#x8FD0;&#x884C;</span>
+<span class="hljs-comment">// path &#x4EE3;&#x8868;IEC&#x811A;&#x672C;&#x5305;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x8DEF;&#x5F84;</span>
+ <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/script?type=run&amp;path=/sdcard/a.iec&quot;</span>;
+http.get(url, (res) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Got response: <span class="hljs-subst">${res}</span>`</span>);
+  res.resume();
+}).on(<span class="hljs-string">&apos;error&apos;</span>, (e) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Got error: <span class="hljs-subst">${e.message}</span>`</span>);
+});
+</code></pre>
+</blockquote>
+</li>
+</ul>
+<h2 id="stop-&#x505C;&#x6B62;&#x811A;&#x672C;get&#x65B9;&#x5F0F;"><a name="stop-&#x505C;&#x6B62;&#x811A;&#x672C;get&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#stop-&#x505C;&#x6B62;&#x811A;&#x672C;get&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. stop &#x505C;&#x6B62;&#x811A;&#x672C;(GET&#x65B9;&#x5F0F;)</h2>
+<ul>
+<li>&#x505C;&#x6B62;&#x811A;&#x672C;<blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;http&quot;</span>)
+<span class="hljs-comment">// type =stop &#x505C;&#x6B62;</span>
+ <span class="hljs-keyword">var</span> url=<span class="hljs-string">&quot;http://127.0.0.1:20391/script?type=stop&quot;</span>;
+http.get(url, (res) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Got response: <span class="hljs-subst">${res}</span>`</span>);
+  res.resume();
+}).on(<span class="hljs-string">&apos;error&apos;</span>, (e) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Got error: <span class="hljs-subst">${e.message}</span>`</span>);
+});
+</code></pre>
+</blockquote>
+</li>
 </ul>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
@@ -1183,12 +1150,12 @@ adb -s &#x624B;&#x673A;&#x7684;&#x5E8F;&#x5217;&#x53F7;3 forward tcp:20393 tcp:2
 
             
                 
-                <a href="../hot-update.html" class="navigation navigation-prev " aria-label="Previous page: 热更新功能">
+                <a href="zk.html" class="navigation navigation-prev " aria-label="Previous page: 企业版中控接口">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="zk-ec-state.html" class="navigation navigation-next " aria-label="Next page: EC状态控制接口">
+                <a href="zk-node.html" class="navigation navigation-next " aria-label="Next page: 全局节点模块接口">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1199,7 +1166,7 @@ adb -s &#x624B;&#x673A;&#x7684;&#x5E8F;&#x5217;&#x53F7;3 forward tcp:20393 tcp:2
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"企业版中控接口","level":"1.10","depth":1,"next":{"title":"EC状态控制接口","level":"1.10.1","depth":2,"path":"zh-cn/zk/zk-ec-state.md","ref":"zh-cn/zk/zk-ec-state.md","articles":[]},"previous":{"title":"热更新功能","level":"1.9","depth":1,"path":"zh-cn/hot-update.md","ref":"zh-cn/hot-update.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/zk/zk.md","mtime":"2020-04-30T01:36:50.074Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-30T02:33:29.434Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"EC状态控制接口","level":"1.10.1","depth":2,"next":{"title":"全局节点模块接口","level":"1.10.2","depth":2,"path":"zh-cn/zk/zk-node.md","ref":"zh-cn/zk/zk-node.md","articles":[{"title":"日志接口","level":"1.10.2.1","depth":3,"path":"zh-cn/zk/global/zk-global-log.md","ref":"zh-cn/zk/global/zk-global-log.md","articles":[]},{"title":"节点服务接口","level":"1.10.2.2","depth":3,"path":"zh-cn/zk/global/zk-node-service.md","ref":"zh-cn/zk/global/zk-node-service.md","articles":[]},{"title":"点击动作接口","level":"1.10.2.3","depth":3,"path":"zh-cn/zk/global/zk-global-click.md","ref":"zh-cn/zk/global/zk-global-click.md","articles":[]},{"title":"多点触摸动作接口","level":"1.10.2.4","depth":3,"path":"zh-cn/zk/global/zk-global-multitouch.md","ref":"zh-cn/zk/global/zk-global-multitouch.md","articles":[]},{"title":"滑动动作接口","level":"1.10.2.5","depth":3,"path":"zh-cn/zk/global/zk-global-swipe.md","ref":"zh-cn/zk/global/zk-global-swipe.md","articles":[]},{"title":"拖动动作接口","level":"1.10.2.6","depth":3,"path":"zh-cn/zk/global/zk-global-drag.md","ref":"zh-cn/zk/global/zk-global-drag.md","articles":[]},{"title":"输入动作接口","level":"1.10.2.7","depth":3,"path":"zh-cn/zk/global/zk-global-input.md","ref":"zh-cn/zk/global/zk-global-input.md","articles":[]},{"title":"节点操作接口","level":"1.10.2.8","depth":3,"path":"zh-cn/zk/global/zk-global-node.md","ref":"zh-cn/zk/global/zk-global-node.md","articles":[]},{"title":"系统按键接口","level":"1.10.2.9","depth":3,"path":"zh-cn/zk/global/zk-global-systemkey.md","ref":"zh-cn/zk/global/zk-global-systemkey.md","articles":[]},{"title":"通知栏接口","level":"1.10.2.10","depth":3,"path":"zh-cn/zk/global/zk-global-notice.md","ref":"zh-cn/zk/global/zk-global-notice.md","articles":[]},{"title":"悬浮窗接口","level":"1.10.2.11","depth":3,"path":"zh-cn/zk/global/zk-global-floatview.md","ref":"zh-cn/zk/global/zk-global-floatview.md","articles":[]}]},"previous":{"title":"企业版中控接口","level":"1.10","depth":1,"path":"zh-cn/zk/zk.md","ref":"zh-cn/zk/zk.md","articles":[{"title":"EC状态控制接口","level":"1.10.1","depth":2,"path":"zh-cn/zk/zk-ec-state.md","ref":"zh-cn/zk/zk-ec-state.md","articles":[]},{"title":"全局节点模块接口","level":"1.10.2","depth":2,"path":"zh-cn/zk/zk-node.md","ref":"zh-cn/zk/zk-node.md","articles":[{"title":"日志接口","level":"1.10.2.1","depth":3,"path":"zh-cn/zk/global/zk-global-log.md","ref":"zh-cn/zk/global/zk-global-log.md","articles":[]},{"title":"节点服务接口","level":"1.10.2.2","depth":3,"path":"zh-cn/zk/global/zk-node-service.md","ref":"zh-cn/zk/global/zk-node-service.md","articles":[]},{"title":"点击动作接口","level":"1.10.2.3","depth":3,"path":"zh-cn/zk/global/zk-global-click.md","ref":"zh-cn/zk/global/zk-global-click.md","articles":[]},{"title":"多点触摸动作接口","level":"1.10.2.4","depth":3,"path":"zh-cn/zk/global/zk-global-multitouch.md","ref":"zh-cn/zk/global/zk-global-multitouch.md","articles":[]},{"title":"滑动动作接口","level":"1.10.2.5","depth":3,"path":"zh-cn/zk/global/zk-global-swipe.md","ref":"zh-cn/zk/global/zk-global-swipe.md","articles":[]},{"title":"拖动动作接口","level":"1.10.2.6","depth":3,"path":"zh-cn/zk/global/zk-global-drag.md","ref":"zh-cn/zk/global/zk-global-drag.md","articles":[]},{"title":"输入动作接口","level":"1.10.2.7","depth":3,"path":"zh-cn/zk/global/zk-global-input.md","ref":"zh-cn/zk/global/zk-global-input.md","articles":[]},{"title":"节点操作接口","level":"1.10.2.8","depth":3,"path":"zh-cn/zk/global/zk-global-node.md","ref":"zh-cn/zk/global/zk-global-node.md","articles":[]},{"title":"系统按键接口","level":"1.10.2.9","depth":3,"path":"zh-cn/zk/global/zk-global-systemkey.md","ref":"zh-cn/zk/global/zk-global-systemkey.md","articles":[]},{"title":"通知栏接口","level":"1.10.2.10","depth":3,"path":"zh-cn/zk/global/zk-global-notice.md","ref":"zh-cn/zk/global/zk-global-notice.md","articles":[]},{"title":"悬浮窗接口","level":"1.10.2.11","depth":3,"path":"zh-cn/zk/global/zk-global-floatview.md","ref":"zh-cn/zk/global/zk-global-floatview.md","articles":[]}]},{"title":"代理事件模块接口 - 开发中","level":"1.10.3","depth":2,"path":"zh-cn/zk/zk-agent.md","ref":"zh-cn/zk/zk-agent.md","articles":[]},{"title":"图色模块接口 - 开发中","level":"1.10.4","depth":2,"path":"zh-cn/zk/zk-image.md","ref":"zh-cn/zk/zk-image.md","articles":[]},{"title":"设备模块接口 - 开发中","level":"1.10.5","depth":2,"path":"zh-cn/zk/zk-device.md","ref":"zh-cn/zk/zk-device.md","articles":[]},{"title":"文件模块接口 - 开发中","level":"1.10.6","depth":2,"path":"zh-cn/zk/zk-file.md","ref":"zh-cn/zk/zk-file.md","articles":[]},{"title":"网络模块接口 - 开发中","level":"1.10.7","depth":2,"path":"zh-cn/zk/zk-http.md","ref":"zh-cn/zk/zk-http.md","articles":[]},{"title":"常用工具模块接口 - 开发中","level":"1.10.8","depth":2,"path":"zh-cn/zk/zk-utils.md","ref":"zh-cn/zk/zk-utils.md","articles":[]},{"title":"Shell命令模块接口 - 开发中","level":"1.10.9","depth":2,"path":"zh-cn/zk/zk-shell.md","ref":"zh-cn/zk/zk-shell.md","articles":[]},{"title":"Sqlite模块接口 - 开发中","level":"1.10.10","depth":2,"path":"zh-cn/zk/zk-sqlite.md","ref":"zh-cn/zk/zk-sqlite.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/zk/zk-ec-state.md","mtime":"2020-04-30T01:38:19.871Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-30T02:33:29.434Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
