@@ -1147,7 +1147,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;"><b>2. </b>&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#filereadfile"><b>2.1. </b>file.readFile</a></li><li><span class="title-icon "></span><a href="#filewritefile"><b>2.2. </b>file.writeFile</a></li><li><span class="title-icon "></span><a href="#filecreate"><b>2.3. </b>file.create</a></li><li><span class="title-icon "></span><a href="#filereadassets"><b>2.4. </b>file.readAssets</a></li><li><span class="title-icon "></span><a href="#filedeleteallfile"><b>2.5. </b>file.deleteAllFile</a></li><li><span class="title-icon "></span><a href="#fileappendline"><b>2.6. </b>file.appendLine</a></li><li><span class="title-icon "></span><a href="#filereadline"><b>2.7. </b>file.readLine</a></li><li><span class="title-icon "></span><a href="#filereadalllines"><b>2.8. </b>file.readAllLines</a></li><li><span class="title-icon "></span><a href="#filemkdirs"><b>2.9. </b>file.mkdirs</a></li><li><span class="title-icon "></span><a href="#fileexists"><b>2.10. </b>file.exists</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BF4;&#x660E;"><b>1. </b>&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;"><b>2. </b>&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#filereadfile"><b>2.1. </b>file.readFile</a></li><li><span class="title-icon "></span><a href="#filelistdir"><b>2.2. </b>file.listDir</a></li><li><span class="title-icon "></span><a href="#filewritefile"><b>2.3. </b>file.writeFile</a></li><li><span class="title-icon "></span><a href="#filecreate"><b>2.4. </b>file.create</a></li><li><span class="title-icon "></span><a href="#filereadassets"><b>2.5. </b>file.readAssets</a></li><li><span class="title-icon "></span><a href="#filedeleteallfile"><b>2.6. </b>file.deleteAllFile</a></li><li><span class="title-icon "></span><a href="#fileappendline"><b>2.7. </b>file.appendLine</a></li><li><span class="title-icon "></span><a href="#filereadline"><b>2.8. </b>file.readLine</a></li><li><span class="title-icon "></span><a href="#filereadalllines"><b>2.9. </b>file.readAllLines</a></li><li><span class="title-icon "></span><a href="#filemkdirs"><b>2.10. </b>file.mkdirs</a></li><li><span class="title-icon "></span><a href="#fileexists"><b>2.11. </b>file.exists</a></li></ul></ul></div><a href="#&#x8BF4;&#x660E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BF4;&#x660E;"><a name="&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BF4;&#x660E;</h1>
 <ul>
 <li>&#x6587;&#x4EF6;&#x6A21;&#x5757;&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x662F;&#x8DDF;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x8054;</li>
 <li>&#x6587;&#x4EF6;&#x6A21;&#x5757;&#x7684;&#x5BF9;&#x8C61;&#x524D;&#x7F00;&#x662F;file&#xFF0C;&#x4F8B;&#x5982; file.readFile()&#x8FD9;&#x6837;&#x8C03;&#x7528;</li>
@@ -1168,7 +1168,25 @@
 main();
 </code></pre>
 </blockquote>
-<h2 id="filewritefile"><a name="filewritefile" class="anchor-navigation-ex-anchor" href="#filewritefile"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. file.writeFile</h2>
+<h2 id="filelistdir"><a name="filelistdir" class="anchor-navigation-ex-anchor" href="#filelistdir"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. file.listDir</h2>
+<ul>
+<li>&#x5217;&#x51FA;&#x6587;&#x4EF6;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;</li>
+<li>@param path &#x8DEF;&#x5F84;</li>
+<li>@return &#x8DEF;&#x5F84;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;</li>
+</ul>
+<blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> data = file.listDir(<span class="hljs-string">&quot;/sdcard/&quot;</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; data.length; i++) {
+        logd(<span class="hljs-string">&quot;path &quot;</span>+data[i]);  
+    }
+
+}
+main();
+</code></pre>
+</blockquote>
+<h2 id="filewritefile"><a name="filewritefile" class="anchor-navigation-ex-anchor" href="#filewritefile"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. file.writeFile</h2>
 <ul>
 <li>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5230;&#x6587;&#x4EF6;&#x4E2D;</li>
 <li>@param data &#x5B57;&#x7B26;&#x4E32; &#x6570;&#x636E;</li>
@@ -1183,7 +1201,7 @@ main();
 main();
 </code></pre>
 </blockquote>
-<h2 id="filecreate"><a name="filecreate" class="anchor-navigation-ex-anchor" href="#filecreate"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. file.create</h2>
+<h2 id="filecreate"><a name="filecreate" class="anchor-navigation-ex-anchor" href="#filecreate"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. file.create</h2>
 <ul>
 <li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;</li>
 <li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;</li>
@@ -1198,7 +1216,7 @@ main();
 main();
 </code></pre>
 </blockquote>
-<h2 id="filereadassets"><a name="filereadassets" class="anchor-navigation-ex-anchor" href="#filereadassets"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. file.readAssets</h2>
+<h2 id="filereadassets"><a name="filereadassets" class="anchor-navigation-ex-anchor" href="#filereadassets"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. file.readAssets</h2>
 <ul>
 <li>&#x4ECE;APK&#x7684;assets&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;</li>
 <li>@param path assets&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x4F8B;&#x5982; data/a.txt</li>
@@ -1213,7 +1231,7 @@ main();
 main();
 </code></pre>
 </blockquote>
-<h2 id="filedeleteallfile"><a name="filedeleteallfile" class="anchor-navigation-ex-anchor" href="#filedeleteallfile"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. file.deleteAllFile</h2>
+<h2 id="filedeleteallfile"><a name="filedeleteallfile" class="anchor-navigation-ex-anchor" href="#filedeleteallfile"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. file.deleteAllFile</h2>
 <ul>
 <li>&#x5220;&#x9664;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;</li>
 <li>@param path &#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
@@ -1226,7 +1244,7 @@ main();
 main();
 </code></pre>
 </blockquote>
-<h2 id="fileappendline"><a name="fileappendline" class="anchor-navigation-ex-anchor" href="#fileappendline"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. file.appendLine</h2>
+<h2 id="fileappendline"><a name="fileappendline" class="anchor-navigation-ex-anchor" href="#fileappendline"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. file.appendLine</h2>
 <ul>
 <li>&#x5199;&#x5165;&#x4E00;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x4E2D;,&#x8FFD;&#x52A0;&#x6A21;&#x5F0F;</li>
 <li>@param data &#x884C;&#x6570;&#x636E;</li>
@@ -1243,7 +1261,7 @@ main();
 </blockquote>
 </li>
 </ul>
-<h2 id="filereadline"><a name="filereadline" class="anchor-navigation-ex-anchor" href="#filereadline"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. file.readLine</h2>
+<h2 id="filereadline"><a name="filereadline" class="anchor-navigation-ex-anchor" href="#filereadline"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. file.readLine</h2>
 <ul>
 <li>&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x884C;&#x53F7;&#x4E0D;&#x5BF9;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x7A7A;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
@@ -1259,7 +1277,7 @@ main();
 </blockquote>
 </li>
 </ul>
-<h2 id="filereadalllines"><a name="filereadalllines" class="anchor-navigation-ex-anchor" href="#filereadalllines"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. file.readAllLines</h2>
+<h2 id="filereadalllines"><a name="filereadalllines" class="anchor-navigation-ex-anchor" href="#filereadalllines"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. file.readAllLines</h2>
 <ul>
 <li>&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
@@ -1274,7 +1292,7 @@ main();
 </blockquote>
 </li>
 </ul>
-<h2 id="filemkdirs"><a name="filemkdirs" class="anchor-navigation-ex-anchor" href="#filemkdirs"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. file.mkdirs</h2>
+<h2 id="filemkdirs"><a name="filemkdirs" class="anchor-navigation-ex-anchor" href="#filemkdirs"><i class="fa fa-link" aria-hidden="true"></i></a>2.10. file.mkdirs</h2>
 <ul>
 <li>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x5939;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
@@ -1289,7 +1307,7 @@ main();
 </blockquote>
 </li>
 </ul>
-<h2 id="fileexists"><a name="fileexists" class="anchor-navigation-ex-anchor" href="#fileexists"><i class="fa fa-link" aria-hidden="true"></i></a>2.10. file.exists</h2>
+<h2 id="fileexists"><a name="fileexists" class="anchor-navigation-ex-anchor" href="#fileexists"><i class="fa fa-link" aria-hidden="true"></i></a>2.11. file.exists</h2>
 <ul>
 <li>&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;&#x662F;&#x5426;&#x5B58;&#x5728;</li>
 <li>@param path   &#x8DEF;&#x5F84;</li>
@@ -1348,7 +1366,7 @@ main();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"文件函数","level":"1.6.8","depth":2,"next":{"title":"网络函数","level":"1.6.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},"previous":{"title":"设备函数","level":"1.6.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/file-api.md","mtime":"2020-04-14T01:27:43.453Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T05:08:57.367Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"文件函数","level":"1.6.8","depth":2,"next":{"title":"网络函数","level":"1.6.9","depth":2,"path":"zh-cn/funcs/http-api.md","ref":"zh-cn/funcs/http-api.md","articles":[]},"previous":{"title":"设备函数","level":"1.6.7","depth":2,"path":"zh-cn/funcs/device-api.md","ref":"zh-cn/funcs/device-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","copy-code-button","-lunr","-search","search-pro","anchor-navigation-ex","hide-element","favicon-absolute","popup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/zh-cn/images/ico.png","appleTouchIconPrecomposedMore":{},"favicon":"/zh-cn/images/ico.png"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EasyClick开发文档","language":"zh-hans","gitbook":"*","description":"记录EasyClick开发教程和常用的函数"},"file":{"path":"zh-cn/funcs/file-api.md","mtime":"2020-05-27T06:24:01.056Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-27T06:59:59.950Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
